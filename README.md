@@ -20,4 +20,4 @@ here I created food store website named Food Recipe that helps the customer to f
 
 ![Screenshot_2022-09-07-18-27-44-32](https://user-images.githubusercontent.com/89571744/188884506-a6bad2a5-1df0-432e-b914-23e4bc75a554.jpg)
 
-![Screenshot_2022-09-07-18-27-52-82](https://user-images.githubusercontent.com/89571744/188884531-d0e15780-64d2-4b48-bd89-dbb3f111bdad.jpg)
+
