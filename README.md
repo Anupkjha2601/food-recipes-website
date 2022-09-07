@@ -1,7 +1,7 @@
-![Screenshot_2022-09-07-18-27-52-82](https://user-images.githubusercontent.com/89571744/188885709-bbfede80-5e8e-4346-9e91-a1d28b55102b.jpg)
-![Screenshot_2022-09-07-18-28-23-87](https://user-images.githubusercontent.com/89571744/188885728-70c3dad7-ed4e-4047-9040-41f209b9c1ac.jpg)
 
-## finalproj  
+
+
+ ## final project  
 
 frt1: future ready talent project by Anup Kumar jha.
 
@@ -21,5 +21,8 @@ here I created food store website named Food Recipe that helps the customer to f
 ![Screenshot_2022-09-07-18-27-37-81](https://user-images.githubusercontent.com/89571744/188884500-16f64a33-7ef2-4bb7-bb52-20797da114cc.jpg)
 
 ![Screenshot_2022-09-07-18-27-44-32](https://user-images.githubusercontent.com/89571744/188884506-a6bad2a5-1df0-432e-b914-23e4bc75a554.jpg)
+ 
+![Screenshot_2022-09-07-18-27-52-82](https://user-images.githubusercontent.com/89571744/188885709-bbfede80-5e8e-4346-9e91-a1d28b55102b.jpg)
 
+![Screenshot_2022-09-07-18-28-23-87](https://user-images.githubusercontent.com/89571744/188885728-70c3dad7-ed4e-4047-9040-41f209b9c1ac.jpg)
 
