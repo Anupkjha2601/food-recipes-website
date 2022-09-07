@@ -1,13 +1,15 @@
 
 
 
- ## final project  
+
+## final project  
 
 frt1: future ready talent project by Anup Kumar jha.
 
 here I created food store website named Food Recipe that helps the customer to find good recipe in cheap rate and genuine products
 
 # azure link https://delightful-beach-00b073d10.1.azurestaticapps.net/
+ 
 ![![Screenshot_2022-09-07-18-28-23-87](https://user-images.githubusercontent.com/89571744/188884546-daac170b-f987-476d-9bc8-52ec059d64e7.jpg)-09-07-18-27-01-46](https://user-images.githubusercontent.com/89571744/188884400-3c08b6b4-c420-447b-b512-36fd47881271.jpg)
 
 ![Screenshot_2022-09-07-18-27-09-53](https://user-images.githubusercontent.com/89571744/188884420-1d8f2618-cef2-4898-833a-33b0cadb0382.jpg)
@@ -26,3 +28,4 @@ here I created food store website named Food Recipe that helps the customer to f
 
 ![Screenshot_2022-09-07-18-28-23-87](https://user-images.githubusercontent.com/89571744/188885728-70c3dad7-ed4e-4047-9040-41f209b9c1ac.jpg)
 
+![Screenshot_2022-09-07-18-59-22-50](https://user-images.githubusercontent.com/89571744/188891163-c9420e15-1ef0-46d4-90bf-9ca87a75965f.jpg)
