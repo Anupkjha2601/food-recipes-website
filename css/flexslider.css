@@ -1,0 +1,217 @@
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {
+	border: 0px;
+	position: relative;
+	zoom: 1;
+	overflow: hidden;
+}
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+
+.carousel li {margin-right: 5px}
+
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a {
+	width: 50px;
+    height: 50px;
+    margin: 0;
+    background:none;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    cursor: pointer;
+    text-indent: -9999px;
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+	display:none;
+}
+.flex-direction-nav .flex-next {
+	background:none;
+    right: 80.5%;
+	display:none;
+}
+.flex-direction-nav .flex-prev {left:0;}
+.flexslider:hover .flex-next {opacity: 0.8;}
+.flexslider:hover .flex-prev {opacity: 0.8;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+/* Control Nav */
+.flex-control-nav {
+	display: block;
+    position: absolute;
+    right: 30%;
+    margin-left: 0px;
+    bottom: 0%;
+}
+.flex-control-nav li {
+	margin: 0 10px;
+    display: inline-block;
+    zoom: 1;
+}
+.flex-control-paging li a {
+	width: 35px;
+    height: 3px;
+    display: block;
+    background: none;
+    cursor: pointer;
+    text-indent: -9999px;
+    border: none;
+    border-radius: 0;
+    background: #000;
+}
+.flex-control-paging li a.flex-active { 
+	background:#ff7b3d;
+    cursor: default;
+}
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+@media screen and (max-width:1440px) {
+	.flex-direction-nav .flex-next {
+		right: 79.5%;
+	}
+}
+@media screen and (max-width: 1366px){
+	.flex-direction-nav .flex-next {
+		right: 78.5%;
+	}
+}
+@media screen and (max-width: 1280px){
+	.flex-direction-nav .flex-prev {
+		left: 8%;
+	}
+	.flex-direction-nav .flex-next {
+		right: 82.5%;
+	}
+}
+@media screen and (max-width:1080px) {
+	.flex-direction-nav .flex-next {
+		right: 81.5%;
+	}
+}
+@media screen and (max-width:991px) {
+	.flex-direction-nav .flex-next {
+		right: 80.5%;
+	}
+}	
+@media screen and (max-width: 800px) {
+	.flex-direction-nav .flex-next {
+		right: 78.5%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.flex-direction-nav .flex-next {
+		right: 77.5%;
+	}
+}
+@media screen and (max-width: 667px){
+	.flex-direction-nav .flex-next {
+		right: 75.5%;
+	}
+}
+@media screen and (max-width: 640px){
+	.flex-control-nav {
+		bottom: -8%;
+	}
+}
+@media screen and (max-width: 600px){
+	.flex-control-nav {
+		bottom: -5%;
+	}
+}
+@media screen and (max-width: 568px){
+	.flex-direction-nav .flex-next {
+		right: 72.5%;
+	}
+}
+@media screen and (max-width: 480px){
+	.flex-control-nav {
+		bottom: 0%;
+		right: 10%;
+	}
+}
+@media screen and (max-width: 480px) {
+	section.slider {
+		padding-top: 0%;
+	}
+	.flexslider {
+		padding: 0px 0px;
+	}
+}
+@media screen and (max-width: 414px){
+	.flex-direction-nav .flex-next {
+		right:76.5%;
+	}
+	.flex-direction-nav .flex-prev {
+		left: 3%;
+	}
+	.flex-control-nav {
+		bottom: 0%;
+		right: 12%;
+	}
+}
+@media screen and (max-width: 384px){
+	.flex-direction-nav .flex-next {
+		right: 74.5%;
+	}
+	.flex-control-paging li a {
+		width: 25px;
+	}
+}
+@media screen and (max-width: 375px){
+	.flex-control-nav li {
+		margin: 0 4px;
+	}
+}
+@media screen and (max-width: 320px) {
+	section.slider {
+		padding-top: 0%;
+	}
+	.flex-direction-nav .flex-next {
+		right: 70.5%;
+	}
+	.flex-control-nav {
+		right: 3%;
+	}
+}
