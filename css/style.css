@@ -951,7 +951,6 @@ ul.top-links li {
     color: #fff;
     text-transform: capitalize;
     padding: 10px 20px;
-		white-space: nowrap;
 }
 @media(max-width:480px) {
 .agile-dish-caption {
