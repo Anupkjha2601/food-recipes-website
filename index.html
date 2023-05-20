@@ -37,10 +37,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="//fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 
+<!-- Fontawesome Link Start -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+<!-- Fontawesome Link End -->
 
+<style>
+	html{
+		scroll-behavior: smooth;
+	}
+	#topBtn{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+  border-radius: 50%;
+  box-shadow: 5px 2px 5px #55221d;
+}
+</style>
 </head>
 	
 <body>
+
+<!-- <a href="#" class="scrolltotop"><i class="fa-solid fa-angle-up"></i></a> -->
 
 <div class="banner-header">
 		<!--header-->
@@ -594,8 +619,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="clearfix"></div>
 	</div>
 </div>
+<button id="topBtn"><i class="glyphicon glyphicon-chevron-up"></i></button>
 <!-- Footer -->	
-
 <!-- Owl-Carousel-JavaScript -->
 	<script src="js/owl.carousel.js"></script>
 	<script>
@@ -624,9 +649,25 @@ $(window).load(function(){
 </script>
 <!-- //flexSlider -->
 
+<script>
+$(document).ready(function(){
 
+	$(window).scroll(function(){
+	  if($(this).scrollTop() > 40){
+		$('#topBtn').fadeIn();
+	  } else{
+		$('#topBtn').fadeOut();
+	  }
+	});
+  
+	$("#topBtn").click(function(){
+	  $('html ,body').animate({scrollTop : 0},800);
+	});
+  });
+  
+</script>
 <!-- start-smoth-scrolling -->
-<script src="js/SmoothScroll.min.js"></script>
+<!-- <script src="js/SmoothScroll.min.js"></script>
 
 <script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
@@ -639,10 +680,10 @@ $(window).load(function(){
 				}, 1000);
 			});
 		});
-	</script>
+	</script> -->
 
 	<!-- here stars scrolling icon -->
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		$(document).ready(function() {
 			/*
 				var defaults = {
@@ -656,7 +697,7 @@ $(window).load(function(){
 			$().UItoTop({ easingType: 'easeOutQuart' });
 								
 			});
-	</script>
+	</script> -->
 <!-- //here ends scrolling icon -->
 
 <!-- for bootstrap working -->
