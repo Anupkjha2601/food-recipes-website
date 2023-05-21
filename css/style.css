@@ -548,34 +548,39 @@ nav.navbar.navbar-default {
 }
 .footer {
     padding: 5em 0;
-    background: #000;
-    background: url("../images/1.jpg") no-repeat 0px 0px;
+    /* background: #000; */
+    background: url("../images/1.jpg") no-repeat 0px 0px black;
+	filter: blur(.6px);
+	-webkit-filter: blur(.6px);
 	background-size: cover;
 }
-.ftr-grid h3 {
+.footer-top .ftr-grid h3 {
     color: #4CAF50;
     font-size: 1.3em;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 1em;
+	z-index: 2;
 }
-.ftr-grid h3 a span {
+.footer-top .ftr-grid h3 a span {
        color: #f6da08;
     display: inline-block;
     padding: 6px 10px;
     background: #f12b24;
+	z-index: 2;
 }
-.ftr-grid h3 span{
+.footer-top .ftr-grid h3 span{
 	
 }
-.ftr-grid p {
+.footer-top .ftr-grid p {
        font-size: 0.85em;
     color:#b8b8b8;
     line-height: 2em;
     letter-spacing: 1px;
+	z-index: 2;
 }
-.ftr-grid.fg1 a {
+.footer-top .ftr-grid.fg1 a {
     color: #f6da08;
     margin-top: 0.5em;
     display: inline-block;
@@ -1790,6 +1795,9 @@ h3.hdg {
 }
 section#tables  p {
  margin-top: 1em;
+}
+.footer-top{
+	
 }
 .tab-container .tab-content {
   border-radius: 0 2px 2px 2px;
