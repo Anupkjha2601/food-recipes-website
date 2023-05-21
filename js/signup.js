@@ -1,5 +1,5 @@
 // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-// import { getAuth, createUserWithEmailAndPassword,  } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+// import { getAuth, createUserWithEmailAndPassword,  } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
 
 
 const signUpButton = document.getElementById('signUp');
@@ -28,30 +28,34 @@ const firebaseConfig = {
   const app = initializeApp(firebaseConfig);
   const auth = getAuth();
 
-  var email = document.getElementById('eemail');
-  var password = document.getElementById('lpassword');
-  var name = document.getElementById('fname');
+    //Function to sign up
+    function signup() {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        if (email.length < 4) {
+          alert('Please enter an email address.');
+          return;
+        }
+        if (password.length < 4) {
+          alert('Please enter a password.');
+          return;
+        }
+        // Create user with email and pass.
+        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          if (errorCode == 'auth/weak-password') {
+            alert('The password is too weak.');
+          } else {
+            alert(errorMessage);
+          }
+          console.log(error);
+        });
+      }
   
 
 
-  //code Auth
-  window = function UserRegister(e){
- e.preventDefault();
- var obj = {
-    name : name.value,
-    email : email.value,
-    password : name.password,
- }
-  createUserWithEmailAndPassword(auth, obj.email, obj.password).then(function(success){
-      alert("Signup Successfully");
-  }).catch(function (error){
-      var errorcode = error.code;
-      var errormsg = error.message;
-      console.log(errorcode + errormsg);
-  });
-
-console.log(obj);
-  }
 //   const auth = firebase.auth();
 //   function SignIn(){
 //       var email = document.getElementById('eemail').value;
