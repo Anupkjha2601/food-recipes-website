@@ -16,7 +16,7 @@
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form action="" id="form">
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -24,10 +24,10 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button>Sign Up</button>
+                <input type="text" id="fname" placeholder="Name"  autocomplete="off"/>
+                <input type="email" id="eemail" placeholder="Email" autocomplete="off" />
+                <input type="password" name="password" id="lpassword" placeholder="Password" />
+                <button type="submit"  onclick="UserRegister()" id="btn">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
@@ -39,10 +39,10 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="email" id="eemail" placeholder="Email" autocomplete="off" />
+                <input type="password" name="password" id="lpassword" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
+                <button type="submit" onclick="SignIn()" id="btn1">Sign In</button>
             </form>
         </div>
         <div class="overlay-container">
@@ -62,9 +62,9 @@
     </div>
 
 
-    <script src="js/signup.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+    <script src="js/signup.js" type="module"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script> -->
 </body>
 
 </html>
