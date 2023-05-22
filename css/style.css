@@ -263,6 +263,7 @@ header {
     color: #fff;
     padding: 20px 10px;
     font-size: 20px;
+	cursor: default;
 }
 .thim-click-to-bottom {
     position: absolute;
@@ -2496,7 +2497,7 @@ input.email {
 	.bottom-left h3 {
 		font-size: 22px;
 		line-height: 30px;
-`	}
+	}
 	h3.heading, h2.heading {
 		font-size: 38px;
 	}
