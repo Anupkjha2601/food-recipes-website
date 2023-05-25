@@ -357,7 +357,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="copyrights">
 		<div class="container">
 			<div class="copyright">
-				<p>&copy; 2022 Food Recipe. All Rights Reserved | Design &copy; by Anup Kumar Jha </p>
+				<p>&copy; <span id="copyright"></span> Food Recipe. All Rights Reserved | Design &copy; by Anup Kumar Jha </p>
 			</div>
 			<div class="social-icons">
 				<ul>
@@ -377,6 +377,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- Footer -->
 
 	<!-- start-smoth-scrolling -->
+	<script>
+		let year = new Date().getFullYear();
+		document.getElementById('copyright').innerText = year;
+	</script>
 	<script src="js/SmoothScroll.min.js"></script>
 
 	<script type="text/javascript" src="js/move-top.js"></script>
