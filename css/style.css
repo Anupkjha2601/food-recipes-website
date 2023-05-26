@@ -1179,6 +1179,7 @@ ul.top-links li {
     background: #333;
     width: 33px;
     height: 33px;
+	border-radius: 50%;	
     line-height: 33px;
 }
 a.w3_agile_facebook:hover{
@@ -1195,6 +1196,7 @@ a.w3_agile_vimeo:hover{
 }
 ul.agileits_social_list {
     padding: 0;
+	line-height: 36px;
 }
 .team-top {
     border-left: 1px solid #000;
@@ -1653,7 +1655,7 @@ h3.icon-subheading {
 h3.agileits-icons-title {
     text-align: center;
     color: #212121;
-    margin: 12px;
+    margin: 14px;
     font-size: 1.3em;
     font-weight: 600;
     letter-spacing: 1px;
