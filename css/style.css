@@ -552,6 +552,7 @@ nav.navbar.navbar-default {
     background: #000;
     background: url("../images/1.jpg") no-repeat 0px 0px;
 	background-size: cover;
+	
 }
 .ftr-grid h3 {
     color: #4CAF50;
@@ -718,24 +719,24 @@ ul.top-links li {
 }
 /*--//placeholder-color--*/
 .copyrights {
-    text-align: center;
+    padding-left: 50px;
+	float: left;
+	
 }
 .copyrights p {
+	text-align: center;
     font-size: 0.9em;
-    color: #fff;
-    float: left;
+    color:white;
+
     letter-spacing: 2px;
     padding-top: 5px;
 }
-.copyrights {
-    background: #1b1a1a;
-    padding: 20px;
-}
-.copyrights p a {
-    color: #999;
+
+.copyrights  p a {
+    color:white;
 }
 .copyrights p a:hover {
-    color: #fff;
+    color:white;
 }
 .more-button a {
     font-size: 14px;
@@ -744,6 +745,7 @@ ul.top-links li {
     padding: 10px 20px;
     text-transform: capitalize;
     letter-spacing: 2px;
+	
 }
 .more-button a:hover {
     background: #fff;
@@ -767,8 +769,10 @@ ul.top-links li {
     margin: 10px 0;
 }
 .social-icons {
-    float: left;
-    margin-left: 4em;
+   
+	text-align: center;
+
+
 }
 .social-icons li {
     display: inline-block;
@@ -2496,7 +2500,7 @@ input.email {
 	.bottom-left h3 {
 		font-size: 22px;
 		line-height: 30px;
-`	}
+	}
 	h3.heading, h2.heading {
 		font-size: 38px;
 	}
