@@ -259,12 +259,12 @@ header {
 .contrast a:hover {
     background: transparent;
 }
-.thim-click-to-bottom i {
+#thim-click-to-bottom i {
     color: #fff;
     padding: 20px 10px;
     font-size: 20px;
 }
-.thim-click-to-bottom {
+#thim-click-to-bottom {
     position: absolute;
     bottom: 18%;
     left: 48.9%;
@@ -274,6 +274,17 @@ header {
     line-height: 40px;
     -webkit-animation: bounce 2s infinite ease-in-out;
 }
+#thim-click-to-bottom button {
+	box-sizing: border-box;
+	height: 2vw;
+	width: 2vw;
+	border-style: solid;
+	border-color: white;
+	border-width: 0px 1px 1px 0px;
+	transform: rotate(45deg);
+	transition: border-width 150ms ease-in-out;
+  }
+  
 @-webkit-keyframes bounce {
 	0%, 20%, 60%, 100%  { -ms-transform: translateY(0); }
 	0%, 20%, 60%, 100%  { -o-transform: translateY(0); }
