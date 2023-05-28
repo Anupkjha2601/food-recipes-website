@@ -352,7 +352,7 @@ header {
     text-transform: uppercase;
 }
 .navbar-nav > li:nth-child(3) a {
-    margin-right:40em !important;
+    margin-right:35em !important;
 }
 .navbar-default .navbar-nav > li:last-child > a {
     margin-right: 0;
