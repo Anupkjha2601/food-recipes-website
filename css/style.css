@@ -274,14 +274,14 @@ header {
     line-height: 40px;
     -webkit-animation: bounce 2s infinite ease-in-out;
 }
-@-webkit-keyframes bounce {
+/* @-webkit-keyframes bounce {
 	0%, 20%, 60%, 100%  { -ms-transform: translateY(0); }
 	0%, 20%, 60%, 100%  { -o-transform: translateY(0); }
 	0%, 20%, 60%, 100%  { -moz-transform: translateY(0); }
 	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
     40%  { -webkit-transform: translateY(-20px); }
 	80% { -webkit-transform: translateY(-10px); }
-}
+} */
 .banner2{
 	background:url(../images/slider4.jpg)no-repeat center 0px;
 	background-size:cover;  
@@ -2505,7 +2505,7 @@ input.email {
 	.bottom-left h3 {
 		font-size: 22px;
 		line-height: 30px;
-`	}
+	}
 	h3.heading, h2.heading {
 		font-size: 38px;
 	}
