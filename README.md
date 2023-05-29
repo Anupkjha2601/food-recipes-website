@@ -73,7 +73,7 @@ We welcome contributions from the open-source community to make Food-Recipe webs
  
  ✏️ <b>Clone the Repo:</b> Clone the forked repository to your local machine .
  ```markdown
- git clone https://github.com/github_username/finalproj.git
+ git clone https://github.com/github_username/food-recipes-website.git
  ```
  Note: Replace `github_username` with your actual GitHub username.
  
@@ -106,6 +106,7 @@ We appreciate your contributions!! Happy Coding!! 🤍
 <br><br>
 
 ## Repo Status 🌟
+
 
 <div align="center">
 	<img src="https://img.shields.io/github/repo-size/Anupkjha2601/food-recipes-website?style=for-the-badge" />

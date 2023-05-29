@@ -263,6 +263,7 @@ header {
     color: #fff;
     padding: 20px 10px;
     font-size: 20px;
+	cursor: default;
 }
 .thim-click-to-bottom {
     position: absolute;
@@ -548,10 +549,26 @@ nav.navbar.navbar-default {
 	 padding: 5em 0;
 }
 .footer {
-    padding: 5em 0;
-    background: #000;
-    background: url("../images/1.jpg") no-repeat 0px 0px;
-	background-size: cover;
+   /* height: 30vh; */
+}
+.footer::before{
+	content: "";
+background: url("../images/1.jpg") no-repeat 0px 0px;
+  background-repeat: no-repeat;
+  background-size: auto;
+background-repeat: no-repeat;
+background-size: auto;
+position: absolute;
+background-repeat: no-repeat;
+background-size: cover;
+z-index: 0;
+width: 100vw;
+height: 45%;
+filter: brightness(0.2) !important;
+
+}
+.footer-top{
+	padding: 4rem 0;
 }
 .ftr-grid h3 {
     color: #4CAF50;
@@ -719,6 +736,8 @@ ul.top-links li {
 /*--//placeholder-color--*/
 .copyrights {
     text-align: center;
+	z-index: 1;
+	position: relative;
 }
 .copyrights p {
     font-size: 0.9em;
@@ -1192,6 +1211,12 @@ a.w3_agile_dribble:hover{
 }
 a.w3_agile_vimeo:hover{
 	background:#1ab7ea;
+}
+a.w3_agile_instagram:hover{
+	background:#f51d70;
+}
+a.w3_agile_linkedin:hover{
+	background:#1a5cea;
 }
 ul.agileits_social_list {
     padding: 0;
@@ -2496,7 +2521,7 @@ input.email {
 	.bottom-left h3 {
 		font-size: 22px;
 		line-height: 30px;
-`	}
+	}
 	h3.heading, h2.heading {
 		font-size: 38px;
 	}
