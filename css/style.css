@@ -827,14 +827,14 @@ ul.top-links li {
 	align-items: center;
 	padding: 0px 20px;
 	text-decoration: none;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
+	font-weight: normal;
 	font-size: 1rem;
 	color: var(--color-text);
 	background: var(--color-background);
 	transition: 1s;
 	border-radius: 5px;
 	box-shadow: 0 0 0.2em 0 var(--color-background);
+	transform: translate(-100px, 10px);
 }
 
 .btn-content:hover,
