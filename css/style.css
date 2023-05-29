@@ -1193,6 +1193,12 @@ a.w3_agile_dribble:hover{
 a.w3_agile_vimeo:hover{
 	background:#1ab7ea;
 }
+a.w3_agile_instagram:hover{
+	background:#f51d70;
+}
+a.w3_agile_linkedin:hover{
+	background:#1a5cea;
+}
 ul.agileits_social_list {
     padding: 0;
 }
