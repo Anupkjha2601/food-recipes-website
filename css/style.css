@@ -1067,7 +1067,7 @@ ul.top-links li {
     padding-left: 0;
 }
 .services-icon-text p{
-    color: #404040;
+    color: var(--color-blackshade);
     font-size: .85em;
     margin: 0em 0 0 0;
     text-transform: capitalize;
