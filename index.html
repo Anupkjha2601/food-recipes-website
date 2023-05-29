@@ -43,6 +43,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 
 <div class="banner-header">
+	<!-- toogle button -->
+	<div class="toggle-btn">
+		<input type="checkbox" id="checkbox">
+		<label for="checkbox" class="toggle-label">
+			<span class="toggle-ball"></span>
+		</label>
+	</div>
 		<!--header-->
 		<div class="header">
 		<div class="container-fluid">
@@ -662,6 +669,25 @@ $(window).load(function(){
 <!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
+
+<script>
+		//dark and light mode
+	const toggle_btn = document.querySelector('#checkbox')
+
+
+
+	toggle_btn.addEventListener('change',()=>{
+		if(toggle_btn.checked){
+			document.body.classList.add('dark-mode')
+			
+		}
+		else{
+			document.body.classList.remove('dark-mode')
+			
+		}
+	})
+
+</script>
 
 </body>
 </html>

@@ -4,10 +4,23 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+:root .dark-mode{
+	--color-black: #fff;
+	--color-white: #000;
+	--color-blackshade: #f6d298;
+	--color-blackshadeanother: #f3cb52;
+}
+
+:root{
+	--color-black: #000;
+	--color-white: #fff;
+	--color-blackshade: #777;
+	--color-blackshadeanother: #333;
+}
 html, body{
     font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
-	background:#ffffff;
+	background: var(--color-white);
 	margin: 0;
 }
 p,ul li,ol li{
@@ -73,12 +86,12 @@ header {
     letter-spacing: 1px;
 }
 .dropdown-menu>li>a:hover {
-    color: #000;
+    color: var(--color-black);
     background: none;
 }
 .dropdown-menu > li > a {
     line-height: 1.42857143;
-    color: #000;
+    color: var(--color-black);
     text-transform: uppercase;
 }
 .navbar-nav > li > .dropdown-menu {
@@ -112,7 +125,7 @@ header {
 }
 .carousel-caption h3 {
     font-weight: 300;
-    color: white;
+    color: #fff;
     text-shadow: 0 1px 1px #000;
     margin: 300px 0 0px 0;
 	letter-spacing:3px;
@@ -130,7 +143,7 @@ header {
 }
 .carousel-caption p {
     font-weight: normal;
-    color: white;
+    color: #fff;
     margin: 30px 0;
     letter-spacing: 3px;
     font-size: 13.5px;
@@ -206,12 +219,12 @@ header {
 .slides-navigation a {
     display: block;
     text-decoration: none;
-    border: 2px solid #fff;
-    color: white;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
     font-weight: bold;
     font-size: 25px;
     margin: 0 25px;
-    text-shadow: 0 1px 1px #000;
+    text-shadow: 0 1px 1px var(--color-black);
     color: #8BC34A;
     border: 2px solid #8BC34A;
     text-align: center;
@@ -219,14 +232,53 @@ header {
     width: 40px;
     top: -40px;
     padding: 1px;
-    -webkit-box-shadow: 0 1px 1px black;
-    -moz-box-shadow: 0 1px 1px black;
-    box-shadow: 0 1px 1px black;
+    -webkit-box-shadow: 0 1px 1px var(--color-black);
+    -moz-box-shadow: 0 1px 1px var(--color-black);
+    box-shadow: 0 1px 1px var(--color-black);
     -webkit-transition: background 0.15s ease;
     -moz-transition: background 0.15s ease;
     -o-transition: background 0.15s ease;
     transition: background 0.15s ease;
 }
+/* dark mode */
+.toggle-btn{
+	display: block;
+	position: absolute;
+	right: 0rem;
+	top: 0;
+	margin: 1rem 1rem 0 0;
+	z-index: 12;  
+  }
+	.toggle-label{
+	  width: 3rem;
+	  height: 2rem;
+	  background-color: #fff;
+	  display: inline-block;
+	  position: relative;
+	  border-radius: 10rem;
+	}
+  
+	#checkbox{
+	  visibility: hidden;
+	}
+  
+	.toggle-ball{
+	  width: 1rem;
+	  height: 1rem;
+	  border-radius: 50%;
+	  background-color: #f5d208;
+	  display: inline-block;
+	  position: absolute;
+	  top: .5rem;
+	  left: .5rem;
+	  transition: all .2s line;
+	}
+  
+	#checkbox:checked + .toggle-label .toggle-ball{
+	  transform: translateX(1rem);
+	  background-color: #000;
+	}
+  
 @media screen and (max-width: 767px) {
   .slides-navigation {
     display: none;
@@ -238,20 +290,20 @@ header {
   height: 15px;
   margin: 5px;
   border-color: white;
-  -webkit-box-shadow: 0 1px 1px black;
-  -moz-box-shadow: 0 1px 1px black;
-  box-shadow: 0 1px 1px black;
+  -webkit-box-shadow: 0 1px 1px var(--color-black);
+  -moz-box-shadow: 0 1px 1px var(--color-black);
+  box-shadow: 0 1px 1px var(--color-black);
 }
 .slides-pagination a.current {
     background: #8BC34A;
     border-color: #8BC34A;
 }
 .contrast a {
-    color: #fff !important;
+    color: var(--color-white) !important;
     font-size: 16px;
     letter-spacing: 2px;
     padding: 10px 20px;
-    border: 1px solid #fff;
+    border: 1px solid var(--color-white);
     border-radius: 25px;
     background: #4CAF50;
     text-transform: capitalize;
@@ -260,7 +312,7 @@ header {
     background: transparent;
 }
 .thim-click-to-bottom i {
-    color: #fff;
+    color: var(--color-white);
     padding: 20px 10px;
     font-size: 20px;
 }
@@ -313,6 +365,7 @@ header {
     border: none;
 }
 .navbar {
+	margin-top: 2rem;
     margin-bottom: 0;  
     border-radius: 0px;
 }
@@ -332,11 +385,11 @@ header {
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #F44336;
-    background: #fff;
+    background:  var(--color-white);
 }
 .navbar-default .navbar-nav > .active > a:hover{
 	color:#333;
-	background: #fff;
+	background: var(--color-white);
 }
 .navbar-default .navbar-nav > li > a {
     color: #fff;
@@ -915,14 +968,14 @@ ul.top-links li {
 }
 .agile-dish-caption h3 {
 	font-weight: bold;
-	color: #3d3d3d;
+	color: var(--color-blackshade);
 }
 .agile-dish-caption span {
     margin: 0;
     padding: 0;
     font-size: 14px;
     line-height: 26px;
-    color: #ffffff;
+    color: var(--color-white);
     font-weight: 300;
 }
 .g1:hover .agile-dish-caption {
@@ -949,7 +1002,7 @@ ul.top-links li {
 }
 .agile-dish-caption a {
     background: #F44336;
-    color: #fff;
+    color: var(--color-white);
     text-transform: capitalize;
     padding: 10px 20px;
 }
@@ -972,24 +1025,24 @@ ul.top-links li {
 }
 .bottomleft h5 {
     font-size: 22px;
-    color: #777;
+    color: var(--color-blackshade);
     text-transform: capitalize;
 }
 .bottomleft h3 {
     font-size: 30px;
-    color: #000;
+    color: var(--color-black);
 	margin: 15px 0;
     text-transform: capitalize;
 }
 .bottomleft p {
     font-size: 14px;
-    color: #333;
+    color: var(--color-blackshadeanother);
 	line-height: 28px;
 	letter-spacing:.5px;
 	margin: 15px 0;
 }
 .border1{
-    border-bottom: solid 1px #ffffff !important;
+    border-bottom: solid 1px var(--color-white) !important;
 }
 .serviceimg img {
     margin: 1em 0;
@@ -997,7 +1050,7 @@ ul.top-links li {
 .services-icon-info {
     width: 70px;
     height: 70px;
-    background: #FFFFFF;
+    background: var(--color-white);
     text-align: center;
     color:  #4CAF50;
     border: 2px solid #4CAF50;
@@ -1040,14 +1093,14 @@ ul.top-links li {
 	color: #cddc39;
 }
 .w3-agile-services-right h5{
-	color:#000000;
+	color: var(--color-black);
 	font-size:1em;
 	line-height:1.8em;
 	font-weight:600;
 	margin:0 0 1em 0;
 }
 .w3-agile-services-right p{
-    color: #999999;
+    color: var(--color-blackshade);
     font-size: .9em;
     line-height: 1.8em;
     margin: 0;
@@ -1061,7 +1114,7 @@ ul.top-links li {
     font-weight: 600;
     margin: 0 0 10px;
     text-transform: uppercase;
-    color: #000;
+    color: var(--color-black);
 }
 .agile-services-left-grid {
     margin-top: 3em;
@@ -1071,17 +1124,17 @@ ul.top-links li {
     padding-right: 0;
 }
 .positiongrid1,.positiongrid2 {
-    background: rgba(0, 0, 0, 0.7);
+    background:  var(--color-black);
     background: rgba(76, 175, 80, 0.7);
     padding: 2em;
-    border: 6px solid #fff;
-	-webkit-box-shadow: -2px 0px 18px 0px rgba(0,0,0,0.74);
-	-moz-box-shadow: -2px 0px 18px 0px rgba(0,0,0,0.74);
-	box-shadow: -2px 0px 18px 0px rgba(0,0,0,0.74);
+    border: 6px solid var(--color-white);
+	-webkit-box-shadow: -2px 0px 18px 0px var(--color-black);
+	-moz-box-shadow: -2px 0px 18px 0px var(--color-black);
+	box-shadow: -2px 0px 18px 0px var(--color-black);
 }
 .positiongrid1 h4 ,.positiongrid2 h4{
     font-size: 22px;
-    color: #fff;
+    color: var(--color-white);
     line-height: 36px;
     text-transform: capitalize;
 }
@@ -1116,7 +1169,7 @@ ul.top-links li {
 }
 .w3_agile_team_grid h4 {
     font-size: 1.2em;
-    color: #404040;
+    color: var(--color-blackshade);
     margin: 0 0 0em;
 	letter-spacing: 0px;
     text-transform: uppercase;
@@ -1172,11 +1225,11 @@ ul.top-links li {
 	}
 }
 .agileits_social_list li a{
-    color: #fff;
+    color: var(--color-white);
     text-align: center;
     display: inline-block;
     font-size: 1.2em;
-    background: #333;
+    background: var(--color-blackshade);
     width: 33px;
     height: 33px;
     line-height: 33px;
@@ -1197,7 +1250,7 @@ ul.agileits_social_list {
     padding: 0;
 }
 .team-top {
-    border-left: 1px solid #000;
+    border-left: 1px solid var(--color-black);
     padding-left: 35px;
 }
 .team-tt {
@@ -1212,7 +1265,7 @@ ul.agileits_social_list {
 
 /*-- testimonials --*/
 .w3_testimonials_grid_left p{
-	color:#666;
+	color:var(--color-blackshade);
 	line-height:2em;
     letter-spacing: .5px;
 	margin: 3em 0 0;
@@ -1251,7 +1304,7 @@ h2.w3l-inner-h-title,h3.w3l-inner-h-title{
 	margin-bottom:1em;
 }
 h3.tittle.two {
-    color: #fff;
+    color: var(--color-white);
 }
 .special-grids {
     margin: 3em 0 0 0;
@@ -1261,7 +1314,7 @@ h3.tittle.two {
 }
 .w3ls-special-img {
     padding: 0;
-    background:#000 url(../images/sp1.jpg) no-repeat 0px 0px;
+    background:var(--color-black) url(../images/sp1.jpg) no-repeat 0px 0px;
     min-height: 235px;
     background-size: cover;
     text-align: center;
@@ -1273,7 +1326,7 @@ h3.tittle.two {
 .agileits-special-info{
     text-align: center;
           padding: 3.9em 1.3em;
-    background: #F5F5F5;
+    background: var(--color-white);
 }
 .agileits-special-info h4{
    color: #2baf2b;
@@ -1292,7 +1345,7 @@ h3.tittle.two {
     left: 53px;
 }
 .agileits-special-info p{
-    color: #555;
+    color: var(--color-blackshade);
     font-size:0.9em;
     line-height:2em;
     margin: 1.5em 0 0 0;
@@ -1314,7 +1367,7 @@ h3.tittle.two {
     background-size: cover;	
 }
 .w3ls-special-text h4 {
-    color: #FFF;
+    color: var(--color-white);
     font-size: 1.8em;
     margin: 3.5em 0 0 0;
     font-weight: 600;
@@ -2496,7 +2549,7 @@ input.email {
 	.bottom-left h3 {
 		font-size: 22px;
 		line-height: 30px;
-`	}
+	}
 	h3.heading, h2.heading {
 		font-size: 38px;
 	}
@@ -2505,6 +2558,9 @@ input.email {
 	}
 	.services-icon-text h3 {
 		font-size: 17px;
+	}
+	.services-icon-text p{
+		color: var(--color-blackshade);
 	}
 	h3.heading:before, h2.heading:before {
 		bottom: -10px;
