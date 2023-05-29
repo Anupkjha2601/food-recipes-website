@@ -834,7 +834,7 @@ ul.top-links li {
 	transition: 1s;
 	border-radius: 5px;
 	box-shadow: 0 0 0.2em 0 var(--color-background);
-	transform: translate(-100px, 10px);
+	transform: translate(0px, 30px);
 }
 
 .btn-content:hover,
