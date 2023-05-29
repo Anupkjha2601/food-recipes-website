@@ -1059,9 +1059,15 @@ th {
 }
 .glyphicon-menu-left:before {
   content: "\e257";
+  position: absolute;
+  top: 7px;
+  left: 11px;
 }
 .glyphicon-menu-right:before {
   content: "\e258";
+  position: absolute;
+  top: 7px;
+  left: 11px;
 }
 .glyphicon-menu-down:before {
   content: "\e259";
