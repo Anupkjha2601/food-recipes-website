@@ -264,6 +264,7 @@ header {
     color: #fff;
     padding: 20px 10px;
     font-size: 20px;
+	cursor: default;
 }
 .thim-click-to-bottom {
     position: absolute;
@@ -275,14 +276,15 @@ header {
     line-height: 40px;
     /* -webkit-animation: bounce 2s infinite ease-in-out; */
 }
-@keyframes bounce {
+ @-webkit-keyframes bounce {
+
 	0%, 20%, 60%, 100%  { -ms-transform: translateY(0); }
 	0%, 20%, 60%, 100%  { -o-transform: translateY(0); }
 	0%, 20%, 60%, 100%  { -moz-transform: translateY(0); }
 	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
     40%  { -webkit-transform: translateY(-20px); }
 	80% { -webkit-transform: translateY(-10px); }
-}
+} 
 .banner2{
 	background:url(../images/slider4.jpg)no-repeat center 0px;
 	background-size:cover;  
@@ -508,8 +510,8 @@ nav.navbar.navbar-default {
 } 
 .carousel-indicators li {
     display: inline-block;
-    width: 14px !important;
-    height: 14px !important;
+    width: 12px !important;
+    height: 12px !important;
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
@@ -548,34 +550,34 @@ nav.navbar.navbar-default {
 .newsletter-tp{
 	 padding: 5em 0;
 }
-.footer {
-    padding: 5em 0;
-    background: #000;
-    background: url("../images/1.jpg") no-repeat 0px 0px;
-	background-size: cover;
-}
-.ftr-grid h3 {
+
+.footer-top .ftr-grid h3 {
     color: #4CAF50;
     font-size: 1.3em;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 1em;
+	z-index: 2;
 }
-.ftr-grid h3 a span {
+.footer-top .ftr-grid h3 a span {
        color: #f6da08;
     display: inline-block;
     padding: 6px 10px;
     background: #f12b24;
+	z-index: 2;
 }
 
-.ftr-grid p {
+.footer-top .ftr-grid p {
+
+  
        font-size: 0.85em;
     color:#b8b8b8;
     line-height: 2em;
     letter-spacing: 1px;
+	z-index: 2;
 }
-.ftr-grid.fg1 a {
+.footer-top .ftr-grid.fg1 a {
     color: #f6da08;
     margin-top: 0.5em;
     display: inline-block;
@@ -718,6 +720,8 @@ ul.top-links li {
 /*--//placeholder-color--*/
 .copyrights {
     text-align: center;
+	z-index: 1;
+	position: relative;
 }
 .copyrights p {
     font-size: 0.9em;
@@ -970,12 +974,12 @@ ul.top-links li {
     width: 100%;
 }
 .bottomleft h5 {
-    font-size: 22px;
+    font-size: 20px;
     color: #777;
     text-transform: capitalize;
 }
 .bottomleft h3 {
-    font-size: 30px;
+    font-size: 28px;
     color: #000;
 	margin: 15px 0;
     text-transform: capitalize;
@@ -983,6 +987,7 @@ ul.top-links li {
 .bottomleft p {
     font-size: 14px;
     color: #333;
+	padding-right: 10px;
 	line-height: 28px;
 	letter-spacing:.5px;
 	margin: 15px 0;
@@ -1000,6 +1005,7 @@ ul.top-links li {
     text-align: center;
     color:  #4CAF50;
     border: 2px solid #4CAF50;
+	border-radius: 5px;
     font-size: 2em;
     padding: .4em 0 0 0;
     transition: 0.5s all;
@@ -1014,7 +1020,7 @@ ul.top-links li {
 }
 .services-icon-text p{
     color: #404040;
-    font-size: .85em;
+    font-size: .8em;
     margin: 0em 0 0 0;
     text-transform: capitalize;
     letter-spacing: .5px;
@@ -1047,7 +1053,7 @@ ul.top-links li {
 }
 .w3-agile-services-right p{
     color: #999999;
-    font-size: .9em;
+    font-size: .2em;
     line-height: 1.8em;
     margin: 0;
 }
@@ -1056,7 +1062,7 @@ ul.top-links li {
 	margin:1em 0 0 0;
 }
 .services-icon-text h3 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     margin: 0 0 10px;
     text-transform: uppercase;
@@ -1079,7 +1085,7 @@ ul.top-links li {
 	box-shadow: -2px 0px 18px 0px rgba(0,0,0,0.74);
 }
 .positiongrid1 h4 ,.positiongrid2 h4{
-    font-size: 22px;
+    font-size: 18px;
     color: #fff;
     line-height: 36px;
     text-transform: capitalize;
@@ -1229,6 +1235,12 @@ a.w3_agile_dribble:hover{
 }
 a.w3_agile_vimeo:hover{
 	background:#1ab7ea;
+}
+a.w3_agile_instagram:hover{
+	background:#f51d70;
+}
+a.w3_agile_linkedin:hover{
+	background:#1a5cea;
 }
 ul.agileits_social_list {
     padding: 0;
@@ -1826,6 +1838,9 @@ h3.hdg {
 }
 section#tables  p {
  margin-top: 1em;
+}
+.footer-top{
+	
 }
 .tab-container .tab-content {
   border-radius: 0 2px 2px 2px;
@@ -2533,7 +2548,7 @@ input.email {
 	.bottom-left h3 {
 		font-size: 22px;
 		line-height: 30px;
-`	}
+	}
 	h3.heading, h2.heading {
 		font-size: 38px;
 	}
@@ -2738,7 +2753,7 @@ input.email {
 		margin: 0 auto;
 	}
 	.positiongrid1 {
-		top: 5%;
+		top: 4%;
 		width: 90%;
 		left: -32%;
 	}
