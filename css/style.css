@@ -2425,6 +2425,7 @@ input.email {
 #toTop {
     background-color: #69757cef;
 	background-image:url(/images/white-arrow-icon-png-26.jpg);
+	transform: rotate(-90deg);
 	background-repeat: no-repeat;
 	background-size: 50px;
 	background-position: center;
@@ -2433,9 +2434,9 @@ input.email {
     right: 10px;
     height: 73px;
     width: 73px;
+	color: #00000000;
     display: grid;
     place-items: center;
-    transform: rotate(-90deg);
     border-radius: 50%;
     cursor: pointer;
 	display: grid;
