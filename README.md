@@ -5,6 +5,21 @@
 
 ## final project  
 
+<div align="center">
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+<img src="https://forthebadge.com/images/badges/uses-brains.svg" />
+<img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
+  <br>
+<img src="https://img.shields.io/github/repo-size/Anupkjha2601/food-recipes-website" />
+  <img src="https://img.shields.io/github/issues/Anupkjha2601/food-recipes-website" />
+  <img src="https://img.shields.io/github/issues-closed-raw/Anupkjha2601/food-recipes-website" />
+  <img src="https://img.shields.io/github/issues-pr-closed-raw/Anupkjha2601/food-recipes-website" />
+  <img src="https://img.shields.io/github/issues-pr/Anupkjha2601/food-recipes-website" />
+  <img src="https://img.shields.io/github/forks/Anupkjha2601/food-recipes-website" />
+  <img src="https://img.shields.io/github/stars/Anupkjha2601/food-recipes-website" />
+  <img src="https://img.shields.io/github/contributors/Anupkjha2601/food-recipes-website" />
+</div>
+
 frt1: future ready talent project by Anup Kumar jha.
 
 here I created food store website named Food Recipe that helps the customer to find good recipe in cheap rate and genuine products
