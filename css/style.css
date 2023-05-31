@@ -1380,6 +1380,8 @@ h3.heading,h2.heading {
     text-transform: capitalize;
     font-weight: 600;
 	position: relative;
+	margin: auto;
+    text-align: center;
 }
 h3.heading span,h2.heading span {
     font-weight: 300;
@@ -1391,6 +1393,8 @@ p.heading {
     font-weight: 600;
 	color:#000;
 	text-transform:capitalize;
+	margin: auto;
+    text-align: center;
 }
 h3.heading:before,h2.heading:before {
     content: "";
@@ -1400,8 +1404,19 @@ h3.heading:before,h2.heading:before {
     background: #000;
     position: absolute;
     bottom: -5px;
+	margin-left: 42%;
 }
-h3.heading:after,h2.heading:after {
+h3.Testimonials_heading::before{
+    content: "";
+    width: 60px;
+    height: 2px;
+    display: block;
+    background: #000;
+    position: absolute;
+    bottom: -5px;
+	margin-left: 41%;	
+}
+h2.heading:after {
     content: "";
     width: 100px;
     height: 2px;
@@ -1409,15 +1424,41 @@ h3.heading:after,h2.heading:after {
     background: #ff6b6b;
     position: absolute;
     top: 55px;
+	margin-left: 39%;
+}
+h3.heading:after {
+    content: "";
+    width: 75px;
+    height: 2px;
+    display: block;
+    background: #ff6b6b;
+    position: absolute;
+    top: 55px;
+	margin-left: 42%;
+}
+h3.Testimonials_heading:after{
+    content: "";
+    width: 75px;
+    height: 2px;
+    display: block;
+    background: #ff6b6b;
+    position: absolute;
+    top: 55px;
+	margin-left: 41%;	
 }
 .special h2.heading,.why-choose-agile h3.heading {
     color: #fff;
+	margin: auto;
+    text-align: center;
 }
 .special p.heading,.why-choose-agile p.heading {
     color: #fff;
+	margin: auto;
+    text-align: center;
 }
 .special h2.heading:before,.why-choose-agile h3.heading:before {
     background: #fff;
+	margin-left: 39%;
 }
 .services,.blog,.about,.menu,.why-choose-agile{
 	padding:5em 0;
