@@ -545,113 +545,112 @@ nav.navbar.navbar-default {
 /*-- //banner-slider --*/
 
 /*-- Footer --*/
-.newsletter-tp{
-	 padding: 5em 0;
-}
-
-.footer-top .ftr-grid h3 {
-    color: #4CAF50;
-    font-size: 1.3em;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 1em;
+.newsletter-tp {
+	padding: 5em 0;
+  }
+  
+  .footer-top .ftr-grid p {
+	font-size: 0.85em;
+	color: #FF5722;
+	line-height: 2em;
+	letter-spacing: 1px;
 	z-index: 2;
-}
-.footer-top .ftr-grid h3 a span {
-       color: #f6da08;
-    display: inline-block;
-    padding: 6px 10px;
-    background: #f12b24;
-	z-index: 2;
-}
-.footer-top .ftr-grid h3 span{
-	
-}
-.footer-top .ftr-grid p {
-       font-size: 0.85em;
-    color:#b8b8b8;
-    line-height: 2em;
-    letter-spacing: 1px;
-	z-index: 2;
-}
-.footer-top .ftr-grid.fg1 a {
-    color: #f6da08;
-    margin-top: 0.5em;
-    display: inline-block;
-    font-size: 1em;
-}
-.ftr-text p a {
-        color: #999;
-}
-.ftr-grid ul {
-    padding: 0em;
-    list-style: none;
-}
-.ftr-grid ul li {
-    font-size: 0.95em;
-    color: #fff;
-    line-height: 1.8em;
-}
-.local {
-    float: left;
-    width:8%;
-}
-.ftr-text {
-    float: right;
-    width:92%;
-}
-.right-w3l.fotw3 {
-    width: 100%;
-    margin-top: 11%;
-    text-align: left;
-}
-ul.top-links li {
-	display:block;
-	margin-bottom: 9px;
-}
-.right-w3l ul.top-links li a i.fa {
-        color: #000;
-    background-color: #fff;
-    width: 26px;
-    height: 26px;
-    font-size: 13px;
-    line-height: 26px;
-    text-align: center;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    vertical-align: text-bottom;
-}
-.right-w3l ul.top-links li a i.fa:hover {
-	color: #fff;
-    background-color: #0d3172;
-}
-.right-w3l {
-    float: left;
-    width:12%;
+	visibility: visible;
+	/* Add the following code */
+	margin: 0;
+  }
+  .footer-top .ftr-grid h3 {
+	color: #4CAF50;
+	font-size: 1.3em;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+  }
+  
+  .footer-top .ftr-grid ul {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+  }
+  
+  .footer-top .ftr-grid ul li {
+	font-size: 0.95em;
+	color: gold;
+	line-height: 1.5em;
+	/* Remove the previous styling and add the following code */
+	display: inline-block;
+	margin-right: 10px;
+  }
+  
+  .ftr-address {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+  }
+  
+  .ftr-address .local {
+	width: 20px;
+  }
+  
+  .ftr-address .ftr-text {
+	margin-left: 10px;
+  }
+  
+  .social-icons ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+  }
+  
+  .social-icons ul li {
+	display: inline-block;
+	margin-right: 10px;
+  }
+  
+  .social-icons ul li a i.fa {
+	color: #000;
+	background-color: #fff;
+	width: 26px;
+	height: 26px;
+	font-size: 13px;
+	line-height: 26px;
+	text-align: center;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	vertical-align: text-bottom;
+  }
+  
+  .social-icons ul li a i.fa:hover {
+	color:#8BC34A;
+	background-color: #0d3172;
+  }
+  
+  .right-w3l {
+	float: right;
+	width: 20%;
 	margin-top: 1em;
-}
-.right-w3-2 {
-    float: right;
-    width:88%;
-}
-.right-w3-2 ul.text-w3 li a {
-    color: #b8b8b8;
-    font-size: 0.9em;
-    margin: 13px 0px 0px;
-    display: inline-block;
-    letter-spacing: 1px;
-    vertical-align: top;
-}
-.fotw3 ul.top-links li a i.fa:hover , .fotw33 ul.top-links li a i.fa:hover {
-    background-color: #478bca;
-}
-.ftr-address {
-    margin: 6px 0;
-}
+  }
+  
+  .right-w3-2 {
+	float: left;
+	width: 80%;
+  }
+  
+  .right-w3-2 ul.text-w3 li a {
+	color:#dd4b39;
+	font-size: 0.9em;
+	margin: 13px 0px 0px;
+	display: inline-block;
+	letter-spacing: 1px;
+	vertical-align: middle;
+	visibility: visible;
+  }
+  
+  
 /*-- Newsletter --*/
 .newsletter-agile {
     text-align: center;
