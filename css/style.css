@@ -548,7 +548,9 @@ nav.navbar.navbar-default {
 .newsletter-tp{
 	 padding: 5em 0;
 }
-
+.footer{
+	padding: 6.5rem;
+}
 .footer-top .ftr-grid h3 {
     color: #4CAF50;
     font-size: 1.3em;
@@ -747,8 +749,8 @@ ul.top-links li {
     letter-spacing: 2px;
 }
 .more-button a:hover {
-    background: #fff;
-    color: #5a5a5a;
+    background: #4CAF50;
+    color: #ffffff;
 }
 .more-button {
     margin-top: 1.5em;
@@ -757,7 +759,7 @@ ul.top-links li {
     color: #fff;
 }
 .fg1 span {
-    color: #fff;
+    color: #000000;
     font-weight: normal;
 }
 .fg1 span.fa {
@@ -851,7 +853,13 @@ ul.top-links li {
 }
 .agile-form {
     background: #4CAF50;
-    padding: 4em 0;
+    padding: 5em 0;
+	width: 100%;
+}
+.agile-form .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 /* // newsletter */
 
