@@ -19,7 +19,7 @@
 ---
 ## ⭐ HOW TO MAKE A PULL REQUEST:
 
-**1.** Start by making a Fork of the [**PetMe**](https://github.com/Anupkjha2601/food-recipes-website/) repository. Click on the <a href="https://github.com/Anupkjha2601/food-recipes-website/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a>Fork symbol at the top right corner.
+**1.** Start by making a Fork of the [**food-recipes-website**](https://github.com/Anupkjha2601/food-recipes-website/) repository. Click on the <a href="https://github.com/Anupkjha2601/food-recipes-website/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a>Fork symbol at the top right corner.
 
 **2.** Clone your new fork of the repository in the terminal/CLI on your computer with the following command:
 
