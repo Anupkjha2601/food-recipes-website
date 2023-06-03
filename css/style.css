@@ -804,6 +804,19 @@ ul.top-links li {
     background: #dd4b39;
     transition: 0.5s ease-in;
 }
+.social-icons i.fa.fa-instagram:hover {
+	color: #f2f3f5;
+	border: 2px solid #f2f3f5;
+	background: rgb(225, 9, 196);
+	transition: 0.5s ease-in;
+}
+.social-icons i.fa.fa-linkedin:hover {
+	color: #f2f3f5;
+	border: 2px solid #f2f3f5;
+	background: #0072b1;
+	transition: 0.5s ease-in;
+}
+
 /*-- //footer --*/
 
 /*  newsletter */
