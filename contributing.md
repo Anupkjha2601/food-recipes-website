@@ -86,7 +86,7 @@ git push origin YourBranchName
 
 **10.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
 
-**11.** **Congratulations!** You've made your first contribution to [**PetMe**]! 🙌🏼
+**11.** **Congratulations!** You've made your first contribution to [**food-recipes-website**]! 🙌🏼
 
 **_:trophy: After this, the maintainers will review the PR and will merge it if it helps move the all-round-calculator project forward. Otherwise, it will be given constructive feedback and suggestions for the changes needed to add the PR to the codebase._**
 
