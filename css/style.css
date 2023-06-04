@@ -803,6 +803,19 @@ nav.navbar.navbar-default {
     background: #dd4b39;
     transition: 0.5s ease-in;
 }
+.social-icons i.fa.fa-instagram:hover {
+    color: #f2f3f5;
+    border: 2px solid #f2f3f5;
+    background: #C13584;
+    transition: 0.5s ease-in;
+}
+.social-icons i.fa.fa-linkedin:hover {
+    color: #f2f3f5;
+    border: 2px solid #f3f4f7;
+    background: #04669A;
+    transition: 0.5s ease-in;
+}
+
 /*-- //footer --*/
 
 /*  newsletter */
