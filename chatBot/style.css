@@ -77,7 +77,7 @@ select {
     --grey-d-1: #ffffff;
     --grey-d-2: #DDD;
     --grey-d-3: #ffffff;
-    --white: #341888;
+    --white: #0d682e;
     --dark: #ffffff;
 }
 
@@ -92,8 +92,8 @@ select {
 /* CHATBOX */
 .chatbox-wrapper {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 5rem;
+    right: 1.9rem;
     width: 4rem;
     height: 4rem;
 }
@@ -101,7 +101,7 @@ select {
 .chatbox-toggle {
     width: 100%;
     height: 100%;
-    background: var(--blue);
+    background: lightcyan;
     color: var(--white);
     font-size: 2rem;
     display: flex;
@@ -113,10 +113,10 @@ select {
 }
 
 .chatbox-toggle:hover {
-    box-shadow: 0 0 5px #9e5bd8,
-        0 0 25px #ac64ea,
-        0 0 25px #b87eea,
-        0 0 25px #9a4cde;
+    box-shadow: 0 0 5px #5bd880,
+        0 0 25px #64eaa3,
+        0 0 25px #7eeaab,
+        0 0 25px #4cde93;
 }
 
 
@@ -226,7 +226,7 @@ select {
 }
 
 .chatbox-message-content {
-    background: rgb(153, 155, 204);
+    background: rgb(155, 204, 153);
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
