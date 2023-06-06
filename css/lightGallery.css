@@ -11,7 +11,11 @@
 	clear: both;
 }
 /*/clearfix*/
-
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 680px;
+}
 
 /** /font-icons/**/
 @font-face {
