@@ -97,6 +97,10 @@ button {
     text-transform: uppercase;
     transition: transform 80ms ease-in;
 }
+button:hover{
+    background-color: #76B877;
+    color:black;
+}
 
 button:active {
     transform: scale(.95);
