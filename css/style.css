@@ -935,6 +935,7 @@ ul.top-links li {
 }
 #owl-demo .item img { 
     width: 100%;
+	padding: 2px;
 }
 .owl-item{
 	width:30%;
@@ -1181,6 +1182,7 @@ ul.top-links li {
     height: 33px;
 	border-radius: 50%;	
     line-height: 33px;
+
 }
 a.w3_agile_facebook:hover{
 	background:#3b5998;
