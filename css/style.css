@@ -200,6 +200,28 @@ header {
   background: #222;
 }
 
+.searchBtn{
+	margin-right:30px;
+	border:solid 1px orange;
+	border-radius:8px;
+	background-color:transparent;
+	font-family:"roboto";
+	width:134px;
+	color:orange;
+	height:38px;
+
+
+}
+.card{
+	border-radius: 20px;
+    box-shadow: 3px 3px 6px orange;
+	margin:15px;
+}
+.inputEle{
+	border-color:orange;
+	border-width:2px;
+}
+
 .slides-navigation {
   top: 50%;
 }
