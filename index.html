@@ -86,6 +86,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   background-color: black;
 }
 
+#imageContainer {
+  position: absolute;
+  width: 80px; /* Adjust the width of the image container */
+  height: 80px; /* Adjust the height of the image container */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation:none;
+}
+
+#imageContainer img {
+  width: 100%;
+  height: 100%;
+}
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -115,7 +129,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	
 <body>
 	<div id="loader">
-		<img src="/images/food-logo.png" class="small-image alt="Loader Image">
+		<div id="imageContainer"></div>
+		<img src="/images/food-logo.png" class="small-image" alt="Loader Image">
 	</div>
 <div style="display:none;" id="myDiv" class="animate-bottom">
 <div class="banner-header">
