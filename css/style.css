@@ -807,7 +807,11 @@ ul.top-links li {
 .social-icons i.fa.fa-instagram:hover {
     color: #f2f3f5;
     border: 2px solid #f2f3f5;
-    background: #C13584;
+    background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
     transition: 0.5s ease-in;
 }
 .social-icons i.fa.fa-linkedin:hover {
@@ -1235,8 +1239,13 @@ a.w3_agile_vimeo:hover{
 	background:#1ab7ea;
 }
 a.w3_agile_instagram:hover{
-	background:#f51d70;
+	background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
+
 a.w3_agile_linkedin:hover{
 	background:#1a5cea;
 }
