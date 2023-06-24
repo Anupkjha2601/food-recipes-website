@@ -2269,6 +2269,8 @@ figure.effect-roxy:hover p,.agileinfo_banner_bottom_grid_three_left:hover figcap
 /* services page --*/
 
 /*-- gallery --*/
+
+
 .w3l_gallery_grid{
 	padding:0;
 }
@@ -2387,6 +2389,29 @@ figure.effect-roxy:hover p,.agileinfo_banner_bottom_grid_three_left:hover figcap
 	-webkit-transform: translateX(380px);
 	transform: translateX(380px);
 }
+
+/* Select the button by its class */
+.Search-btn {  
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style the button on hover */
+  .Search-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the button when it's clicked */
+  .Search-btn:active {
+    background-color: #3e8e41;
+  }
+  
 /*-- //gallery --*/
 
 /*-- contact --*/
