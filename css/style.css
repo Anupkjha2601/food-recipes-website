@@ -353,7 +353,7 @@ header {
     text-transform: uppercase;
 }
 .navbar-nav > li:nth-child(3) a {
-    margin-right:40em !important;
+    margin-right:35em !important;
 }
 .navbar-default .navbar-nav > li:last-child > a {
     margin-right: 0;
@@ -2535,7 +2535,7 @@ input.email {
 }
 @media(max-width:1280px){
 	.navbar-nav > li:nth-child(3) a {
-		margin-right: 30em !important;
+		margin-right: 22em !important;
 	}
 	.banner-header .header {
 		left: 1%;
@@ -2571,7 +2571,7 @@ input.email {
 		margin: 0em .1em;
 	}
 	.navbar-nav > li:nth-child(3) a {
-		margin-right: 23em !important;
+		margin-right: 18em !important;
 	}
 	.w3_navigation_pos {
 		left: 34%;
@@ -2669,7 +2669,7 @@ input.email {
 		padding: 10px 10px;
 	}
 	.navbar-nav > li:nth-child(3) a {
-		margin-right: 24.4em !important;
+		margin-right: 20em !important;
 	}
 	
 	.carousel .item, .carousel .item1, .carousel .item2, .carousel .item3, .carousel .item4 {
@@ -2729,7 +2729,7 @@ input.email {
 }
 @media(max-width:991px){
 	.navbar-nav > li:nth-child(3) a {
-		margin-right: 22em !important;
+		margin-right: 20em !important;
 	}
 	.w3_navigation_pos {
 		left: 33%;
