@@ -949,6 +949,7 @@ ul.top-links li {
 }
 #owl-demo .item img { 
     width: 100%;
+	padding: 2px;
 }
 .owl-item{
 	width:30%;
@@ -1220,7 +1221,9 @@ ul.top-links li {
     background: #333;
     width: 33px;
     height: 33px;
+	border-radius: 50%;	
     line-height: 33px;
+
 }
 a.w3_agile_facebook:hover{
 	background:#3b5998;
@@ -1242,6 +1245,7 @@ a.w3_agile_linkedin:hover{
 }
 ul.agileits_social_list {
     padding: 0;
+	line-height: 36px;
 }
 .team-top {
     border-left: 1px solid #000;
@@ -1628,9 +1632,10 @@ h3.heading:after,h2.heading:after {
 .icon-box {
     padding: 8px 15px;
     background: rgba(149, 149, 149, 0.18);
-    margin: 1em 0 1em 0;
+    margin: 1em 0px 1em 0px;
     border: 5px solid #ffffff;
     text-align: left;
+	border-radius: 8px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1699,7 +1704,7 @@ h3.icon-subheading {
 h3.agileits-icons-title {
     text-align: center;
     color: #212121;
-    margin: 0;
+    margin: 14px;
     font-size: 1.3em;
     font-weight: 600;
     letter-spacing: 1px;
@@ -1719,9 +1724,10 @@ h3.agileits-icons-title {
 }
 .icons .bs-glyphicons li {
     float: left;
-    width: 18%;
+    width: 21%;
     height: 115px;
-    padding: 10px;
+    padding: 9px;
+	border-radius: 4px;
     line-height: 1.4;
     text-align: center;
     font-size: 12px;
@@ -1730,8 +1736,8 @@ h3.agileits-icons-title {
     margin: 1%;
 }
 .icons .bs-glyphicons .glyphicon {
-    margin-top: 5px;
-    margin-bottom: 10px;
+	margin-top: -6px;
+	 margin-bottom: 5px;
     font-size: 24px;
 	color: #282a2b;
 }
@@ -1908,7 +1914,7 @@ h2.typoh2{
 }
 @media (max-width:640px){
 	h1, .h1, h2, .h2, h3, .h3 {
-		margin-top: 0px;
+		margin-top: 11px;
 		margin-bottom: 0px;
 	}
 	.grid_5 h3, .grid_5 h2, .grid_5 h1, .grid_5 h4, .grid_5 h5, h3.hdg, h3.bars {
@@ -2644,8 +2650,9 @@ input.email {
 		line-height: 2.2em;
 	}
 	.icon-box {
-		padding: 8px 5px;
+		padding: 6px 5px;
 		font-size: .9em;
+		margin: 6px 6px;
 	}
 	h3.hdg {
 		font-size: 2.4em;
