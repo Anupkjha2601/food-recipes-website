@@ -6,8 +6,28 @@
 
 =========================================================/**/
 
+
+
+
 ;(function($){
 	"use strict";
+
+	const input = document.getElementById('inputvalue');
+
+	input.addEventListener('keypress', function(event) {
+	  if (event.key === 'Enter') {
+		event.preventDefault(); // Prevent form submission
+  
+		// Perform your desired action here
+		const dishName = input.value;
+		console.log('Entered dish name:', dishName);
+  
+		// Clear the input field
+		input.value = '';
+	  }
+	});
+
+
 	$.fn.lightGallery = function(options) {
 		var defaults = {
 				mode:'slide',
