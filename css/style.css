@@ -175,6 +175,7 @@ header {
 }
 .navbar {
 	margin-bottom: 0px;
+	
 	min-height: 30px;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
@@ -182,19 +183,174 @@ header {
 }
 .navbar-nav>li {
     margin: 0 3px;
+	/* background-color: green; */
+	/* margin-left: 0px; */
+	/* padding-left: 0px; */
 }
 .navbar-nav {
     float: right;
+	/* background-color: red; */
+	/* justify-content: space-between; */
 }
 .nav>li>a {
     padding: 10px 20px;
+	/* background-color: #04669A; */
+	
 }
 .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 14px;
     letter-spacing: 1px;
+	/* background-color: #04669A; */
 }
+
+
+.sidebar{
+    position: fixed;
+    /* display: flex; */
+	width: 250px;
+    top: 0;
+    /* bottom: 0; */
+    /* right: 0; */
+    left: -1000px;
+	top: 80px;
+    z-index: 10;
+	height: 100%;
+    /* transform: translateX(-100%); */
+    /* transition: transform 0.2s;
+    background-color: transparent; */
+	background-color: white;
+	/* background-color: transparent; */
+	opacity: 40%;
+	/* filter: blur(100px); */
+  	/* -webkit-filter: blur(100px); */
+	
+}
+
+.sidebar header{
+	margin-top: 25px;
+	font-size:40px;
+	
+	text-align: center;
+    /* display: flex; */
+	line-height: 70px;
+	user-select: none;
+    /* align-items: center; */
+	/* margin: 50px 0px;
+    padding: 10px;
+    padding-left: 30px; */
+    background-color: white;
+    color: #165718;
+	opacity: 100%;
+	font-weight: 550;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	border: none;
+	filter: blur(0px);	
+	-webkit-filter: blur(0px);
+}
+.sidebar ul{
+	filter: blur(0px);
+}
+.sidebar ul a{
+	display: block;
+	height: 1005;
+	width: 100%;
+	line-height: 65px;
+	font-size: 22px;
+	color: #36ab3a;
+	font-weight: 900;
+	padding-left: 40px;
+	box-sizing: border-box;
+	/* border: 2px solid black; */
+	border-bottom: 1px solid green;
+	filter: blur(10px);
+  	-webkit-filter: blur(10px);
+  	
+}
+.sidebar ul li a{
+	filter: blur(0px);
+	-webkit-filter: blur(0px);
+}
+.sidebar ul li:hover a{
+	padding-left: 60px;
+	opacity: 100%;
+	transform: scale(1.1);
+	transition: 0.5s;
+	color: #0f6112;
+	
+}
+#check{
+	display: none;
+}
+label #btn,label #cancel{
+	position: absolute;
+	cursor: pointer;
+}
+label #btn{
+	
+	top: 28px;
+	left: -50px;
+	font-size: 25px;
+	/* opacity: 0;
+	pointer-events: none; */
+	border-radius: 20px;
+	width: 50px;
+	text-align: center;
+	color: #F44336;
+	padding: 4px 9px;
+	width: 50px;
+	background-color: white;
+	opacity: 100%;
+}
+label #cancel:hover{
+	color: #073b08;
+}
+label #cancel{
+	left: 250px;
+	opacity: 0;
+	
+	
+	/* background-color: white; */
+
+
+}
+#check:checked ~ .sidebar{
+	left: 0px;
+	right: 0;
+	
+}
+#check:checked ~ label #btn{
+	z-index: 11111;
+	/* left: -1950px; */
+	left: -50px;
+	top: 28px;
+	font-size: 25px;
+	border-radius: 20px;
+	color: #F44336;
+	padding: 4px 9px;
+	width: 50px;
+	text-align: center;
+	/* opacity: 0; */
+	background-color: white;
+	opacity: 60%;
+
+	
+}
+#check:checked ~ label #cancel{
+	z-index: 11111;
+	left: 150px;
+	top: 85px;
+	font-size: 25px;
+	color: #165718;
+	opacity: 80%;
+}
+
+
+
+
+
+
 .dropdown-menu>li>a:hover {
     color: #000;
     background: none;
@@ -932,7 +1088,11 @@ nav.navbar.navbar-default {
 .social-icons i.fa.fa-instagram:hover {
     color: #f2f3f5;
     border: 2px solid #f2f3f5;
-    background: #C13584;
+    background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
     transition: 0.5s ease-in;
 }
 .social-icons i.fa.fa-linkedin:hover {
@@ -1401,8 +1561,13 @@ a.w3_agile_vimeo:hover{
 	background:#1ab7ea;
 }
 a.w3_agile_instagram:hover{
-	background:#f51d70;
+	background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
+
 a.w3_agile_linkedin:hover{
 	background:#1a5cea;
 }
