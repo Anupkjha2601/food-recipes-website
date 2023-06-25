@@ -2479,18 +2479,23 @@ input.email {
 
 /*-- to-top --*/
 #toTop {
-    display: none;
-    text-decoration: none;
+    background-color: #69757cef;
+	background-image:url(/images/white-arrow-icon-png-26.jpg);
+	transform: rotate(-90deg);
+	background-repeat: no-repeat;
+	background-size: 50px;
+	background-position: center;
     position: fixed;
     bottom: 20px;
-    right: 2%;
-    overflow: hidden;
-    z-index: 999;
-    width: 40px;
-    height: 40px;
-    border: none;
-    text-indent: 100%;
-    background: url(../images/top.png) no-repeat 0px 0px;
+    right: 10px;
+    height: 73px;
+    width: 73px;
+	color: #00000000;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+	display: grid;
 }
 #toTopHover {
 	width: 35px;
@@ -2498,6 +2503,7 @@ input.email {
 	display: block;
 	overflow: hidden;
 	float: right;
+	z-index: 100;
 	opacity: 0;
 	-moz-opacity: 0;
 	filter: alpha(opacity=0);
