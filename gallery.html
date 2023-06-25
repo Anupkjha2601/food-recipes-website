@@ -14,6 +14,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--favicon icon-->
 <link rel="icon" href="images/restaurant.png">
 
+<!--Bootstap link-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 <!-- //custom-theme -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -25,6 +28,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
+
+<script src="js/script.js"></script> <!-- js for loader-->
 
 <!-- font-awesome-icons -->
 <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -39,6 +44,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 	
 <body>
+
+
+			<!-- Loader -->
+	
+			<div id="loader-wrapper">
+
+				<div id="loader"></div>
+				<div class="loader-section section-left"></div>
+				<div class="loader-section section-right"></div>
+	
+			</div>		
+			
+			<!-- end Loader -->
 
 
 <div class="banner-header banner2">
@@ -136,8 +154,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  <p class="heading">Our Food recipes</p>
 				</div>
 				<div>
-				  <input type="text" placeholder="Enter the dish name..." style="padding: 5px 10px; border-radius: 8px; height: 6vh; width: 250px;" />
-				  <button>Search</button>
+				  <input type="text" id="inputvalue" placeholder="Enter the dish name..." style="padding: 5px 10px; border-radius: 8px; height: 6vh; width: 250px;" />
+                 
+				  
+
+				  <button class="btn btn-primary btn-lg serching">Search</button>
 				</div>
 	          </div>
 			<div class="w3l_gallery_grids">
@@ -256,7 +277,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="col-md-8">
 			<form action="#" method="get">
-				<input type="email" name="email" placeholder="Enter Your Email Address" required="">
+				<input type="email" name="email" placeholder="Enter Your Email Address" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
 				<input type="submit" value="">
 			</form>
 			<div class="clearfix"></div>
@@ -351,7 +372,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		});
     </script>
-<!-- //gallery -->
+//gallery
 
 
 <!-- start-smoth-scrolling -->

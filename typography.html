@@ -22,6 +22,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
 
+<script src="js/script.js"></script> <!-- js for loader-->
+
 <!-- font-awesome-icons -->
 <link rel="stylesheet" href="css/font-awesome.min.css" />
 <!-- //font-awesome-icons -->
@@ -37,6 +39,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 	
 <body>
+	
+			<!-- Loader -->
+	
+			<div id="loader-wrapper">
+
+				<div id="loader"></div>
+				<div class="loader-section section-left"></div>
+				<div class="loader-section section-right"></div>
+	
+			</div>		
+			
+			<!-- end Loader -->
 
 
 <div class="banner-header banner2">
@@ -706,7 +720,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="col-md-8">
 			<form action="#" method="get">
-				<input type="email" name="email" placeholder="Enter Your Email Address" required="">
+				<input type="email" name="email" placeholder="Enter Your Email Address" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
 				<input type="submit" value="">
 			</form>
 			<div class="clearfix"></div>
