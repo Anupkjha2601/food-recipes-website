@@ -4,6 +4,7 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
 html, body{
     font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
@@ -273,16 +274,17 @@ header {
     height: 40px;
     font-size: 40px;
     line-height: 40px;
-    -webkit-animation: bounce 2s infinite ease-in-out;
+    /* -webkit-animation: bounce 2s infinite ease-in-out; */
 }
-/* @-webkit-keyframes bounce {
+ @-webkit-keyframes bounce {
+
 	0%, 20%, 60%, 100%  { -ms-transform: translateY(0); }
 	0%, 20%, 60%, 100%  { -o-transform: translateY(0); }
 	0%, 20%, 60%, 100%  { -moz-transform: translateY(0); }
 	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
     40%  { -webkit-transform: translateY(-20px); }
 	80% { -webkit-transform: translateY(-10px); }
-} */
+} 
 .banner2{
 	background:url(../images/slider4.jpg)no-repeat center 0px;
 	background-size:cover;  
@@ -565,10 +567,10 @@ nav.navbar.navbar-default {
     background: #f12b24;
 	z-index: 2;
 }
-.footer-top .ftr-grid h3 span{
-	
-}
+
 .footer-top .ftr-grid p {
+
+  
        font-size: 0.85em;
     color:#b8b8b8;
     line-height: 2em;
@@ -1145,13 +1147,51 @@ ul.top-links li {
 /*-- //banner bottom --*/
 
 /*-- team --*/
+.hover14{
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	/* height: 400px; */
+	transition: all 3s ease;
+}
+.hover14:hover{
+	/* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+	transform: scale(0.8);
+	/* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	/* height: 400px; */
+}
+.hover14 img{
+	/* box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; */
+	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+	/* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+	/* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+	border-radius: 10px;
+ transition: all 3s ease;
+}
+.hover14 img:hover{
+	transform: scale(1.2);
+}
 .special{
 	padding:5em 0;
 	background: url("../images/t.jpg")no-repeat 0px 0px;
 	background-size: cover;
 }
+.col-md-3{
+	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+	/* margin: 9px; */
+	padding-bottom: 20px;
+	transition: all 2s ease;
+}
+.col-md-3:hover{
+	transform: scale(1.1);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
 .team img {
     background: #F44336;
+	/* margin: 5px; */
+	padding-top: 20px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+	/* margin: 18px; */
 }
 .w3_agile_team_grids{
 	margin:3em 0 0;
@@ -1176,7 +1216,7 @@ ul.top-links li {
 }
 .w3_agile_team_grid ul li{
 	display:inline-block;
-	margin-right: .5em;
+	/* margin-right: .5em; */
 }
 .w3_agile_team_grid ul li:last-child{
 	margin:0;
