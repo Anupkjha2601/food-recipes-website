@@ -825,15 +825,37 @@ nav.navbar.navbar-default {
 /*-- //banner-slider --*/
 
 /*-- Footer --*/
-.newsletter-tp {
-	padding: 5em 0;
-  }
-  
-  .footer-top .ftr-grid p {
-	font-size: 0.85em;
-	color: #FF5722;
-	line-height: 2em;
-	letter-spacing: 1px;
+
+.newsletter-tp{
+	 padding: 5em 0;
+}
+.footer{
+	padding: 6.5rem;
+}
+.footer-top .ftr-grid h3 {
+    color: #4CAF50;
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+	z-index: 2;
+}
+.footer-top .ftr-grid h3 a span {
+       color: #f6da08;
+    display: inline-block;
+    padding: 6px 10px;
+    background: #f12b24;
+	z-index: 2;
+}
+.footer-top .ftr-grid h3 span{
+	
+}
+.footer-top .ftr-grid p {
+       font-size: 0.85em;
+    color:#b8b8b8;
+    line-height: 2em;
+    letter-spacing: 1px;
 
 
 	z-index: 2;
@@ -1028,8 +1050,8 @@ nav.navbar.navbar-default {
     letter-spacing: 2px;
 }
 .more-button a:hover {
-    background: #fff;
-    color: #5a5a5a;
+    background: #4CAF50;
+    color: #ffffff;
 }
 .more-button {
     margin-top: 1.5em;
@@ -1038,7 +1060,7 @@ nav.navbar.navbar-default {
     color: #fff;
 }
 .fg1 span {
-    color: #fff;
+    color: #000000;
     font-weight: normal;
 }
 .fg1 span.fa {
@@ -1149,7 +1171,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 }
 .agile-form {
     background: #4CAF50;
-    padding: 4em 0;
+    padding: 5em 0;
+	width: 100%;
+}
+.agile-form .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 /* // newsletter */
 
