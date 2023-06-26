@@ -14,6 +14,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--favicon icon-->
 <link rel="icon" href="images/restaurant.png">
 
+<!--Bootstap link-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 <!-- //custom-theme -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -26,9 +29,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
 
+<script src="js/script.js"></script> <!-- js for loader-->
+
 <!-- font-awesome-icons -->
 <link rel="stylesheet" href="css/font-awesome.min.css" />
 <!-- //font-awesome-icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 <link href="//fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
@@ -65,6 +71,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 
 
+			<!-- Loader -->
+	
+			<div id="loader-wrapper">
+
+				<div id="loader"></div>
+				<div class="loader-section section-left"></div>
+				<div class="loader-section section-right"></div>
+	
+			</div>		
+			
+			<!-- end Loader -->
+
+
 <div class="banner-header banner2">
 	<div class="banner-dott1">
 		<!--header-->
@@ -99,6 +118,49 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  </li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
+
+						<input type="checkbox" id="check">
+					<label for="check">
+						<i class="fa-solid fa-bars" id="btn"></i>
+						<i class="fa-solid fa-times" id="cancel"></i>
+					</label>
+					<div class="sidebar" style="opacity: 80%;">
+						<header>FOOD RECIPE</header>
+						<ul>
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="about.html">About Us</a>
+							</li>
+							<li>
+								<a href="services.html">Our Services</a>
+							</li>
+							<li style="background-color: #142e10;">
+								<a href="gallery.html">Gallery</a>
+							</li>
+							<!-- <li>
+								<a href="#">Short Codes</a>
+							</li> -->
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-hover="Pages" data-toggle="dropdown">Short
+									Codes <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="icons.html">Icons</a></li>
+									<li><a href="typography.html">Typography</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+				
+						<!-- <button id="sidebar-close">
+							<i class="fa-solid fa-xmark"></i>
+						</button> -->
+						
+					</div>
+					
 					</nav>
 				</div>
 			</nav>	
@@ -117,8 +179,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  <p class="heading">Our Food recipes</p>
 				</div>
 				<div>
+
 				  <input class="input-dish" type="text" placeholder="Enter the dish name..." style="padding: 5px 10px; border-radius: 8px; height: 6vh; width: 250px;" />
 				  <button class="Search-btn">Search</button>
+
+
+				  <input type="text" placeholder="Enter the dish name..." style="padding: 5px 10px; border-radius: 8px; height: 6vh; width: 250px;" />
+				  <button class="Search-btn">Search</button>
+
+				  <input type="text" id="inputvalue" placeholder="Enter the dish name..." style="padding: 5px 10px; border-radius: 8px; height: 6vh; width: 250px;" />
+                 
+				  
+
+				  <button class="btn btn-primary btn-lg serching">Search</button>
+
+
 				</div>
 	          </div>
 			<div class="w3l_gallery_grids">
@@ -236,8 +311,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<h4>For our latest updates</h4>
 		</div>
 		<div class="col-md-8">
+
 			<form class="form" action="#" method="get">
 				<input type="email" name="email" placeholder="Enter Your Email Address" required="">
+
+			<form action="#" method="get">
+				<input type="email" name="email" placeholder="Enter Your Email Address" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+
 				<input type="submit" value="">
 			</form>
 			<div class="clearfix"></div>
@@ -308,11 +388,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="social-icons">
 			<ul>
-				<li><a href="https://www.facebook.com/anup.jha.108889"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-				<li><a href="https://twitter.com/AnupKum59920381"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-				<li><a href="mailto:anupkjha01@gmail.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-				<li><a href="https://www.instagram.com/anup.jha.108889/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/anup-kumar-jha-36a393201"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li><a  target="_blank" href="https://www.facebook.com/anup.jha.108889"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a target="_blank"  href="https://twitter.com/AnupKum59920381"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="mailto:anupkjha01@gmail.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="https://www.instagram.com/anup.jha.108889/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="https://www.linkedin.com/in/anup-kumar-jha-36a393201"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
 		<div class="clearfix"></div>
@@ -332,7 +412,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		});
     </script>
-<!-- //gallery -->
+//gallery
 
 
 <!-- start-smoth-scrolling -->
