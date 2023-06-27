@@ -1,115 +1,86 @@
-// MESSAGE INPUT
-const textarea = document.querySelector('.chatbox-message-input')
-const chatboxForm = document.querySelector('.chatbox-message-form')
+const chatbotToggle = document.querySelector('.chatbot__button');
+const sendChatBtn = document.querySelector('.chatbot__input-box span');
+const chatInput = document.querySelector('.chatbot__textarea');
+const chatBox = document.querySelector('.chatbot__box');
+const chatbotCloseBtn = document.querySelector('.chatbot__header span');
 
-textarea.addEventListener('input', function () {
-	let line = textarea.value.split('\n').length
+let userMessage;
+// Need GPT key
+const inputInitHeight = chatInput.scrollHeight;
+const API_KEY = '2a3b13e793msh2ecc97d82d31f8fp18c0f4jsn1bbea1178414';
 
-	if(textarea.rows < 6 || line < 6) {
-		textarea.rows = line
-	}
+const createChatLi = (message, className) => {
+  const chatLi = document.createElement('li');
+  chatLi.classList.add('chatbot__chat', className);
+  chatLi.innerHTML = `<p>${message}</p>`;
+  return chatLi;
+};
 
-	if(textarea.rows > 1) {
-		chatboxForm.style.alignItems = 'flex-end'
-	} else {
-		chatboxForm.style.alignItems = 'center'
-	}
-})
+const generateResponse = (incomingChatLi) => {
+  const API_URL = 'https://chatgpt53.p.rapidapi.com/';
+  const messageElement = incomingChatLi.querySelector('p');
 
+  const requestOptions = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-RapidAPI-Key": "2a3b13e793msh2ecc97d82d31f8fp18c0f4jsn1bbea1178414",
+      "X-RapidAPI-Host": "chatgpt53.p.rapidapi.com",
+    },
+    body: JSON.stringify({
+      messages: [{ role: "user", content: userMessage }],
+    }),
+  };
 
+  console.log('Sending API request:', requestOptions);
 
-// TOGGLE CHATBOX
-const chatboxToggle = document.querySelector('.chatbox-toggle')
-const chatboxMessage = document.querySelector('.chatbox-message-wrapper')
-
-chatboxToggle.addEventListener('click', function () {
-	chatboxMessage.classList.toggle('show')
-})
-
-
-
-// DROPDOWN TOGGLE
-const dropdownToggle = document.querySelector('.chatbox-message-dropdown-toggle')
-const dropdownMenu = document.querySelector('.chatbox-message-dropdown-menu')
-
-dropdownToggle.addEventListener('click', function () {
-	dropdownMenu.classList.toggle('show')
-})
-
-document.addEventListener('click', function (e) {
-	if(!e.target.matches('.chatbox-message-dropdown, .chatbox-message-dropdown *')) {
-		dropdownMenu.classList.remove('show')
-	}
-})
-
-
-
-
-
-
-
-// CHATBOX MESSAGE
-const chatboxMessageWrapper = document.querySelector('.chatbox-message-content')
-const chatboxNoMessage = document.querySelector('.chatbox-message-no-message')
-
-chatboxForm.addEventListener('submit', function (e) {
-	e.preventDefault()
-
-	if(isValid(textarea.value)) {
-		writeMessage()
-		setTimeout(autoReply, 1000)
-	}
-})
+  fetch(API_URL, requestOptions)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log('API response:', data);
+      console.log(data.choices[0].message.content);
+      messageElement.textContent = data.choices[0].message.content;
+    })
+    .catch((error) => {
+      console.log('API error:', error);
+      messageElement.classList.add('error');
+      messageElement.textContent = 'Oops! Please try again!';
+    })
+    .finally(() => chatBox.scrollTo(0, chatBox.scrollHeight));
+};
 
 
+const handleChat = () => {
+  userMessage = chatInput.value.trim();
+  if (!userMessage) return;
+  chatInput.value = '';
+  chatInput.style.height = `${inputInitHeight}px`;
 
-function addZero(num) {
-	return num < 10 ? '0'+num : num
-}
+  chatBox.appendChild(createChatLi(userMessage, 'outgoing'));
+  chatBox.scrollTo(0, chatBox.scrollHeight);
 
-function writeMessage() {
-	const today = new Date()
-	let message = `
-		<div class="chatbox-message-item sent">
-			<span class="chatbox-message-item-text">
-				${textarea.value.trim().replace(/\n/g, '<br>\n')}
-			</span>
-			<span class="chatbox-message-item-time">${addZero(today.getHours())}:${addZero(today.getMinutes())}</span>
-		</div>
-	`
-	chatboxMessageWrapper.insertAdjacentHTML('beforeend', message)
-	chatboxForm.style.alignItems = 'center'
-	textarea.rows = 1
-	textarea.focus()
-	textarea.value = ''
-	chatboxNoMessage.style.display = 'none'
-	scrollBottom()
-}
+  setTimeout(() => {
+    const incomingChatLi = createChatLi('Typing...', 'incoming');
+    chatBox.appendChild(incomingChatLi);
+    chatBox.scrollTo(0, chatBox.scrollHeight);
+    generateResponse(incomingChatLi);
+  }, 600);
+};
 
-function autoReply() {
-	const today = new Date()
-	let message = `
-		<div class="chatbox-message-item received">
-			<span class="chatbox-message-item-text">
-				Hello,
-			</span>
-			<span class="chatbox-message-item-text">
-				so how can I help you ?
-			</span>
-			<span class="chatbox-message-item-time">${addZero(today.getHours())}:${addZero(today.getMinutes())}</span>
-		</div>
-	`
-	chatboxMessageWrapper.insertAdjacentHTML('beforeend', message)
-	scrollBottom()
-}
-
-function scrollBottom() {
-	chatboxMessageWrapper.scrollTo(0, chatboxMessageWrapper.scrollHeight)
-}
-
-function isValid(value) {
-	let text = value.replace(/\n/g, '')
-	text = text.replace(/\s/g, '')
-
-	return text.length > 0
-}
+chatInput.addEventListener('input', () => {
+  chatInput.style.height = `${inputInitHeight}px`;
+  chatInput.style.height = `${chatInput.scrollHeight}px`;
+});
+chatInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && !e.shiftKey && window.innerWidth > 800) {
+    e.preventDefault();
+    handleChat();
+  }
+});
+chatbotToggle.addEventListener('click', () =>
+  document.body.classList.toggle('show-chatbot')
+);
+chatbotCloseBtn.addEventListener('click', () =>
+  document.body.classList.remove('show-chatbot')
+);
+sendChatBtn.addEventListener('click', handleChat);

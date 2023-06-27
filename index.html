@@ -11,6 +11,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 
+		<!-- Material -->
+		<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 	<!-- //custom-theme -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -659,40 +663,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- Footer -->
 
-	<div class="chatbox-wrapper">
-		<div class="chatbox-toggle">
-			<i class='bx bx-message-dots'></i>
-		</div>
-		<div class="chatbox-message-wrapper">
-			<div class="chatbox-message-header">
-				<div class="chatbox-message-profile">
-					<img src="./images/pngegg(2).png" alt="" class="chatbox-message-image">
-					<div>
-						<h4 class="chatbox-message-name">Vigybag</h4>
-						<p class="chatbox-message-status">online</p>
-					</div>
-				</div>
-				<div class="chatbox-message-dropdown">
-					<i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle' id="dots-nav"></i>
-					<ul class="chatbox-message-dropdown-menu">
-						<li>
-							<a href="#">Report</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="chatbox-message-content">
-				<h4 class="chatbox-message-no-message">Ask me anything !</h4>
-			</div>
-			<div class="chatbox-message-bottom">
-				<form action="#" class="chatbox-message-form">
-					<textarea rows="1" placeholder="Enter your message..." class="chatbox-message-input"></textarea>
-					<button type="submit" class="chatbox-message-submit"><i class='bx bx-send'></i></button>
-				</form>
-			</div>
-		</div>
-	</div>
-	<!--  chat bot finish  -->
+	
+  <!--   Chat bot   -->
+  <button class="chatbot__button">
+    <span class="material-symbols-outlined">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <div class="chatbot__header">
+      <h3 class="chatbox__title">Eduhub Community 24/7</h3>
+      <span class="material-symbols-outlined">close</span>
+    </div>
+    <ul class="chatbot__box">
+      <li class="chatbot__chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Hi there. How can I help you today?</p>
+      </li>
+      <li class="chatbot__chat outgoing">
+        <p>...</p>
+      </li>
+    </ul>
+    <div class="chatbot__input-box">
+      <textarea class="chatbot__textarea" placeholder="Enter a message..." required></textarea>
+      <span id="send-btn" class="material-symbols-outlined">send</span>
+    </div>
+  </div>
+  <!--  chat bot finish  -->
 
 	<!-- Owl-Carousel-JavaScript -->
 	<script src="js/owl.carousel.js"></script>
