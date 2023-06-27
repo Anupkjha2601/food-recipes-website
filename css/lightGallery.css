@@ -505,26 +505,6 @@
 	-ms-transition: opacity 0.3s ease;
 	transition: opacity 0.3s ease;
 }
-.Search-btn{
-	color:white;
-	background-color: red;
-	border: none;
-	padding: 9px 15px;
-	border-radius:4px ;
-	
-	}
-	.Search-btn:hover{
-		background-color: rgba(255, 0, 0, 0.645);
-	}
-	.input-dish{
-		border: 1px solid gray;
-	
-	}
-.subcribe-p{
-	font-size:2rem!important;
-	color: #000000cf!important;
-}
-
 @media (max-width: 568px){
 	#lightGallery-Gallery .thumb_cont .thumb {
 		width: 60px;

@@ -1050,12 +1050,8 @@ nav.navbar.navbar-default {
     letter-spacing: 2px;
 }
 .more-button a:hover {
-
-	background: #f12517b2;
-
     background: #4CAF50;
     color: #ffffff;
-
 }
 .more-button {
     margin-top: 1.5em;
@@ -2698,13 +2694,11 @@ figure.effect-roxy:hover p,.agileinfo_banner_bottom_grid_three_left:hover figcap
     height: inherit;
     padding: 5.5em 2em;
     text-align: center;
-
-
 }
 /** Caption 6: Scale **/
 .box .scale-caption h3,.box .scale-caption p {
 	position: relative;
-	bottom:-200px;
+	left:-380px;
 	-webkit-transition: all 300ms ease-out;
 	-moz-transition: all 300ms ease-out;
 	-o-transition: all 300ms ease-out;
@@ -2774,10 +2768,10 @@ figure.effect-roxy:hover p,.agileinfo_banner_bottom_grid_three_left:hover figcap
 }
 
 .box:hover .scale-caption h3,.box:hover .scale-caption p {
-	-moz-transform: translateY(-180px);
-	-o-transform: translateY(-180px);
-	-webkit-transform: translateY(-180px);
-	transform: translateY(-180px);
+	-moz-transform: translateX(380px);
+	-o-transform: translateX(380px);
+	-webkit-transform: translateX(380px);
+	transform: translateX(380px);
 }
 
 /* Select the button by its class */
@@ -2917,21 +2911,6 @@ input.email {
 	-moz-opacity: 0;
 	filter: alpha(opacity=0);
 }
-.clr-p{
-	color: gray!important;
-}
-
-.agile-form{
-	margin-block:10px;
-}
-.subcribe-p{
-	font-size:2rem!important;
-	color: #000000cf!important;
-}
-.form{
-	margin-top: 60px;
-}
-
 /*-- //to-top --*/
 
 /* Responsive Design */
