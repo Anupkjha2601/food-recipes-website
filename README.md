@@ -1,4 +1,4 @@
-
+![Screenshot from 2023-06-26 00-09-02](https://github.com/SyedImtiyaz-1/food-recipes-website/assets/121503426/4c14c692-1f29-47fe-888a-b46b6b326d09)
 <div id="top"></div>
 
 # Food Recipe 🎍
@@ -29,19 +29,21 @@
 ---
 
 ### HOME 👇
-![Home](https://github.com/Anikinee/finalproj/assets/101719881/c85f5387-0307-482a-b5cf-b3306da37343)
+![Home](https://github.com/SyedImtiyaz-1/food-recipes-website/assets/121503426/f339ffb6-f80f-4615-bae5-7e5f38f1091a)
 
 ### ABOUT US 👇
-![about](https://github.com/Anikinee/finalproj/assets/101719881/ef386144-f230-4fd9-b7b3-958a777a3ce1)
+![About](https://github.com/SyedImtiyaz-1/food-recipes-website/assets/121503426/fbb52154-66b1-4b3b-93d2-d80698162c87)
 
 ### OUR SERVICES 👇
-![Services](https://github.com/Anikinee/finalproj/assets/101719881/0fd40c26-21a1-4cac-8982-5f3dbf232e59)
+![Services](https://github.com/SyedImtiyaz-1/food-recipes-website/assets/121503426/ddb74da7-fcb8-4ce6-920a-44b90cf621b3)
 
 ### GALLERY 👇
-![gallery2](https://github.com/Anikinee/finalproj/assets/101719881/2e129442-f038-4e89-b5a4-f02a97152854)
+![Gallery](https://github.com/SyedImtiyaz-1/food-recipes-website/assets/121503426/2be595b4-cbc4-4876-a270-a7ed76939c4e)
+
 
 ### CONTACT 👇
-![contact](https://github.com/Anikinee/finalproj/assets/101719881/15ea7720-fa0d-4d8a-a70c-3ca38ec5339c)
+![Contact](https://github.com/SyedImtiyaz-1/food-recipes-website/assets/121503426/c5d16083-1528-48a9-bb91-bba92062dacb)
+
 
 ### AZURE PORTAL LOGIN 👇
 Azure link:  https://delightful-beach-00b073d10.1.azurestaticapps.net/ 
