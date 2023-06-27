@@ -4101,4 +4101,115 @@ input.email {
 	}
 }
 
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../images/newsletter.png");
+    background-color: #043614;
+    background-repeat: repeat;
+    background-position: 50% 30%;
+    height: 32vh;
+    width: 100%;
+    padding: 20px 100px;
+    margin: 60px 0;
+	width: 100vw;
+	margin: 100px 0px
+}
+
+#newsletter .news-text h4{
+    color: #fff;
+	font-weight: 600;
+}
+
+#newsletter .news-text p{
+    color: rgb(100, 100, 100);
+    margin-bottom: 0;
+}
+
+#newsletter .news-text p span{
+    color: #ffbd27;
+}
+
+#newsletter .news-form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter .news-form input{
+    height: 3.125rem;
+    width: 100%;
+    padding: 0 1.25em;
+    font-size: 16px;
+    border:0;
+    border-radius: 4px 0px 0px 4px;
+    outline: none;
+}
+
+#newsletter .news-form button{
+    border-radius: 0px 4px 4px 0px;
+    background-color: #088178;
+    color: white;
+    border: 0;
+    width: 20%;
+    transition: 0.4s ease;
+}
+
+#newsletter .news-form button:hover{
+    background-color: #0e958c;
+}
+
+@media screen and (max-width: 920px) {
+	#newsletter{
+        height: 22vh;
+    }
+    #newsletter .news-text h4{
+        font-size: 22px;
+    }
+    #newsletter .news-text p{
+        font-size: 18px;
+    }
+    #newsletter .news-form{
+        width: 45%;
+    }
+    #newsletter .news-form input{
+        height: 2rem;
+        font-size: 14px;
+    }
+    #newsletter .news-form button{
+        width: 30%;
+        text-align: center;
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+	#newsletter{
+        padding: 10px;
+    }
+    #newsletter .news-text{
+        width:50%;
+    }
+    #newsletter .news-text h4{
+        font-size: 18px;
+    }
+    #newsletter .news-text p{
+        font-size: 16px;
+    }
+    #newsletter .news-form{
+        width: 48%;
+    }
+    #newsletter .news-form input{
+        padding: 0px 2px;
+        height: 20px;
+        font-size: 12px;
+    }
+    #newsletter .news-form button{
+        font-size: 8px;
+        padding: 0px 6px;
+    }
+}
+
 /* //Responsive Design */
