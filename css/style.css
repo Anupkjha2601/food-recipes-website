@@ -2971,7 +2971,10 @@ input.email {
 
 #toTop:Hover {
 	opacity:70%;
-	box-shadow: 1px 4px 3px grey;
+	box-shadow: 0 0 5px #5bd880,
+        0 0 25px #64eaa3,
+        0 0 25px #7eeaab,
+        0 0 25px #4cde93;
 }
 
 
