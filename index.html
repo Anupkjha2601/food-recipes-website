@@ -604,7 +604,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 	<!-- News letter -->
-	
+	<div class="agile-form">
+		<div class="container">
+			<div class="col-md-4 newsletter">
+				<p>Subscribe to our newsletter</p>
+				<h4>For our latest updates</h4>
+			</div>
+			<div class="col-md-8">
+				<form action="#" method="get">
+					<input type="email" name="email" inputmode="email" style="text-transform: lowercase" placeholder="Enter Your Email Address" required>
+					<input type="submit" value="">
+				</form>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
 	<!-- News letter -->
 
 	<!-- Footer -->
@@ -662,7 +678,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 	<!-- Owl-Carousel-JavaScript -->
-	
+	<script src="js/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#owl-demo").owlCarousel({
+				items: 5,
+				lazyLoad: true,
+				autoPlay: true,
+				pagination: true,
+			});
+		});
+	</script>
 	<!-- //Owl-Carousel-JavaScript -->
 
 	<!-- flexSlider -->
