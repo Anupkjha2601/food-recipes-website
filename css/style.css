@@ -10,6 +10,7 @@ html, body{
 	font-family: 'Open Sans', sans-serif;
 	background:#ffffff;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 /* start loader css */
@@ -175,20 +176,27 @@ header {
 }
 .navbar {
 	margin-bottom: 0px;
-	
 	min-height: 30px;
+	width: 100vw;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     background-color: #57d45c;
 }
+
+.navbar ul{
+	display: flex;
+	justify-content: center;
+	margin-right: 15em;
+}
+
 .navbar-nav>li {
-    margin: 0 3px;
+    padding: 0 3px;
 	/* background-color: green; */
 	/* margin-left: 0px; */
 	/* padding-left: 0px; */
 }
 .navbar-nav {
-    float: right;
+    /* float: right; */
 	/* background-color: red; */
 	/* justify-content: space-between; */
 }
@@ -832,6 +840,7 @@ nav.navbar.navbar-default {
 }
 .footer{
 	padding: 6.5rem;
+	background-color: #100f0f;
 }
 .footer-top .ftr-grid h3 {
     color: #4CAF50;
@@ -851,7 +860,6 @@ nav.navbar.navbar-default {
 }
 
 .footer-top .ftr-grid p {
-\
        font-size: 0.85em;
     color:#b8b8b8;
     line-height: 2em;
@@ -913,7 +921,7 @@ nav.navbar.navbar-default {
   }
   
   .social-icons ul li a i.fa {
-	color: #000;
+	color: #ffffff;
 	background-color: #fff;
 	width: 26px;
 	height: 26px;
@@ -1060,7 +1068,7 @@ nav.navbar.navbar-default {
     color: #fff;
 }
 .fg1 span {
-    color: #000000;
+    color: #ffffff;
     font-weight: normal;
 }
 .fg1 span.fa {
