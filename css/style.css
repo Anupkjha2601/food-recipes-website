@@ -2940,11 +2940,10 @@ input.email {
 
 /*-- to-top --*/
 #toTop {
-    background-color: #69757cef;
-	background-image:url(/images/white-arrow-icon-png-26.jpg);
-	transform: rotate(-90deg);
+    background-color: #beebaeef;
+	background-image: url(https://www.downloadclipart.net/large/46067-up-arrow-clipart.png);
 	background-repeat: no-repeat;
-	background-size: 50px;
+	background-size: 25px;
 	background-position: center;
     position: fixed;
     bottom: 20px;
@@ -2957,17 +2956,22 @@ input.email {
     border-radius: 50%;
     cursor: pointer;
 	display: grid;
+	transition: opacity 0.5s;
+  	animation: action 1s infinite alternate;
 }
-#toTopHover {
-	width: 35px;
-	height: 35px;
-	display: block;
-	overflow: hidden;
-	float: right;
-	z-index: 100;
-	opacity: 0;
-	-moz-opacity: 0;
-	filter: alpha(opacity=0);
+
+@keyframes action {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+}
+
+#toTop:Hover {
+	opacity:70%;
+	box-shadow: 1px 4px 3px grey;
 }
 
 
