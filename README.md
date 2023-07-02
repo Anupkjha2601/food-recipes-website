@@ -73,37 +73,92 @@ We welcome contributions from the open-source community to make Food-Recipe webs
 
  ✏️ <b>Find or Create an Issue:</b> Browse the existing issues or create a new one if you have a suggestion or find a bug and wait until it is assigned to you.
 
- ✏️ <b>Fork the Repo:</b> Fork the Food-Recipe repository to your GitHub account (Click the <a href="https://github.com/Anupkjha2601/food-recipes-website/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> button in the top right of this page).
+ 1. <b>Fork the Repo:</b> Fork the Food-Recipe repository to your GitHub account (Click the <a href="https://github.com/Anupkjha2601/food-recipes-website/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> button in the top right of this page).
  
- ✏️ <b>Clone the Repo:</b> Clone the forked repository to your local machine .
- ```markdown
- git clone https://github.com/github_username/food-recipes-website.git
- ```
- Note: Replace `github_username` with your actual GitHub username.
- 
- ✏️ <b>Change the present working directory:</b> 
- ```markdown
- cd finalproj
- ```
- 
- ✏️ <b>Create a New Branch:</b> Create a new branch in your forked repository to work on your changes.
- ```markdown
- git checkout -b branch_name
- ```
+2. Clone your forked repository
 
- ✏️ <b>Make your contribution:</b> Make necessary changes as per the issue assigned to you.
- 
- ✏️ <b>Commit and push the changes:</b> Stage your changes and commit and finally push them to your forked repository.
- ```markdown
- git add .
- git commit -m 'Your message'
- git push origin branch_name
- ```
- 
- ✏️ <b>Open a Pull Request:</b> Open a pull request from your branch to the main Food-Recipe repository. Provide a clear description of the changes you've made. Add screenshots or videos to your Pull Request to help us understand the effects of the changes proposed in your PR.
+```sh
+ git clone https://github.com/<your_github_username>/Moksh.git
+```
+3. Now go ahead and create a new branch and move to the branch
+   ```sh
+   git checkout -b fix-issue-<ISSUE-NUMBER>
+   ```
+4. After you have added your changes, follow the following command chain
+   * Check the changed files
+    ```sh
+     git status -s
+     ```
+   * Add all the files to the staging area
+      ```sh
+     git add .
+     ```
+     or
+     ```sh
+     git add <file_name1> <file_name2>
+     ```
+   * Commit your changes
+    ```sh
+     git commit -m "<EXPLAIN-YOUR_CHANGES>"
+     ```
+5. Push your changes
+   ```sh
+   git push origin fix-issue-<ISSUE-NUMBER>
+   ```
+6. Open a Pull Request 
+<h4>Provide a clear description of the changes you've made. Add screenshots or videos to your Pull Request to help us understand the effects of the changes proposed in your PR.</h4>
 
 ✏️ <b>Review and Merge:</b> Wait for your PR review and approval from the maintainers.
 Once approved, it will be merged into the main repository.
+
+<h1>GSSOC'23 Issue TimeLine</h1>
+
+
+- Once an issue is assigned,the assignee is expected to submit a pr for review withing a week of the assignment. 
+
+- If the assignee fails to comply with the deadline, the issue will be assigned to the next person who had who had requested to be assigned.
+
+
+
+<h1>GSSOC'23 Pointer System</h1>
+<h2> Level 1 - Documentation/Minor bug fix </h2>
+<h3> Points - 10 </h3>
+
+
+- Contributors can update existing documentation, write new documentation for features or code and improve the overall organisation and clarity of the projects documentation.  
+
+
+- Minor bug fixes refer to fixing small isolated issues in the codebase.  
+
+
+- Fixing issues such as typos, brokel links, or minor performance problems.
+
+
+- Bug fixes are an important part of maintaining stability of and reliability of of an open-source project and every bug fix, no matter how small, contributes to the overall health of the project. 
+
+
+
+
+
+<h2> Level 2 - Enhancement of existing features </h2>
+<h3> Points - 25 </h3>
+
+
+-  Feature or enhancement contributions refer to adding new functionality to an open source project.  
+
+- Contributors can add new features, improve existing features, or add new functionality to existing features.
+
+
+
+
+
+
+<h2> Level 3 - Refactoring/ Adding functionalities </h2>
+<h3> Points - 45 </h3>
+
+
+- Core contributions, such as implementing major features or refactoring significant parts of the codebase. This needs a deep understanding of the codebase and its patterns.
+
 
 <br>
 We appreciate your contributions!! Happy Coding!! 🤍
