@@ -1,116 +1,81 @@
-# Contributing Guidelines 👨‍💻
-## 👨‍💻 Prerequisite Skills to Contribute
-
-### Contribute in public/Profile
-
-- [Git](https://git-scm.com/) 
----
-## 💥 How to Contribute
-
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Anupkjha2601/food-recipes-website/pulls)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/Anupkjha2601)
-
-- Take a look at the existing [Issues](https://github.com/Anupkjha2601/food-recipes-website/issues) or [create a new issue](https://github.com/Anupkjha2601/food-recipes-website/issues/new/choose)!
-- [Fork the Repo](https://github.com/Anupkjha2601/food-recipes-website/fork). Then, create a branch for any issue that you are working on. Finally, commit your work.
-- Create a **[Pull Request](https://github.com/Anupkjha2601/food-recipes-website/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
-- Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes proposed in your PR.
+### 🧑‍💻 Contribution Guidelines   
 
 
----
-## ⭐ HOW TO MAKE A PULL REQUEST:
+## Introduction  
+Welcome to our delectable world of culinary delights! Whether you're a seasoned chef or a cooking novice, our food recipes website is here to inspire your taste buds and guide you through a mouthwatering journey of flavors. 
 
-**1.** Start by making a Fork of the [**food-recipes-website**](https://github.com/Anupkjha2601/food-recipes-website/) repository. Click on the <a href="https://github.com/Anupkjha2601/food-recipes-website/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a>Fork symbol at the top right corner.
+## Getting Started 
+We deeply value your enthusiasm for enhancing this project!  We warmly welcome your valuable contributions and invite you to participate in elevating it to new heights.  
 
-**2.** Clone your new fork of the repository in the terminal/CLI on your computer with the following command:
+There are some steps that you need to follow before making any contribution in this project, the following steps are important to get start. 
 
-```bash
-git clone https://github.com/<your-github-username>/food-recipes-website
+### Step 1. Fork the Repository
+ [Fork](https://github.com/Anupkjha2601/food-recipes-website) the repo first 
+
+ ### Step 2. Clone the forked Repository 
+    ``` 
+    git clone https://github.com/<your_github_username>/food-recipes-website.git 
+     ```  
+### Step 3. Set Up Remotes 
+- Add a reference (remote) to the original repository:
+    ```
+     git remote add upstream https://github.com/Anupkjha2601/food-recipes-website.git 
+       ``` 
+    - Add a reference (remote) to your forked repository:
+``` 
+git remote add origin  https://github.com/<your_github_username>/food-recipes-website.git 
+``` 
+
+### Step 4. Check Remotes
+```
+git remote -v
 ```
 
-**3.** Navigate to the newly created LinkFree project directory:
-
-```bash
-cd food-recipes-website
+### Step 5. Keep Your Local Copy Updated
+```
+git pull upstream main
+``` 
+### Step 6. Create a New Branch
+```
+git checkout -b <your_branch_name>
 ```
 
-**4.** Set upstream command:
+## Making Changes
+Perform your desired changes to the code base. 
 
-```bash
-git remote add upstream https://github.com/Deepanshi177/food-recipes-website.git
+### Step 7. Track Changes
+    ```
+     # Track the changes
+     git status
+
+     # Add changes to Index
+     git add . or git add <file_name>
+     ```
+### Step 8. Commit Changes
+    ```
+    git commit -m "Write a meaningful but small commit message" 
+    ```
+  ### Step 9. Push Changes
 ```
-
-**5.** Create a new branch:
-
-```bash
-git checkout -b YourBranchName
+git push -u origin <your_branch_name>
 ```
+### 10. Compare and Create
+- Click on "Compare And Pull Requests" 🔄
+- Make sure your pull request adheres to our contribution guidelines. Pull requests that do not meet the guidelines may be closed or discarded ❌
+- Add an appropriate title and description to your pull request, explaining your changes with suitable explanations and screenshots 📝🖼️
+- Click on "Create Pull Request" to submit your contribution for review ✅ 
 
-**6.** Sync your fork or your local repository with the origin repository:
+We appreciate your understanding and cooperation in following our guidelines. Thank you for your contribution! 🙌 
+Follow the existing code style and formatting conventions.
 
-- In your forked repository, click on "Fetch upstream"
-- Click "Fetch and merge"
+Maintain consistency with the overall project structure and organization.
 
-### Alternatively, Git CLI way to Sync forked repository with origin repository:
+Write clear and concise code with appropriate comments where necessary.
 
-```bash
-git fetch upstream
-```
+Ensure your code is free from errors and runs without issues. 
 
-```bash
-git merge upstream/main
-```
+Congratulations! You've made your PR with the desired changes. Once the PR is reviewed, it will be merged into the original codebase for everyone to see and use. 
 
-### [Github Docs](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github) for Syncing
-
-**7.** Make your changes to the source code.
-
-**8.** Stage your changes and commit:
-
-⚠️ **Make sure** not to commit `package.json` or `package-lock.json` file
-
-⚠️ **Make sure** not to run the commands `git add .` or `git add *`. Instead, stage your changes for each file/folder
-
-```bash
-git add public
-```
-
-```bash
-git commit -m "<your_commit_message>"
-```
-
-**9.** Push your local commits to the remote repository:
-
-```bash
-git push origin YourBranchName
-```
-
-**10.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
-
-**11.** **Congratulations!** You've made your first contribution to [**food-recipes-website**]! 🙌🏼
-
-**_:trophy: After this, the maintainers will review the PR and will merge it if it helps move the all-round-calculator project forward. Otherwise, it will be given constructive feedback and suggestions for the changes needed to add the PR to the codebase._**
-
----
-
-## Style Guide for Git Commit Messages :memo:
-
-**How you can add more value to your contribution logs:**
-
-- Use the present tense. (Example: "Add feature" instead of "Added feature")
-- Use the imperative mood. (Example: "Move item to...", instead of "Moves item to...")
-- Limit the first line (also called the Subject Line) to _50 characters or less_.
-- Capitalize the Subject Line.
-- Separate subject from body with a blank line.
-- Do not end the subject line with a period.
-- Wrap the body at _72 characters_.
-- Use the body to explain the _what_, _why_, _vs_, and _how_.
-- Reference [Issues](https://github.com/Anupkjha2601/food-recipes-website/issues) and [Pull Requests](https://github.com/Anupkjha2601/food-recipes-website/pulls) liberally after the first line.
-
----
-## 💥 Issues
-
-In order to discuss changes, you are welcome to [open an issue](https://github.com/Anupkjha2601/food-recipes-website/issues/new/choose) about what you would like to contribute. Enhancements are always encouraged and appreciated.
-
-## All the best! 🥇
-
-[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Anupkjha2601)
+## Thank You! 
+Thank you so much for considering contributing to the food-recipes-website project.  We appreciate your valuable input, and we hope to see you again soon. 😊 
+For any further questions or assistance, please reach out to the project maintainers or refer to the project's documentation. 

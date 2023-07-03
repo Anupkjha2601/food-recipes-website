@@ -49,3 +49,42 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
+  # Configure issue template
+  configure-issue-template:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Set up Git
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.before }}
+      - name: Configure issue template
+        run: |
+          mkdir .github
+          mkdir .github/ISSUE_TEMPLATE
+          echo "# Issue Template" > .github/ISSUE_TEMPLATE/issue_template.md
+          git config --global user.name ${{ github.actor }}
+          git config --global user.email ${{ github.actor }}@users.noreply.github.com
+          git add .
+          git commit -m "Add issue template"
+          git push
+
+  # Configure pull request template
+  configure-pull-request-template:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Set up Git
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.before }}
+      - name: Configure pull request template
+        run: |
+          mkdir .github
+          echo "# Pull Request Template" > .github/pull_request_template.md
+          git config --global user.name ${{ github.actor }}
+          git config --global user.email ${{ github.actor }}@users.noreply.github.com
+          git add .
+          git commit -m "Add pull request template"
+          git push
