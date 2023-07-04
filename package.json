@@ -1,0 +1,13 @@
+{
+  "name": "food-recipes-website",
+  "version": "1.0.0",
+  "description": "![Screenshot from 2023-06-26 00-09-02](https://github.com/SyedImtiyaz-1/food-recipes-website/assets/121503426/4c14c692-1f29-47fe-888a-b46b6b326d09)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
