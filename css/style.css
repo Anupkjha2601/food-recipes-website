@@ -2353,6 +2353,13 @@ figure.effect-roxy:hover p,.agileinfo_banner_bottom_grid_three_left:hover figcap
 /*-- //gallery --*/
 
 /*-- contact --*/
+.container_c{
+	background-color: #c7f9cc;
+	padding: 2rem;
+	border-radius: 0 0.5cm 0.5cm 0;
+	width: 90rem;
+}
+
 .contact-agileinfo {
     margin-top: 4em;
 }  
@@ -2431,6 +2438,10 @@ input.email {
 } 
 .contact {
     padding: 5em 0;
+}
+
+.submit{
+	border-radius: 0.2cm;
 }
 /*-- //contact --*/
 
