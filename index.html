@@ -48,8 +48,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  
 
 	<body>
-
+   <div class="loader-body">
+  <div class="preloader-background"></div>
+  <div class="loader-content">
+    <div class="preloader"></div>
+    <div class="loader-text">loading all your favourite food...</div>
+  </div>
+  </div>
 		<div class="banner-header">
+      
 			<!--header-->
 			<div class="header">
 				<div class="container-fluid">
@@ -687,7 +694,18 @@ $(window).load(function(){
 			});
 		});
 	</script>
-
+   <script>
+    // Simulate some loading time
+    setTimeout(function() {
+      // Remove the preloader and background
+      document.querySelector('.preloader').style.display = 'none';
+      document.querySelector('.preloader-background').style.display = 'none';
+      document.querySelector('.loader-body').style.display = 'none';
+      document.querySelector('.loader-text').style.display = 'none';
+      // Show the page content
+      document.body.style.display = 'block';
+    }, 3000); // Change the delay time (in milliseconds) as needed
+  </script>
 		<!-- here stars scrolling icon -->
 		<script type="text/javascript">
 		$(document).ready(function() {
