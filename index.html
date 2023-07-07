@@ -643,7 +643,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 		<!-- Footer -->
+<!-- sroll to top button -->
+<button id="scrollBtn" onclick="topFunction()" title="Scroll to Top">^</button>
+<script>
+  window.onscroll = function() {
+    scrollFunction();
+};
 
+function scrollFunction() {
+    var scrollBtn = document.getElementById("scrollBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollBtn.style.display = "block";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+}
+function topFunction() {
+    // Scroll to the top of the document with smooth behavior
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
 		<!-- Owl-Carousel-JavaScript -->
 		<script src="js/owl.carousel.js"></script>
 		<script>
@@ -677,20 +699,27 @@ $(window).load(function(){
 
 		<script type="text/javascript" src="js/move-top.js"></script>
 		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
+		
+ </script>
 
+ <!-- here stars scrolling icon -->
+ <!-- <script type="text/javascript">
+   $(document).ready(function () {
+     
+
+     var defaults = {
+     containerID: 'toTop', // fading element id
+     containerHoverID: 'toTopHover', // fading element hover id
+     scrollSpeed: 1200,
+     easingType: 'linear' 
+     };
+
+     $().UItoTop({ easingType: "easeOutQuart" });
+   });
+ </script> -->
 		<!-- here stars scrolling icon -->
-		<script type="text/javascript">
-		$(document).ready(function() {
+		<!-- <script type="text/javascript">
+		$(document).ready(function() { -->
 			/*
 =======
   <head>

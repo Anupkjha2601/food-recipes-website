@@ -2435,7 +2435,7 @@ input.email {
 /*-- //contact --*/
 
 /*-- to-top --*/
-#toTop {
+/* #toTop {
     display: none;
     text-decoration: none;
     position: fixed;
@@ -2448,6 +2448,7 @@ input.email {
     border: none;
     text-indent: 100%;
     background: url(../images/top.png) no-repeat 0px 0px;
+	
 }
 #toTopHover {
 	width: 35px;
@@ -2458,6 +2459,27 @@ input.email {
 	opacity: 0;
 	-moz-opacity: 0;
 	filter: alpha(opacity=0);
+
+} */
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* Adjust this value to change the horizontal position */
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #F44336;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 51%;
+	width: 58px;
+}
+
+#scrollBtn:hover {
+	background-color: #777;
 }
 /*-- //to-top --*/
 
