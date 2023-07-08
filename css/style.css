@@ -25,13 +25,7 @@ ul,label{
 body a:hover{
 	text-decoration:none;
 }
-input[type="submit"],input[type="reset"],a,.w3l_banner_bottom_grid1 i,.w3layouts_more a i{
-	-webkit-transition: 0.5s ease-in;
-    -moz-transition: 0.5s ease-in;
-    -ms-transition: 0.5s ease-in;
-    -o-transition: 0.5s ease-in;
-    transition:0.5s ease-in;
-}
+
 a:focus{
 	outline:none;
 }
@@ -40,25 +34,33 @@ header {
 	padding:10px 0;
 	border-top: 2px solid #2c333d;
 }
-.logo {
-    float: left;
-    margin-top: 2px;
+
+#cnav .nav-link{
+	color:white;
+	font-weight: 800;
+	font-size: 14px;
+	position: relative;
 }
-.logo h1 a {
-    text-decoration: none;
-    font-size: 35px;
-    color: #286090;
-	text-transform: uppercase;
+#cnav .nav-item.active .nav-link{
+	color:#03a9f4;
 }
+#cnav .nav-item.active .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust the value to control the position of the line */
+    width: 100%;
+    height: 3px;
+	background: linear-gradient(to right, rgb(10, 14, 29), rgb(66, 39, 122), rgb(50, 43, 248), rgb(5, 39, 86), blue, indigo, rgb(112, 19, 112)); 
+}
+
 .navbar {
 	margin-bottom: 0px;
 	min-height: 30px;
 }
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-    background-color: #57d45c;
-}
 .navbar-nav>li {
     margin: 0 3px;
+	
 }
 .navbar-nav {
     float: right;
@@ -66,43 +68,7 @@ header {
 .nav>li>a {
     padding: 10px 20px;
 }
-.navbar-nav>li>a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-.dropdown-menu>li>a:hover {
-    color: #000;
-    background: none;
-}
-.dropdown-menu > li > a {
-    line-height: 1.42857143;
-    color: #000;
-    text-transform: uppercase;
-}
-.navbar-nav > li > .dropdown-menu {
-    margin-top: 10px;
-}
-.navbar-inverse .navbar-nav>li>a:focus {
-    color: #2c333d;
-    background-color: transparent;
-}
-.navbar-inverse .navbar-nav>li>a {
-    color: #2c333d;
-}
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    padding: 0;
-}
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-    background-color: #00c5b5;
-}
-/*-- bootstrap dropdown hover menu --*/
-.navbar-inverse {
-    background-color: transparent;
-    border-color: transparent;
-    margin: 0 60px 0;
-}
+
 
 /*-- /bootstrap dropdown hover menu --*/
 /*-- /header --*/
