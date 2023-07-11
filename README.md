@@ -116,7 +116,7 @@ Once approved, it will be merged into the main repository.
 <h1>GSSOC'23 Issue TimeLine</h1>
 
 
-- Once an issue is assigned,the assignee is expected to submit a pr for review withing a week of the assignment. 
+- Once an issue is assigned,the assignee is expected to submit a pr for review within a week of the assignment. 
 
 - If the assignee fails to comply with the deadline, the issue will be assigned to the next person who had who had requested to be assigned.
 
@@ -133,7 +133,7 @@ Once approved, it will be merged into the main repository.
 - Minor bug fixes refer to fixing small isolated issues in the codebase.  
 
 
-- Fixing issues such as typos, brokel links, or minor performance problems.
+- Fixing issues such as typos, broken links, or minor performance problems.
 
 
 - Bug fixes are an important part of maintaining stability of and reliability of of an open-source project and every bug fix, no matter how small, contributes to the overall health of the project. 
