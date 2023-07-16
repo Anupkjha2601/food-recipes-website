@@ -758,7 +758,7 @@ nav.navbar.navbar-default {
     color: #fff;
 }
 .fg1 span {
-    color: #fff;
+    color: #000000;
     font-weight: normal;
 }
 .fg1 span.fa {
@@ -1469,6 +1469,7 @@ h3.heading:after,h2.heading:after {
 }
 .bottom-right img,.menu-grids img {
     width: 100%;
+	border-radius: 10px;
 }
 .readmore a {
     font-size: 14px;
