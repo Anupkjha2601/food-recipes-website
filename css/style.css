@@ -285,12 +285,12 @@ header {
 	80% { -webkit-transform: translateY(-10px); }
 } */
 .banner2{
-	background:url(../images/slider4.jpg)no-repeat center 0px;
+	background:url(../images/slider4.webp)no-repeat center 0px;
 	background-size:cover;  
 	height: 300px!important;
 }
 .banner-dott1 {
-    background: url(../images/dott.png)repeat 0px 0px;
+    background: url(../images/dott.webp)repeat 0px 0px;
     background-size: 2px;
     -webkit-background-size: 2px;
     -moz-background-size: 2px;
@@ -478,31 +478,31 @@ nav.navbar.navbar-default {
 	border-radius:50%;
 }
 .carousel .item{ 
-	background:url(../images/slider1.jpg)no-repeat center 0px;
+	background:url(../images/slider1.webp)no-repeat center 0px;
 	background-size:cover;  
 	height: 760px!important;
 	
 } 
 .carousel .item1{ 
-	background:url(../images/slider5.jpg)no-repeat center 0px;
+	background:url(../images/slider5.webp)no-repeat center 0px;
 	background-size:cover;  
 	height: 760px!important;
 	
 } 
 .carousel .item2{ 
-	background:url(../images/slider2.jpg)no-repeat center 0px;
+	background:url(../images/slider2.webp)no-repeat center 0px;
 	background-size:cover;
 	    height: 760px!important;
 	
 } 
 .carousel .item3{ 
-	background:url(../images/slider3.jpg)no-repeat center 0px;
+	background:url(../images/slider3.webp)no-repeat center 0px;
 	background-size:cover;
 	    height: 760px!important;
 	
 } 
 .carousel .item4{ 
-	background:url(../images/slider4.jpg)no-repeat center 0px;
+	background:url(../images/slider4.webp)no-repeat center 0px;
 	background-size:cover;
 	    height: 760px!important;
 	
@@ -535,7 +535,7 @@ nav.navbar.navbar-default {
     line-height: 1.5;
 } 
 .banner-dott {
-    background: url(../images/dott.png)repeat 0px 0px;
+    background: url(../images/dott.webp)repeat 0px 0px;
     background-size: 2px;
     -webkit-background-size: 2px;
     -moz-background-size: 2px;
@@ -835,7 +835,7 @@ nav.navbar.navbar-default {
     letter-spacing: 1px;
     border: none;
     outline: none;
-    background: url(../images/arrow.png)0px 0px no-repeat;
+    background: url(../images/arrow.webp)0px 0px no-repeat;
     color: #fff;
     padding: 5px 5px;
     float: left;
@@ -1110,7 +1110,7 @@ nav.navbar.navbar-default {
 /*-- team --*/
 .special{
 	padding:5em 0;
-	background: url("../images/t.jpg")no-repeat 0px 0px;
+	background: url("../images/t.webp")no-repeat 0px 0px;
 	background-size: cover;
 }
 .team img {
@@ -1272,7 +1272,7 @@ h3.tittle.two {
 }
 .w3ls-special-img {
     padding: 0;
-    background:#000 url(../images/sp1.jpg) no-repeat 0px 0px;
+    background:#000 url(../images/sp1.webp) no-repeat 0px 0px;
     min-height: 235px;
     background-size: cover;
     text-align: center;
@@ -1309,19 +1309,19 @@ h3.tittle.two {
     margin: 1.5em 0 0 0;
 }
 .wthree-img1{
-       background:#000 url(../images/sp2.jpg) no-repeat 0px 0px;
+       background:#000 url(../images/sp2.webp) no-repeat 0px 0px;
     background-size: cover;	
 }
 .wthree-img2{
-        background:#000 url(../images/sp3.jpg) no-repeat 0px 0px;
+        background:#000 url(../images/sp3.webp) no-repeat 0px 0px;
     background-size: cover;	
 }
 .wthree-img3{
-       background:#000 url(../images/sp4.jpg) no-repeat 0px 0px;
+       background:#000 url(../images/sp4.webp) no-repeat 0px 0px;
     background-size: cover;	
 }
 .wthree-img4{
-       background:#000 url(../images/sp4.jpg) no-repeat 0px 0px;
+       background:#000 url(../images/sp4.webp) no-repeat 0px 0px;
     background-size: cover;	
 }
 .w3ls-special-text h4 {
@@ -1488,7 +1488,7 @@ h3.heading:after,h2.heading:after {
 }
 /*-- choose-us --*/
 .why-choose-agile {
-    background: url("../images/t.jpg") no-repeat 0px 0px;
+    background: url("../images/t.webp") no-repeat 0px 0px;
 	background-size: cover;
     background-attachment: fixed;
 }
@@ -2202,7 +2202,7 @@ figure.effect-roxy:hover p,.agileinfo_banner_bottom_grid_three_left:hover figcap
 /*-- //Services --*/
 /*-- background --*/
 .background {
-    background: url(../images/t.jpg) no-repeat 0px 0px;
+    background: url(../images/t.webp) no-repeat 0px 0px;
     background-size: cover;
 	background-attachment: fixed;
 	padding: 6em 0;
@@ -2459,7 +2459,7 @@ input.email {
     height: 40px;
     border: none;
     text-indent: 100%;
-    background: url(../images/top.png) no-repeat 0px 0px;
+    background: url(../images/top.webp) no-repeat 0px 0px;
 }
 #toTopHover {
 	width: 35px;
@@ -3947,12 +3947,12 @@ header {
 	80% { -webkit-transform: translateY(-10px); }
 } */
 .banner2{
-	background:url(../images/slider4.jpg)no-repeat center 0px;
+	background:url(../images/slider4.webp)no-repeat center 0px;
 	background-size:cover;  
 	height: 300px!important;
 }
 .banner-dott1 {
-    background: url(../images/dott.png)repeat 0px 0px;
+    background: url(../images/dott.webp)repeat 0px 0px;
     background-size: 2px;
     -webkit-background-size: 2px;
     -moz-background-size: 2px;
@@ -4140,31 +4140,31 @@ nav.navbar.navbar-default {
 	border-radius:50%;
 }
 .carousel .item{ 
-	background:url(../images/slider1.jpg)no-repeat center 0px;
+	background:url(../images/slider1.webp)no-repeat center 0px;
 	background-size:cover;  
 	height: 760px!important;
 	
 } 
 .carousel .item1{ 
-	background:url(../images/slider5.jpg)no-repeat center 0px;
+	background:url(../images/slider5.webp)no-repeat center 0px;
 	background-size:cover;  
 	height: 760px!important;
 	
 } 
 .carousel .item2{ 
-	background:url(../images/slider2.jpg)no-repeat center 0px;
+	background:url(../images/slider2.webp)no-repeat center 0px;
 	background-size:cover;
 	    height: 760px!important;
 	
 } 
 .carousel .item3{ 
-	background:url(../images/slider3.jpg)no-repeat center 0px;
+	background:url(../images/slider3.webp)no-repeat center 0px;
 	background-size:cover;
 	    height: 760px!important;
 	
 } 
 .carousel .item4{ 
-	background:url(../images/slider4.jpg)no-repeat center 0px;
+	background:url(../images/slider4.webp)no-repeat center 0px;
 	background-size:cover;
 	    height: 760px!important;
 	
@@ -4197,7 +4197,7 @@ nav.navbar.navbar-default {
     line-height: 1.5;
 } 
 .banner-dott {
-    background: url(../images/dott.png)repeat 0px 0px;
+    background: url(../images/dott.webp)repeat 0px 0px;
     background-size: 2px;
     -webkit-background-size: 2px;
     -moz-background-size: 2px;
@@ -4497,7 +4497,7 @@ nav.navbar.navbar-default {
     letter-spacing: 1px;
     border: none;
     outline: none;
-    background: url(../images/arrow.png)0px 0px no-repeat;
+    background: url(../images/arrow.webp)0px 0px no-repeat;
     color: #fff;
     padding: 5px 5px;
     float: left;
@@ -4772,7 +4772,7 @@ nav.navbar.navbar-default {
 /*-- team --*/
 .special{
 	padding:5em 0;
-	background: url("../images/t.jpg")no-repeat 0px 0px;
+	background: url("../images/t.webp")no-repeat 0px 0px;
 	background-size: cover;
 }
 .team img {
@@ -4934,7 +4934,7 @@ h3.tittle.two {
 }
 .w3ls-special-img {
     padding: 0;
-    background:#000 url(../images/sp1.jpg) no-repeat 0px 0px;
+    background:#000 url(../images/sp1.webp) no-repeat 0px 0px;
     min-height: 235px;
     background-size: cover;
     text-align: center;
@@ -4971,19 +4971,19 @@ h3.tittle.two {
     margin: 1.5em 0 0 0;
 }
 .wthree-img1{
-       background:#000 url(../images/sp2.jpg) no-repeat 0px 0px;
+       background:#000 url(../images/sp2.webp) no-repeat 0px 0px;
     background-size: cover;	
 }
 .wthree-img2{
-        background:#000 url(../images/sp3.jpg) no-repeat 0px 0px;
+        background:#000 url(../images/sp3.webp) no-repeat 0px 0px;
     background-size: cover;	
 }
 .wthree-img3{
-       background:#000 url(../images/sp4.jpg) no-repeat 0px 0px;
+       background:#000 url(../images/sp4.webp) no-repeat 0px 0px;
     background-size: cover;	
 }
 .wthree-img4{
-       background:#000 url(../images/sp4.jpg) no-repeat 0px 0px;
+       background:#000 url(../images/sp4.webp) no-repeat 0px 0px;
     background-size: cover;	
 }
 .w3ls-special-text h4 {
@@ -5150,7 +5150,7 @@ h3.heading:after,h2.heading:after {
 }
 /*-- choose-us --*/
 .why-choose-agile {
-    background: url("../images/t.jpg") no-repeat 0px 0px;
+    background: url("../images/t.webp") no-repeat 0px 0px;
 	background-size: cover;
     background-attachment: fixed;
 }
@@ -5864,7 +5864,7 @@ figure.effect-roxy:hover p,.agileinfo_banner_bottom_grid_three_left:hover figcap
 /*-- //Services --*/
 /*-- background --*/
 .background {
-    background: url(../images/t.jpg) no-repeat 0px 0px;
+    background: url(../images/t.webp) no-repeat 0px 0px;
     background-size: cover;
 	background-attachment: fixed;
 	padding: 6em 0;
@@ -6110,7 +6110,7 @@ input.email {
     height: 40px;
     border: none;
     text-indent: 100%;
-    background: url(../images/top.png) no-repeat 0px 0px;
+    background: url(../images/top.webp) no-repeat 0px 0px;
 }
 #toTopHover {
 	width: 35px;
