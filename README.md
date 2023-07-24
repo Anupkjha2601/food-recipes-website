@@ -1,6 +1,25 @@
-Food Recipe 🎍
+# Food Recipe 🎍
 Food Recipe is a food store website that helps customers find good recipes at affordable prices with genuine products. It provides an exceptional dining experience that combines delectable cuisine, warm ambiance, and exceptional service.
 
+<div align="center">
+ <p>
+
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=Anupkjha26015%2Ffood-recipes-website%20&countColor=%23263759&style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/Anupkjha2601/food-recipes-website?style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/Anupkjha2601/food-recipes-website?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/Anupkjha2601/food-recipes-website?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/Anupkjha2601/food-recipes-website?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/Anupkjha2601/food-recipes-website?style=for-the-badge)
+![Github](https://img.shields.io/github/license/Anupkjha2601/food-recipes-website?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/Anupkjha2601/food-recipes-website?style=for-the-badge)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Anupkjha2601/food-recipes-website?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Anupkjha2601/food-recipes-website?style=for-the-badge)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Anupkjha2601/food-recipes-website?style=for-the-badge)
+  
+ </p>
+ </div>
+ 
 Features
 Updates customers about daily special offers.
 Provides the facility to order food online.
