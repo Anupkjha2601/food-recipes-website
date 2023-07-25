@@ -1,69 +1,81 @@
-# Contributing Guidelines
-
-Welcome to the project! We appreciate your interest and contributions. Before getting started, please take a moment to review the following guidelines.
+### 🧑‍💻 Contribution Guidelines   
 
 
+## Introduction  
+Welcome to our delectable world of culinary delights! Whether you're a seasoned chef or a cooking novice, our food recipes website is here to inspire your taste buds and guide you through a mouthwatering journey of flavors. 
 
-## Table of Contents
+## Getting Started 
+We deeply value your enthusiasm for enhancing this project!  We warmly welcome your valuable contributions and invite you to participate in elevating it to new heights.  
 
--  ### <u>How Can You Contribute
--  ### Code Contribution
--  ### Bug Reports
--  ### Feature Requests
--  ### Pull Requests
--  ### Style Guide
--  ### Community Guidelines
--  ### License</u>
+There are some steps that you need to follow before making any contribution in this project, the following steps are important to get start. 
 
-## How Can You Contribute
+### Step 1. Fork the Repository
+ [Fork](https://github.com/Anupkjha2601/food-recipes-website) the repo first 
 
-There are several ways you can contribute to this project:
+ ### Step 2. Clone the forked Repository 
+    ``` 
+    git clone https://github.com/<your_github_username>/food-recipes-website.git 
+     ```  
+### Step 3. Set Up Remotes 
+- Add a reference (remote) to the original repository:
+    ```
+     git remote add upstream https://github.com/Anupkjha2601/food-recipes-website.git 
+       ``` 
+    - Add a reference (remote) to your forked repository:
+``` 
+git remote add origin  https://github.com/<your_github_username>/food-recipes-website.git 
+``` 
 
--  Reporting bugs and issues
--  Requesting new features
--  Fixing bugs and implementing new features
--  through pull requests
--  Improving documentation
--  Providing feedback and suggestions
+### Step 4. Check Remotes
+```
+git remote -v
+```
 
-## Code Contribution
+### Step 5. Keep Your Local Copy Updated
+```
+git pull upstream main
+``` 
+### Step 6. Create a New Branch
+```
+git checkout -b <your_branch_name>
+```
 
-If you would like to contribute code to the project, please follow these steps:
+## Making Changes
+Perform your desired changes to the code base. 
 
-1. Fork the repository to your own GitHub account.
-1. Clone the forked repository to your local machine.
-1. Create a new branch for your changes:
-   `git checkout -b feature/your-feature-name`.
-1. Make your changes and test thoroughly.
-1. Commit your changes: `git commit -a -m "Add a descriptive commit message"`.
-1. Push your changes to your forked repository: `git push origin feature/your-feature-name`.
-1. Open a pull request in the main repository and provide a clear description of your changes.
+### Step 7. Track Changes
+    ```
+     # Track the changes
+     git status
 
-## Bug Reports
+     # Add changes to Index
+     git add . or git add <file_name>
+     ```
+### Step 8. Commit Changes
+    ```
+    git commit -m "Write a meaningful but small commit message" 
+    ```
+  ### Step 9. Push Changes
+```
+git push -u origin <your_branch_name>
+```
+### 10. Compare and Create
+- Click on "Compare And Pull Requests" 🔄
+- Make sure your pull request adheres to our contribution guidelines. Pull requests that do not meet the guidelines may be closed or discarded ❌
+- Add an appropriate title and description to your pull request, explaining your changes with suitable explanations and screenshots 📝🖼️
+- Click on "Create Pull Request" to submit your contribution for review ✅ 
 
-If you encounter any bugs or issues while using the project, please follow these steps:
+We appreciate your understanding and cooperation in following our guidelines. Thank you for your contribution! 🙌 
+Follow the existing code style and formatting conventions.
 
-1. Check if the issue has already been reported by searching the existing issues.
-1. If the issue has not been reported, open a new issue.
-1. Provide a clear and descriptive title for the issue.
-1. Include steps to reproduce the issue.
-1. Describe the expected behavior and the actual behavior.
-1. Provide any relevant error messages or screenshots.
+Maintain consistency with the overall project structure and organization.
 
-## Feature Requests
+Write clear and concise code with appropriate comments where necessary.
 
-If you have a feature request, please follow these steps:
+Ensure your code is free from errors and runs without issues. 
 
-1. Check if the feature has already been requested by searching the existing issues.
-1. If the feature has not been requested, open a new issue.
-1. Provide a clear and descriptive title for the feature request.
-1. Describe the problem or use case that the feature would address.
-1. Provide a clear description of the proposed solution or implementation.
+Congratulations! You've made your PR with the desired changes. Once the PR is reviewed, it will be merged into the original codebase for everyone to see and use. 
 
-## Community Guidelines
-
-When participating in discussions and contributing to the project, we kindly ask you to follow our community guidelines. These guidelines ensure a positive and inclusive environment for everyone involved. Please review the `README.md` file for more information.
-
-## License
-
-By contributing to this project, you agree that your contributions will be licensed under the `LICENSE` of the project.
+## Thank You! 
+Thank you so much for considering contributing to the food-recipes-website project.  We appreciate your valuable input, and we hope to see you again soon. 😊 
+For any further questions or assistance, please reach out to the project maintainers or refer to the project's documentation. 
