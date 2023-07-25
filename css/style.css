@@ -806,6 +806,37 @@ nav.navbar.navbar-default {
     background: #dd4b39;
     transition: 0.5s ease-in;
 }
+
+.social-icons i.fab.fa-facebook-f:hover {
+    color: #f2f3f5;
+    border: 2px solid #f3f4f7;
+    background: #3c5998;
+    transition: 0.5s ease-in;
+}
+.social-icons i.fab.fa-twitter:hover {
+    color: #f2f3f5;
+    border: 2px solid #f3f4f7;
+    background: #1da1f2;
+    transition: 0.5s ease-in;
+}
+.social-icons i.fab.fa-google-plus-g:hover {
+    color: #f2f3f5;
+    border: 2px solid #f2f3f5;
+    background: #dd4b39;
+    transition: 0.5s ease-in;
+}
+.social-icons i.fab.fa-instagram:hover {
+    color: #f2f3f5;
+    border: 2px solid #f2f3f5;
+	background: linear-gradient(45deg, #dc2743, #cc2366, #bc1888, #bc1888, #ab1b9a, #8e1fa5, #601ea5);
+    transition: 0.5s ease-in;
+}
+.social-icons i.fab.fa-linkedin-in:hover {
+    color: #f2f3f5;
+    border: 2px solid #f2f3f5;
+    background: #3c5998;
+    transition: 0.5s ease-in;
+}
 /*-- //footer --*/
 
 /*  newsletter */
@@ -2454,12 +2485,16 @@ input.email {
     bottom: 20px;
     right: 2%;
     overflow: hidden;
-    z-index: 999;
-    width: 40px;
-    height: 40px;
+    z-index: 900;
+    width: 60px;
+    height: 60px;
     border: none;
     text-indent: 100%;
     background: url(../images/top.webp) no-repeat 0px 0px;
+	background-position: 50%;
+	background-color: #808080;
+	border-radius: 50%;
+
 }
 #toTopHover {
 	width: 35px;
@@ -6105,12 +6140,15 @@ input.email {
     bottom: 20px;
     right: 2%;
     overflow: hidden;
-    z-index: 999;
-    width: 40px;
-    height: 40px;
+    z-index: 900;
+    width: 60px;
+    height: 60px;
     border: none;
     text-indent: 100%;
     background: url(../images/top.webp) no-repeat 0px 0px;
+	background-position: 50%;
+	background-color: #808080;
+	border-radius: 50%;
 }
 #toTopHover {
 	width: 35px;
