@@ -2485,12 +2485,16 @@ input.email {
     bottom: 20px;
     right: 2%;
     overflow: hidden;
-    z-index: 999;
-    width: 40px;
-    height: 40px;
+    z-index: 900;
+    width: 60px;
+    height: 60px;
     border: none;
     text-indent: 100%;
     background: url(../images/top.webp) no-repeat 0px 0px;
+	background-position: 50%;
+	background-color: #808080;
+	border-radius: 50%;
+
 }
 #toTopHover {
 	width: 35px;
@@ -6136,12 +6140,15 @@ input.email {
     bottom: 20px;
     right: 2%;
     overflow: hidden;
-    z-index: 999;
-    width: 40px;
-    height: 40px;
+    z-index: 900;
+    width: 60px;
+    height: 60px;
     border: none;
     text-indent: 100%;
     background: url(../images/top.webp) no-repeat 0px 0px;
+	background-position: 50%;
+	background-color: #808080;
+	border-radius: 50%;
 }
 #toTopHover {
 	width: 35px;
