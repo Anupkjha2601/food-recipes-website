@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,24 +40,71 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link
 	href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
 	rel="stylesheet">
+  <head>
+    <title>Food Recipe</title>
+    <!-- custom-theme -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="keywords"
+      content="Food Recipe a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+    />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      	function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
 
-</head>
-	
-<body>
+    <!--favicon icon-->
+    <link rel="icon" href="images/restaurant.webp" />
 
+    <!--Bootstap link-->
+	<link
+	href="css/bootstrap.css"
+	rel="stylesheet"
+	type="text/css"
+	media="all"
+  />
 
-			<!-- Loader -->
-	
-			<div id="loader-wrapper">
+  <!-- gallery -->
+  <link
+	rel="stylesheet"
+	href="css/lightGallery.css"
+	type="text/css"
+	media="all"
+  />
+  <!-- //gallery -->
 
-				<div id="loader"></div>
-				<div class="loader-section section-left"></div>
-				<div class="loader-section section-right"></div>
-	
-			</div>		
-			
-			<!-- end Loader -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- js -->
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <!-- //js -->
 
+  <!-- font-awesome-icons -->
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <!-- //font-awesome-icons -->
+
+  <link href="//fonts.googleapis.com/css?family=Cookie" rel="stylesheet" />
+  <link
+	href="//fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese"
+	rel="stylesheet"
+  />
+  <link
+	href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	rel="stylesheet"
+  />
+  </head>
+
+  <body>
+    <!-- Loader -->
+
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
+    <!-- end Loader -->
 
 <div class="banner-header banner2">
 	<div class="banner-dott1">
@@ -160,149 +206,326 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div>
 
-				  <input type="text" placeholder="Enter the dish name..." style="padding: 5px 10px; border-radius: 8px; height: 6vh; width: 250px;" />
-				  <button class="Search-btn">Search</button>
+    <div class="banner-header banner2">
+      <div class="banner-dott1">
+        <!--header-->
+        <div class="header">
+          <div class="container-fluid">
+            <nav class="navbar navbar-default">
+              <div class="navbar-header navbar-left">
+                <button
+                  type="button"
+                  class="navbar-toggle collapsed"
+                  data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1"
+                >
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div class="w3_navigation_pos">
+                  <h1><a href="index.html">Food Recipe</a></h1>
+                </div>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div
+                class="collapse navbar-collapse navbar-right"
+                id="bs-example-navbar-collapse-1"
+              >
+                <nav>
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                    <li class="dropdown">
+                      <a
+                        href="#"
+                        class="dropdown-toggle"
+                        data-hover="Pages"
+                        data-toggle="dropdown"
+                        >Short Codes <b class="caret"></b
+                      ></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="icons.html">Icons</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!--//header-->
+      </div>
+    </div>
+    <!-- // banner -->
+    <!-- gallery -->
+    <div id="gallery" class="gallery_main">
+      <div class="container">
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-top: 5px;
+          "
+        >
+          <div>
+            <h2 class="heading">Our <span>Food</span></h2>
+            <p class="heading">Our Food recipes</p>
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Enter the dish name..."
+              style="
+                padding: 5px 10px;
+                border-radius: 8px;
+                height: 6vh;
+                width: 250px;
+              "
+            />
+            <button class="Search-btn">Search</button>
 
-				  <input type="text" id="inputvalue" placeholder="Enter the dish name..." style="padding: 5px 10px; border-radius: 8px; height: 6vh; width: 250px;" />
-                 
-				  
- 
-				  <button class="btn btn-primary btn-lg serching">Search</button>
+            <input
+              type="text"
+              id="inputvalue"
+              placeholder="Enter the dish name..."
+              style="
+                padding: 5px 10px;
+                border-radius: 8px;
+                height: 6vh;
+                width: 250px;
+              "
+            />
 
-				</div>
-	          </div>
-	  <div class="full_container">
+            <button class="btn btn-primary btn-lg serching">Search</button>
+          </div>
+            
+        </div>
+        <div class="full_container">
+          <div class="w3l_gallery_grids">
+            <ul class="w3l_gallery_grid gallery" id="lightGallery">
+              <li
+                data-title="Healthy Food"
+                data-desc="Lorem Ipsum is simply dummy text of the printing."
+                data-src="images/gallery1.webp"
+                data-responsive-src="images/1.webp"
+              >
+                <div class="w3_w3l_gallery_grid box">
+                  <a href="#">
+                    <img
+                      src="images/gallery1.webp"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                    <div class="caption scale-caption">
+                      <h3>Healthy Food</h3>
+                      <p>required for human nutrition</p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li
+                data-title="Healthy Food"
+                data-desc="Lorem Ipsum is simply dummy text of the printing."
+                data-src="images/gallery2.webp"
+                data-responsive-src="images/7.webp"
+              >
+                <div class="w3_w3l_gallery_grid box">
+                  <a href="#">
+                    <img
+                      src="images/gallery2.webp"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                    <div class="caption scale-caption">
+                      <h3>Healthy Food</h3>
+                      <p>required for human nutrition</p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li
+                data-title="Healthy Food"
+                data-desc="Lorem Ipsum is simply dummy text of the printing."
+                data-src="images/gallery3.webp"
+                data-responsive-src="images/5.webp"
+              >
+                <div class="w3_w3l_gallery_grid box">
+                  <a href="#">
+                    <img
+                      src="images/gallery3.webp"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                    <div class="caption scale-caption">
+                      <h3>Healthy Food</h3>
+                      <p>required for human nutrition</p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li
+                data-title="Healthy Food"
+                data-desc="Lorem Ipsum is simply dummy text of the printing."
+                data-src="images/gallery4.webp"
+                data-responsive-src="images/6.webp"
+              >
+                <div class="w3_w3l_gallery_grid box">
+                  <a href="#">
+                    <img
+                      src="images/gallery4.webp"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                    <div class="caption scale-caption">
+                      <h3>Healthy Food</h3>
+                      <p>required for human nutrition</p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li
+                data-title="Healthy Food"
+                data-desc="Lorem Ipsum is simply dummy text of the printing."
+                data-src="images/gallery5.webp"
+                data-responsive-src="images/8.webp"
+              >
+                <div class="w3_w3l_gallery_grid box">
+                  <a href="#">
+                    <img
+                      src="images/gallery5.webp"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                    <div class="caption scale-caption">
+                      <h3>Healthy Food</h3>
+                      <p>required for human nutrition</p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li
+                data-title="Healthy Food"
+                data-desc="Lorem Ipsum is simply dummy text of the printing."
+                data-src="images/gallery8.webp"
+                data-responsive-src="images/9.webp"
+              >
+                <div class="w3_w3l_gallery_grid box">
+                  <a href="#">
+                    <img
+                      src="images/gallery8.webp"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                    <div class="caption scale-caption">
+                      <h3>Healthy Food</h3>
+                      <p>required for human nutrition</p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li
+                data-title="Healthy Food"
+                data-desc="Lorem Ipsum is simply dummy text of the printing."
+                data-src="images/gallery7.webp"
+                data-responsive-src="images/10.webp"
+              >
+                <div class="w3_w3l_gallery_grid box">
+                  <a href="#">
+                    <img
+                      src="images/gallery7.webp"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                    <div class="caption scale-caption">
+                      <h3>Healthy Food</h3>
+                      <p>required for human nutrition</p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li
+                data-title="Healthy Food"
+                data-desc="Lorem Ipsum is simply dummy text of the printing."
+                data-src="images/gallery9.webp"
+                data-responsive-src="images/11.webp"
+              >
+                <div class="w3_w3l_gallery_grid box">
+                  <a href="#">
+                    <img
+                      src="images/gallery9.webp"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                    <div class="caption scale-caption">
+                      <h3>Healthy Food</h3>
+                      <p>required for human nutrition</p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li
+                data-title="Healthy Food"
+                data-desc="Lorem Ipsum is simply dummy text of the printing."
+                data-src="images/gallery6.webp"
+                data-responsive-src="images/12.webp"
+              >
+                <div class="w3_w3l_gallery_grid box">
+                  <a href="#">
+                    <img
+                      src="images/gallery6.webp"
+                      alt=" "
+                      class="img-responsive"
+                    />
+                    <div class="caption scale-caption">
+                      <h3>Healthy Food</h3>
+                      <p>required for human nutrition</p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		  <div class="w3l_gallery_grids">
-			  <ul class="w3l_gallery_grid gallery" id="lightGallery">
-				  <li data-title="Healthy Food" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/gallery1.webp" data-responsive-src="images/1.webp"> 
-					  <div class="w3_w3l_gallery_grid box">
-						  <a href="#">
-							  <img src="images/gallery1.webp" alt=" " class="img-responsive" /> 
-							  <div class="caption scale-caption">
-								  <h3>Healthy Food</h3>
-								  <p>required for human nutrition</p>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Healthy Food" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/gallery2.webp" data-responsive-src="images/7.webp"> 
-						<div class="w3_w3l_gallery_grid box">
-							<a href="#">
-								<img src="images/gallery2.webp" alt=" " class="img-responsive" /> 
-								<div class="caption scale-caption">
-									<h3>Healthy Food</h3>
-									<p>required for human nutrition</p>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Healthy Food" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/gallery3.webp" data-responsive-src="images/5.webp"> 
-						<div class="w3_w3l_gallery_grid box">
-							<a href="#">
-								<img src="images/gallery3.webp" alt=" " class="img-responsive" /> 
-								<div class="caption scale-caption">
-									<h3>Healthy Food</h3>
-									<p>required for human nutrition</p>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Healthy Food" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/gallery4.webp" data-responsive-src="images/6.webp"> 
-						<div class="w3_w3l_gallery_grid box">
-							<a href="#">
-								<img src="images/gallery4.webp" alt=" " class="img-responsive" /> 
-								<div class="caption scale-caption">
-									<h3>Healthy Food</h3>
-									<p>required for human nutrition</p>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Healthy Food" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/gallery5.webp" data-responsive-src="images/8.webp"> 
-						<div class="w3_w3l_gallery_grid box">
-							<a href="#">
-								<img src="images/gallery5.webp" alt=" " class="img-responsive" /> 
-								<div class="caption scale-caption">
-									<h3>Healthy Food</h3>
-									<p>required for human nutrition</p>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Healthy Food" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/gallery8.webp" data-responsive-src="images/9.webp"> 
-						<div class="w3_w3l_gallery_grid box">
-							<a href="#">
-								<img src="images/gallery8.webp" alt=" " class="img-responsive" /> 
-								<div class="caption scale-caption">
-									<h3>Healthy Food</h3>
-									<p>required for human nutrition</p>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Healthy Food" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/gallery7.webp" data-responsive-src="images/10.webp"> 
-						<div class="w3_w3l_gallery_grid box">
-							<a href="#">
-								<img src="images/gallery7.webp" alt=" " class="img-responsive" /> 
-								<div class="caption scale-caption">
-									<h3>Healthy Food</h3>
-									<p>required for human nutrition</p>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Healthy Food" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/gallery9.webp" data-responsive-src="images/11.webp"> 
-						<div class="w3_w3l_gallery_grid box">
-							<a href="#">
-								<img src="images/gallery9.webp" alt=" " class="img-responsive" /> 
-								<div class="caption scale-caption">
-									<h3>Healthy Food</h3>
-									<p>required for human nutrition</p>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Healthy Food" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/gallery6.webp" data-responsive-src="images/12.webp"> 
-						<div class="w3_w3l_gallery_grid box">
-							<a href="#">
-								<img src="images/gallery6.webp" alt=" " class="img-responsive" /> 
-								<div class="caption scale-caption">
-									<h3>Healthy Food</h3>
-									<p>required for human nutrition</p>
-								</div>
-							</a>
-						</div>
-					</li>
-				</ul>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		</div>
-	</div>
+    <!-- News letter -->
+    <div class="agile-form">
+      <div class="container">
+        <div class="col-md-4 newsletter">
+          <p>Subscribe to our newsletter</p>
+          <h4>For our latest updates</h4>
+        </div>
+        <div class="col-md-8">
+          <form action="#" method="get">
+            <input
+              type="email"
+              name="email"
+              inputmode="email"
+              style="text-transform: lowercase"
+              placeholder="Enter Your Email Address"
+              required
+            />
+            <input type="submit" value="" />
+          </form>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- News letter -->
 
-<!-- News letter -->
-<div class="agile-form">
-	<div class="container">
-	  <div class="col-md-4 newsletter">
-		<p>Subscribe to our newsletter</p>
-		<h4>For our latest updates</h4>
-	  </div>
-	  <div class="col-md-8">
-		<form action="#" method="get">
-		  <input type="email" name="email" inputmode="email" style="text-transform: lowercase" placeholder="Enter Your Email Address" required>
-		  <input type="submit" value="">
-		</form>
-		<div class="clearfix"></div>
-	  </div>
-	  <div class="clearfix"></div>
-	</div>
-  </div>
-<!-- News letter -->
-
-<!-- Footer -->
-<div class="footer w3ls">
-	<div class="container">
+    <!-- Footer -->
+    <div class="footer w3ls">
+      <div class="container">
 		<div class="footer-main">
 			<div class="footer-top">
 				<div class="col-md-4 ftr-grid fg1">
@@ -321,11 +544,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<p>Lorem ipsum dolor sit amet.</p>
 						</div>
 						<div class="clearfix"> </div>
-					</div>
+					  </div>
 					<div class="ftr-address">
 						<div class="local"> 
 						 <i class="fa fa-phone" aria-hidden="true"></i>
-					    </div>
+						</div>
 					 <div class="ftr-text"> 
 							<p>+1 (512) 154 8176</p>
 						</div>
@@ -372,59 +595,117 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<li><a target="_blank" href="https://www.linkedin.com/in/anup-kumar-jha-36a393201"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 			</ul>
 		</div> -->
+			</div>
+		</div>
+	  </div>
+    </div>
 
-		<div class="social-icons">
-			<ul>
-			  <li><a target="_blank" href="https://www.facebook.com/anup.jha.108889"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-			  <li><a target="_blank" href="https://twitter.com/AnupKum59920381"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-			  <li><a target="_blank" href="mailto:anupkjha01@gmail.com"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
-			  <li><a target="_blank" href="https://www.instagram.com/anup.jha.108889/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-			  <li><a target="_blank" href="https://www.linkedin.com/in/anup-kumar-jha-36a393201"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-			</ul>
-		  </div>
+    <div class="copyrights">
+      <div class="container">
+        <div class="copyright">
+          <p>
+            &copy; <span id="copyright-year"></span> Food Recipe. All Rights
+            Reserved | Design &copy; by Anup Kumar Jha
+          </p>
+        </div>
+        <div class="social-icons">
+	          <ul>
+	            <li>
+	              <a
+	                target="_blank"
+	                href="https://www.facebook.com/anup.jha.108889"
+	                aria-label="Follow us on Facebook"
+	                title="Facebook (External Link)"
+	                rel="noopener noreferrer"
+	                ><i class="fab fa-facebook" aria-hidden="true"></i
+	              ></a>
+	            </li>
+	            <li>
+	              <a
+	                target="_blank"
+	                href="https://twitter.com/AnupKum59920381"
+	                aria-label="Follow us on Twitter"
+	                title="Twitter (External Link)"
+	                rel="noopener noreferrer"
+	                ><i class="fab fa-twitter" aria-hidden="true"></i
+	              ></a>
+	            </li>
+	            <li>
+	              <a
+	                target="_blank"
+	                href="mailto:anupkjha01@gmail.com"
+	                aria-label="Mail us on"
+	                title="Preferred Mail Application (External Link)"
+	                rel="noopener noreferrer"
+	                ><i class="fab fa-google-plus" aria-hidden="true"></i
+	              ></a>
+	            </li>
+	            <li>
+	              <a
+	                target="_blank"
+	                href="https://www.instagram.com/anup.jha.108889/"
+	                aria-label="Follow us on Instagram"
+	                title="Instagram (External Link)"
+	                rel="noopener noreferrer"
+	                ><i class="fab fa-instagram" aria-hidden="true"></i
+	              ></a>
+	            </li>
+	            <li>
+	              <a
+	                target="_blank"
+	                href="https://www.linkedin.com/in/anup-kumar-jha-36a393201"
+	                aria-label="Follow us on LinkedIn"
+	                title="LinkedIn (External Link)"
+	                rel="noopener noreferrer"
+	                ><i class="fab fa-linkedin" aria-hidden="true"></i
+	              ></a>
+	            </li>
+	          </ul>
+                </div>
 		  
 		<div class="clearfix"></div>
 	</div>
 </div>
 <!-- Footer -->	
 
-	<!-- Copyright Year js file -->
-	<script src="js/copyrightYear.js"></script>
-	<script src="js/lightGallery.js"></script>
-	<script>
-    	 $(document).ready(function() {
-			$("#lightGallery").lightGallery({
-				mode:"fade",
-				speed:800,
-				caption:true,
-				desc:true,
-				mobileSrc:true
-			});
-		});
+    <!-- Copyright Year js file -->
+    <script src="js/copyrightYear.js"></script>
+    <script src="js/lightGallery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#lightGallery").lightGallery({
+          mode: "fade",
+          speed: 800,
+          caption: true,
+          desc: true,
+          mobileSrc: true,
+        });
+      });
     </script>
-//gallery
 
+    <!-- start-smoth-scrolling -->
+    <script src="js/SmoothScroll.min.js"></script>
 
-<!-- start-smoth-scrolling -->
-<script src="js/SmoothScroll.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          $("html,body").animate(
+            {
+              scrollTop: $(this.hash).offset().top,
+            },
+            1000
+          );
+        });
+      });
+    </script>
 
-<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
-
-	<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        /*
 				var defaults = {
 				containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
@@ -432,16 +713,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				easingType: 'linear' 
 				};
 			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
-<!-- //here ends scrolling icon -->
 
-<!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
+        $().UItoTop({ easingType: "easeOutQuart" });
+      });
+    </script>
+    <!-- //here ends scrolling icon -->
 
-</body>
+    <!-- for bootstrap working -->
+    <script src="js/bootstrap.js"></script>
+    <!-- //for bootstrap working -->
+  </body>
 </html>
