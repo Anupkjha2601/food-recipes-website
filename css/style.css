@@ -5499,7 +5499,8 @@ section#tables  p {
  margin-top: 1em;
 }
 .footer-top{
-	
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 .tab-container .tab-content {
   border-radius: 0 2px 2px 2px;
