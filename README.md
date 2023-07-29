@@ -42,27 +42,26 @@ Fork the Repo: Fork the Food Recipe repository to your GitHub account by clickin
 
 Clone the Repo: Clone the forked repository to your local machine using the following command:
 
-shell
-Copy code
+```shell
 git clone https://github.com/your-username/food-recipes-website.git
+```
 Note: Replace your-username with your actual GitHub username.
 
 Change the Present Working Directory: Navigate to the cloned repository using the following command:
 
-shell
-Copy code
+```shell
 cd food-recipes-website
+```
 Create a New Branch: Create a new branch in your forked repository to work on your changes:
 
-shell
-Copy code
+```shell
 git checkout -b branch-name
+```
 Make Your Contribution: Make the necessary changes as per the assigned issue.
 
 Commit and Push the Changes: Stage your changes, commit them, and push them to your forked repository:
 
-shell
-Copy code
+```shell
 git add .
 git commit -m 'Your message'
 
@@ -151,36 +150,14 @@ We appreciate your contributions!! Happy Coding!! 🤍
 
 ## Our Contributors ✨
 
-<a href="https://github.com/Anupkjha2601/food-recipes-website/graphs/contributors">
-  <img align="center" src="https://contrib.rocks/image?max=100&repo=Anupkjha2601/food-recipes-website" />
-</a> 
+<div align="center">
+	<a href="https://github.com/Anupkjha2601/food-recipes-website/graphs/contributors">
+	  <img align="center" src="https://contrib.rocks/image?max=100&repo=Anupkjha2601/food-recipes-website" />
+	</a> 
+</div>
 <br><br>
-Thank you to all the amazing contributors who have made this project possible!! 💗
+Thank you to all the amazing contributors who have made this project possible, Keep up the great work! Happy Coding! 🤍
 
 <br><br>
-
-git push origin branch-name
-Open a Pull Request: Open a pull request from your branch to the main Food Recipe repository. Provide a clear description of the changes you've made. Add screenshots or videos to your Pull Request to help us understand the effects of the proposed changes.
-
-Review and Merge: Wait for your Pull Request to be reviewed and approved by the maintainers. Once approved, it will be merged into the main repository.
-
-Repository Status 🌟
-Repository Size: Repo Size
-Stars: Stars
-Forks: Forks
-Contributors: Contributors
-Last Commit: Last Commit
-Languages: Languages
-Visitors: Visitors
-Open Issues: Open Issues
-Closed Issues: Closed Issues
-Open Pull Requests: Open PRs
-Closed Pull Requests: Closed PRs
-Our Contributors ✨
-Thank you to all the amazing contributors who have made this project possible! Your contributions are highly appreciated.
-
-Note: The contributor list can be viewed at https://github.com/Anupkjha2601/food-recipes-website/graphs/contributors.
-
-Keep up the great work! Happy Coding! 🤍
 
 
