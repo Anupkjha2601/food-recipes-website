@@ -597,6 +597,10 @@ nav.navbar.navbar-default {
   .ftr-address .ftr-text {
 	margin-left: 10px;
   }
+
+  .footer-top .day{
+	color:#000
+  }
   
   .social-icons ul {
 	padding: 0;
@@ -3695,7 +3699,6 @@ input.email {
 	}
 }
 
-=======
 /*--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -7351,4 +7354,7 @@ input.email {
 }
 
 
+
+
 /* //Responsive Design */
+
