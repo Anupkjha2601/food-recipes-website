@@ -11,10 +11,14 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
     />
     <script type="application/x-javascript">
-       addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-      function hideURLbar(){ window.scrollTo(0,1); }
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      	function hideURLbar(){ window.scrollTo(0,1); }
     </script>
 
+    <!--favicon icon-->
+    <link rel="icon" href="images/restaurant.webp" />
+
+    <!-- //custom-theme -->
     <link
       href="css/bootstrap.css"
       rel="stylesheet"
@@ -22,46 +26,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       media="all"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-
-    <link
-      href="css/carousel.css"
-      type="text/css"
-      rel="stylesheet"
-      media="all"
-    />
-    <!-- carousel css -->
-
-    <link
-      rel="stylesheet"
-      href="css/owl.carousel.css"
-      type="text/css"
-      media="all"
-    />
-    <!-- owl-Carousel-CSS -->
-
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- Theme-CSS -->
-
-    <link
-      rel="stylesheet"
-      href="css/flexslider.css"
-      type="text/css"
-      media="screen"
-      property
-    />
-    <!-- Flexslider-CSS -->
-
+    <!-- js -->
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <!-- //js -->
+
+    <script src="js/script.js"></script>
+    <!-- js for loader-->
 
     <!-- font-awesome-icons -->
-
     <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- //font-awesome-icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link href="//fonts.googleapis.com/css?family=Cookie" rel="stylesheet" />
     <link
@@ -366,119 +348,143 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- News letter -->
 
-    <!-- Footer -->
-    <div class="footer w3ls">
-      <div class="container">
-        <div class="footer-main">
-          <div class="footer-top">
-            <div class="col-md-4 ftr-grid fg1">
-              <h3>opening timings</h3>
-              <p>
-                <span class="fa fa-clock-o" aria-hidden="true"></span
-                ><span>Mon - friday</span> : 9am to 8pm
-              </p>
-              <p>
-                <span class="fa fa-clock-o" aria-hidden="true"></span
-                ><span>Saturday</span> : 9am to 5pm
-              </p>
-              <p>
-                <span class="fa fa-clock-o" aria-hidden="true"></span
-                ><span>Sunday</span> : 6am to 11pm
-              </p>
-            </div>
-            <div class="col-md-4 ftr-grid fg2 mid-gd">
-              <h3>Our Address</h3>
-              <div class="ftr-address">
-                <div class="local">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <!-- Footer -->
+        <div class="footer w3ls">
+          <div class="container">
+            <div class="footer-main">
+              <div class="footer-top">
+                <div class="col-md-4 ftr-grid fg1">
+                  <h3>opening timings</h3>
+                  <p>
+                    <span class="fa fa-clock-o" aria-hidden="true"></span
+                    ><span>Mon - friday</span> : 9am to 8pm
+                  </p>
+                  <p>
+                    <span class="fa fa-clock-o" aria-hidden="true"></span
+                    ><span>Saturday</span> : 9am to 5pm
+                  </p>
+                  <p>
+                    <span class="fa fa-clock-o" aria-hidden="true"></span
+                    ><span>Sunday</span> : 6am to 11pm
+                  </p>
                 </div>
-                <div class="ftr-text">
-                  <p>Lorem ipsum dolor sit amet.</p>
+                <div class="col-md-4 ftr-grid fg2 mid-gd">
+                  <h3>Our Address</h3>
+                  <div class="ftr-address">
+                    <div class="local">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div class="ftr-text">
+                      <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="ftr-address">
+                    <div class="local">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="ftr-text">
+                      <p>+1 (512) 154 8176</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="ftr-address">
+                    <div class="local">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="ftr-text">
+                      <p>
+                        <a href="mailto:anupkjha01@gmail.com"
+                          >anupkjha01@gmail.com</a
+                        >
+                      </p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="col-md-4 ftr-grid fg2">
+                  <h3>Recent posts</h3>
+                  <p>
+                    Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices.
+                  </p>
+                  <div class="more-button">
+                    <a href="#">Read more</a>
+                  </div>
                 </div>
                 <div class="clearfix"></div>
               </div>
-              <div class="ftr-address">
-                <div class="local">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                </div>
-                <div class="ftr-text">
-                  <p>+1 (512) 154 8176</p>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-              <div class="ftr-address">
-                <div class="local">
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
-                </div>
-                <div class="ftr-text">
-                  <p><a href="mailto:info@example.com">info@example.com</a></p>
-                </div>
-                <div class="clearfix"></div>
-              </div>
             </div>
-            <div class="col-md-4 ftr-grid fg2">
-              <h3>Recent posts</h3>
+          </div>
+        </div>
+        <div class="copyrights">
+          <div class="container">
+            <div class="copyright">
               <p>
-                Vestibulum ante ipsum primis in faucibus orci luctus et
-                ultrices.
+                &copy; <span id="copyright-year"></span> Food Recipe. All Rights
+                Reserved | Design &copy; by Anup Kumar Jha
               </p>
-              <div class="more-button">
-                <a href="#">Read more</a>
-              </div>
             </div>
+    
+            <div class="social-icons">
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/anup.jha.108889"
+                    aria-label="Follow us on Facebook"
+                    title="Facebook (External Link)"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-facebook" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/AnupKum59920381"
+                    aria-label="Follow us on Twitter"
+                    title="Twitter (External Link)"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="mailto:anupkjha01@gmail.com"
+                    aria-label="Mail us on"
+                    title="Preferred Mail Application (External Link)"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-google-plus" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/anup.jha.108889/"
+                    aria-label="Follow us on Instagram"
+                    title="Instagram (External Link)"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/anup-kumar-jha-36a393201"
+                    aria-label="Follow us on LinkedIn"
+                    title="LinkedIn (External Link)"
+                    rel="noopener noreferrer"
+                    ><i class="fab fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+    
             <div class="clearfix"></div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="copyrights">
-      <div class="container">
-        <div class="copyright">
-          <p>
-            &copy; <span id="copyright-year"></span> Food Recipe. All Rights
-            Reserved | Design &copf; by Anup Kumar Jha
-          </p>
-        </div>
-        <div class="social-icons">
-          <ul>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.facebook.com/anup.jha.108889
-					"
-                ><i class="fa fa-facebook" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a target="_blank" href="#"
-                ><i class="fa fa-twitter" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a target="_blank" href="#"
-                ><i class="fa fa-google-plus" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/anup.jha.108889/"
-                ><i class="fa fa-instagram" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/anup-kumar-jha-36a393201"
-                ><i class="fa fa-linkedin" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-    </div>
-    <!-- Footer -->
+        <!-- Footer -->
 
     <!-- Copyright Year js file -->
     <script src="js/copyrightYear.js"></script>
