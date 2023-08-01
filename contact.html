@@ -158,19 +158,19 @@
       <p class="heading">Get In Touch</p>
       <div class="contact-agileinfo">
         <div class="col-md-7 contact-right">
-          <form action="#" method="post">
+          <form action="#" method="post" aria-label="contact us form">
 
             <label for="name" class="sr-only">Enter your Name: </label>
-            <input type="text" name="name" id="name" placeholder="Name" required="" />
+            <input type="text" name="name" id="name" placeholder="Name" required aria-required="true" />
 
             <label for="email" class="sr-only">Enter your E-mail: </label>
-            <input type="email" class="email" name="email" id="email" placeholder="Email" required="" />
+            <input type="email" class="email" name="email" id="email" placeholder="Email" required aria-required="true" />
 
             <label for="phone" class="sr-only">Enter your Phone Number: </label>
-            <input type="tel" name="phone" id="phone" pattern="91[0-9]{10}" placeholder="Phone" required="" />
+            <input type="tel" name="phone" id="phone" pattern="91[0-9]{10}" placeholder="Phone" required aria-required="true" />
 
             <label for="message" class="sr-only">Enter your Message: </label>
-            <textarea name="message" id="message" placeholder="Message" required="">
+            <textarea name="message" id="message" placeholder="Message" required aria-required="true">
 	      </textarea>
 
             <label for="submit" class="sr-only">Submit this Form</label>
@@ -219,9 +219,9 @@
         <h4>For our latest updates</h4>
       </div>
       <div class="col-md-8">
-        <form action="#" method="get">
+        <form action="#" method="get" aria-label="newsletter">
           <input type="email" name="email" inputmode="email" style="text-transform: lowercase"
-            placeholder="Enter Your Email Address" required />
+            placeholder="Enter Your Email Address" required aria-required="true" />
           <input type="submit" value="" />
         </form>
         <div class="clearfix"></div>

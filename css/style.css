@@ -6520,7 +6520,8 @@ figure.effect-roxy:hover p,
   color: #0d3172;
 }
 .contact-agileinfo input[type="text"],
-.contact-agileinfo input[type="email"] {
+.contact-agileinfo input[type="email"],
+.contact-agileinfo input[type="tel"] {
   width: 100%;
   color: #999;
   background: none;
