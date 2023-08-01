@@ -23,15 +23,18 @@ Food Recipe is a food store website that helps customers find good recipes at af
 Features
 Updates customers about daily special offers.
 Provides the facility to order food online.
-Technology Stack 💻
-The technologies used in this project are:
 
-- JavaScript
-- CSS3
-- HTML5
-- Microsoft Azure
-- UI/UX
+# Tech Stack 💻
 
+<div align="center">
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) &nbsp;&nbsp;&nbsp;
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) &nbsp;&nbsp;&nbsp;
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) &nbsp;&nbsp;&nbsp;
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) &nbsp;&nbsp;&nbsp;
+![Azure](https://img.shields.io/badge/microsoft%20azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) &nbsp;&nbsp;&nbsp;
+
+</div>
 
 <h1>Contribution Guidelines ✍️</h1>
 We welcome contributions from the open-source community to make the Food Recipe website even better. To contribute, please follow these steps:
