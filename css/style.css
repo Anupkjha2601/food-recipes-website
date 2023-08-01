@@ -1313,6 +1313,9 @@ ul.agileits_social_list {
 /*-- //team --*/
 
 /*-- testimonials --*/
+.testimonials {
+  position: relative;
+}
 .w3_testimonials_grid_left p {
   color: #666;
   line-height: 2em;
