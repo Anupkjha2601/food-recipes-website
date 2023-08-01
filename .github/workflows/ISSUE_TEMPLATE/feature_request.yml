@@ -1,29 +1,35 @@
-name: ✨ Feature Request
-description: Suggest a feature request
-title: '[Feat]: '
-labels: ['⭐ goal: addition']
+name: Feature Request 💡
+description: Have any new idea or new feature for LinksHub? Please suggest!
+title: "[Feature] <write a small description here>"
+labels: ["enhancement", "goal: addition"]
 body:
-- type: textarea
-  id: what-feature
-  attributes:
-    label: What feature?
-    placeholder: Describe it in detail
-  validations:
-    required: true
-- type: textarea
-  id: screenshots
-  attributes:
-    label: Show us the magic with screenshots
-    placeholder: Attach screenshots to visualize your idea
-  validations:
-    required: false
-- type: checkboxes
-  id: terms
-  attributes:
-    label: 'Record'
-    options:
-      - label: I agree to follow this project's Code of Conduct
-        required: true
-      - label: I'm a GSSoC'23 contributor
-      - label: I want to work on this issue
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of any alternative solution or features you've considered.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Please add screenshots if applicable
+    validations:
+      required: false
+  - type: checkboxes
+    id: no-duplicate-issues
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "I have checked the existing issues"
+          required: true
 
+        - label: "I have read the [Contributing Guidelines](https://github.com/Anupkjha2601/food-recipes-website/blob/main/contributing.md)"
+          required: true
+
+        - label: "I am willing to work on this issue (optional)"
+          required: false
+
+        - label: "I am a GSSoC'23 contributor"
+          required: false
