@@ -789,10 +789,10 @@ nav.navbar.navbar-default {
   margin-top: 1.5em;
 }
 .local i.fa {
-  color: #fff;
+  /* color: #fff; */
 }
 .fg1 span {
-  color: #fff;
+  /* color: #fff; */
   font-weight: normal;
 }
 .fg1 span.fa {
@@ -4753,10 +4753,10 @@ nav.navbar.navbar-default {
   margin-top: 1.5em;
 }
 .local i.fa {
-  color: #fff;
+  /* color: #fff; */
 }
 .fg1 span {
-  color: #fff;
+  /* color: #fff; */
   font-weight: normal;
 }
 .fg1 span.fa {
