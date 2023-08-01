@@ -274,7 +274,7 @@ header {
     height: 40px;
     font-size: 40px;
     line-height: 40px;
-    -webkit-animation: bounce 2s infinite ease-in-out;
+    --webkit-animation: bounce 2s infinite ease-in-out;
 }
 /* @-webkit-keyframes bounce {
 	0%, 20%, 60%, 100%  { -ms-transform: translateY(0); }
@@ -698,7 +698,7 @@ nav.navbar.navbar-default {
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
-    -webkit-appearance: none;
+    --webkit-appearance: none;
 }
 .newsletter-agile input[type="submit"]:hover {
     background: #000000;
@@ -755,13 +755,13 @@ nav.navbar.navbar-default {
 .more-button {
     margin-top: 1.5em;
 }
-.local i.fa {
+/* .local i.fa {
     color: #fff;
 }
-.fg1 span {
+.fg1  {
     color: #fff;
     font-weight: normal;
-}
+} */
 .fg1 span.fa {
     margin-right: 10px;
 }
@@ -1832,9 +1832,7 @@ h3.hdg {
 section#tables  p {
  margin-top: 1em;
 }
-.footer-top{
-	
-}
+
 .tab-container .tab-content {
   border-radius: 0 2px 2px 2px;
   border: 1px solid #e0e0e0;
@@ -2268,7 +2266,7 @@ figure.effect-roxy:hover p,.agileinfo_banner_bottom_grid_three_left:hover figcap
 	padding:0;
 }
 .w3l_gallery_grid li{
-	display:inline-block;
+	/* display:inline-block; */
 	float:left;
 	width:33.33%;
     padding: 5px;
@@ -2427,7 +2425,7 @@ figure.effect-roxy:hover p,.agileinfo_banner_bottom_grid_three_left:hover figcap
     font-size: .9em;
     padding: .7em .8em;
     border: solid 1px #ccc;
-    -webkit-appearance: none;
+    --webkit-appearance: none;
     display: inline-block;
 } 
 input.email {
@@ -2443,7 +2441,7 @@ input.email {
     padding: .7em .8em;
     border: solid 1px #ccc;
     min-height: 10em;
-    -webkit-appearance: none;
+    --webkit-appearance: none;
     margin-top: 1em;
 }
 .contact-agileinfo input[type="submit"] {
@@ -2455,7 +2453,7 @@ input.email {
     padding: 10px 30px;
     text-transform: capitalize;
     letter-spacing: 2px;
-    -webkit-appearance: none;
+    --webkit-appearance: none;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -3695,7 +3693,6 @@ input.email {
 	}
 }
 
-=======
 /*--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -3971,7 +3968,7 @@ header {
     height: 40px;
     font-size: 40px;
     line-height: 40px;
-    -webkit-animation: bounce 2s infinite ease-in-out;
+    --webkit-animation: bounce 2s infinite ease-in-out;
 }
 /* @-webkit-keyframes bounce {
 	0%, 20%, 60%, 100%  { -ms-transform: translateY(0); }
@@ -4395,7 +4392,7 @@ nav.navbar.navbar-default {
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
-    -webkit-appearance: none;
+    --webkit-appearance: none;
 }
 .newsletter-agile input[type="submit"]:hover {
     background: #000000;
@@ -4456,7 +4453,6 @@ nav.navbar.navbar-default {
     color: #fff;
 }
 .fg1 span {
-    color: #fff;
     font-weight: normal;
 }
 .fg1 span.fa {
@@ -5935,7 +5931,7 @@ figure.effect-roxy:hover p,.agileinfo_banner_bottom_grid_three_left:hover figcap
 	padding:0;
 }
 .w3l_gallery_grid li{
-	display:inline-block;
+	/* display:inline-block; */
 	float:left;
 	width:33.33%;
     padding: 5px;
@@ -6087,7 +6083,7 @@ figure.effect-roxy:hover p,.agileinfo_banner_bottom_grid_three_left:hover figcap
     font-size: .9em;
     padding: .7em .8em;
     border: solid 1px #ccc;
-    -webkit-appearance: none;
+    --webkit-appearance: none;
     display: inline-block;
 } 
 input.email {
@@ -6103,7 +6099,7 @@ input.email {
     padding: .7em .8em;
     border: solid 1px #ccc;
     min-height: 10em;
-    -webkit-appearance: none;
+    --webkit-appearance: none;
     margin-top: 1em;
 }
 .contact-agileinfo input[type="submit"] {
@@ -6115,7 +6111,7 @@ input.email {
     padding: 10px 30px;
     text-transform: capitalize;
     letter-spacing: 2px;
-    -webkit-appearance: none;
+    --webkit-appearance: none;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
