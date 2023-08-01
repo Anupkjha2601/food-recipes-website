@@ -284,7 +284,7 @@
           <div class="col-md-7 contact-right">
             <form action="#" method="post">
 		    
-	      <label for="name">Enter your Name: </label>    
+	      <label for="name" class="sr-only">Enter your Name: </label>    
               <input 
 		type="text" 
 		name="name" 
@@ -293,7 +293,7 @@
 		required=""
 	      />
 	      
-	      <label for="email">Enter your E-mail: </label> 
+	      <label for="email" class="sr-only">Enter your E-mail: </label> 
               <input
                 type="email"
                 class="email"
@@ -303,7 +303,7 @@
                 required=""
               />
 
-	      <label for="phone">Enter your Phone Number: </label> 
+	      <label for="phone" class="sr-only">Enter your Phone Number: </label> 
               <input
                 type="tel"
                 name="phone"
@@ -313,7 +313,7 @@
                 required=""
               />
 
-	      <label for="message">Enter your Message: </label> 
+	      <label for="message" class="sr-only">Enter your Message: </label> 
               <textarea
                 name="message"
 		id="message"
@@ -321,8 +321,13 @@
                 required="">
 	      </textarea>
 
-	      <label for="submit">Submit this Form</label> 
-              <input type="submit" name="submit" id="submit" value="SUBMIT" />
+	      <label for="submit" class="sr-only">Submit this Form</label> 
+              <input 
+		type="submit" 
+		name="submit" 
+		id="submit" 
+		value="SUBMIT" 
+	      />
             </form>
           </div>
           <address class="col-md-5 contact-left">
