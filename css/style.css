@@ -789,10 +789,10 @@ nav.navbar.navbar-default {
   margin-top: 1.5em;
 }
 .local i.fa {
-  color: #fff;
+  /* color: #fff; */
 }
 .fg1 span {
-  color: #fff;
+  /* color: #fff; */
   font-weight: normal;
 }
 .fg1 span.fa {
@@ -2307,6 +2307,10 @@ figure.effect-roxy:hover p,
 /*-- Services --*/
 .services-info {
   padding: 0;
+  transition: 0.3s;
+}
+.services-info:hover {
+	background-color: #d0d0d0;
 }
 .services-info-1,
 .services-info-2,
@@ -4749,10 +4753,10 @@ nav.navbar.navbar-default {
   margin-top: 1.5em;
 }
 .local i.fa {
-  color: #fff;
+  /* color: #fff; */
 }
 .fg1 span {
-  color: #fff;
+  /* color: #fff; */
   font-weight: normal;
 }
 .fg1 span.fa {
