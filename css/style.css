@@ -2307,6 +2307,10 @@ figure.effect-roxy:hover p,
 /*-- Services --*/
 .services-info {
   padding: 0;
+  transition: 0.3s;
+}
+.services-info:hover {
+	background-color: #d0d0d0;
 }
 .services-info-1,
 .services-info-2,
