@@ -96,6 +96,17 @@ git push origin branch_name
 ✏️ <b>Review and Merge:</b> Wait for your PR review and approval from the maintainers.
 Once approved, it will be merged into the main repository.
 
+<br>
+
+<div align="center">
+	<h1>This project is a part of Open Source Program ✨</h1>
+	<br>
+	<a href="https://gssoc.girlscript.tech/">
+		<img src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
+	</a>
+</div>
+     
+
 <h1>GSSOC'23 Issue TimeLine</h1>
 
 
