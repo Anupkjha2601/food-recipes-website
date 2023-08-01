@@ -1,72 +1,53 @@
-name: 🐛 Bug Report
-description: Report a bug report
-title: '[Bug]: '
-labels: ['🔧 goal: fix']
+name: ​🐞 Bug
+description: Report an issue to help us improve the project.
+title: "[BUG] <write a small description here>"
+labels: ["bug", "goal: fix"]
 body:
-- type: textarea
-  id: what-happened
-  attributes:
-    label: Description
-    placeholder: Describe the issue in detail
-  validations:
-    required: true
-- type: textarea
-  id: Expected 
-  attributes:
-    label: Expected Behavior
-    placeholder: A brief description of what you expected to happen
-  validations:
-    required: true    
-- type: textarea
-  id: screenshots
-  attributes:
-    label: Show us the trouble with screenshots
-    placeholder: Attach screenshots to demonstrate the issue
-  validations:
-    required: true
-- type: dropdown
-  id: browsers
-  attributes:
-    label: Which browsers are affected?
-    multiple: true
-    options:
-    - Firefox
-    - Chrome
-    - Safari
-    - Microsoft Edge
-    - Brave
-    - Other
-- type: dropdown
-  id: Operating-system
-  attributes:
-    label: Which OS are affected?
-    multiple: true
-    options:
-    - Mac
-    - Windows
-    - linux  
-- type: textarea
-  id: version
-  attributes:
-    label: Enter the version of your web browser
-    placeholder: Version
-  validations:
-    required: true     
-- type: dropdown
-  id: Device
-  attributes:
-    label: Device?
-    multiple: true
-    options:
-    - Desktop
-    - Mobile       
-- type: checkboxes
-  id: terms
-  attributes:
-    label: 'Record'
-    options:
-      - label: I agree to follow this project's Code of Conduct
-        required: true
-      - label: I'm a GSSoC'23 contributor
-      - label: I want to work on this issue
+  - type: textarea
+    attributes:  
+      label: Description   
+      id: description  
+      description: A brief description of the issue or bug you are facing, also include what you tried and what didn't work.
+    validations:
+      required: false
+  - type: textarea
+    attributes: 
+      label: Screenshots
+      id: screenshots
+      description: Please add screenshots if applicable
+    validations:
+      required: false
+  - type: textarea
+    attributes: 
+      label: Any additional information? 
+      id: extrainfo
+      description: Any additional information or Is there anything we should know about this bug? 
+    validations: 
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes: 
+      label: What browser are you seeing the problem on? 
+      multiple: true
+      options: 
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge      
+  - type: checkboxes
+    id: no-duplicate-issues
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "I have checked the existing issues"
+          required: true
 
+        - label: "I have read the [Contributing Guidelines](https://github.com/Anupkjha2601/food-recipes-website/blob/main/contributing.md)"
+          required: true
+
+        - label: "I am willing to work on this issue (optional)"
+          required: false
+        
+        - label: "I am a GSSoC'23 contributor"
+          required: false
+                 
