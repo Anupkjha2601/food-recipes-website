@@ -789,10 +789,10 @@ nav.navbar.navbar-default {
   margin-top: 1.5em;
 }
 .local i.fa {
-  color: #fff;
+  /* color: #fff; */
 }
 .fg1 span {
-  color: #fff;
+  /* color: #fff; */
   font-weight: normal;
 }
 .fg1 span.fa {
@@ -1036,6 +1036,10 @@ nav.navbar.navbar-default {
   .agile-dish-caption span {
     font-size: 0.8em;
   }
+}
+.clients{
+  margin-bottom: 70px;
+  padding: 0px 0px 0px 115px;
 }
 /*-- //instagram posts slider --*/
 
@@ -4753,10 +4757,10 @@ nav.navbar.navbar-default {
   margin-top: 1.5em;
 }
 .local i.fa {
-  color: #fff;
+  /* color: #fff; */
 }
 .fg1 span {
-  color: #fff;
+  /* color: #fff; */
   font-weight: normal;
 }
 .fg1 span.fa {
@@ -5752,6 +5756,34 @@ h3.agileits-icons-title {
 ul.bs-glyphicons-list {
   padding: 0;
   margin: 0;
+}
+.icons .bs-glyphicons li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 7rem;
+}
+.icons .bs-glyphicons li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 10px rgba(0,0,0,.2);
+  color: white;
+  background: #0009
+}
+.icons .bs-glyphicons li span:first-of-type {
+  font-size: 1.6rem;
+}
+.icons .bs-glyphicons li span::before,
+.icons .bs-glyphicons li span
+{
+  transition: .3s ease;
+}
+.icons .bs-glyphicons li:hover span::before{
+  color: white;
+
+}
+.icons .bs-glyphicons li:hover span:first-of-type{
+  transform: rotateY(360deg);
 }
 /*-- //icons --*/
 /*-- typography --*/
