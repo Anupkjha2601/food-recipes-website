@@ -216,7 +216,7 @@
         <p class="heading">Get In Touch</p>
         <div class="contact-agileinfo">
           <div class="col-md-7 contact-right">
-            <form action="#" method="post">
+            <form action="#" method="post" role="form" aria-labelledby="form-heading">
 		    
 	      <label for="name" class="sr-only">Enter your Name: </label>    
               <input 
@@ -225,6 +225,7 @@
 		id="name" 
 		placeholder="Name" 
 		required=""
+    aria-required="true"
 	      />
 	      
 	      <label for="email" class="sr-only">Enter your E-mail: </label> 
@@ -235,6 +236,7 @@
 	        id="email"
                 placeholder="Email"
                 required=""
+                aria-required="true"
               />
 
 	      <label for="phone" class="sr-only">Enter your Phone Number: </label> 
@@ -245,6 +247,7 @@
 		pattern="91[0-9]{10}"
                 placeholder="Phone"
                 required=""
+                aria-required="true"
               />
 
 	      <label for="message" class="sr-only">Enter your Message: </label> 
@@ -252,7 +255,7 @@
                 name="message"
 		id="message"
                 placeholder="Message"
-                required="">
+                required="" aria-required="true">
 	      </textarea>
 
 	      <label for="submit" class="sr-only">Submit this Form</label> 
@@ -261,6 +264,7 @@
 		name="submit" 
 		id="submit" 
 		value="SUBMIT" 
+    aria-label="Submit"
 	      />
             </form>
           </div>
