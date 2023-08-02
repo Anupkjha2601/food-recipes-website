@@ -1581,6 +1581,17 @@ h2.heading:after {
 .bottom-right img,
 .menu-grids img {
   width: 100%;
+  padding: 10px;
+}
+.menu-grids img:hover{
+   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50px, 0, -50px);
+  transform: translate3d(-50px, 0, -50px);
+  -moz-transform: translate3d(-50px, 0, -50px);
+  -o-transform: translate3d(-50px, 0, -50px);
+  -ms-transform: translate3d(-50px, 0, -50px);
+   opacity: 0.7;
 }
 .readmore a {
   font-size: 14px;
