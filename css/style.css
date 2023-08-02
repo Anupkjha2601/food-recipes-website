@@ -11,7 +11,7 @@ body {
   background: #ffffff;
   margin: 0;
 }
-p,
+p, 
 ul li,
 ol li {
   margin: 0;
@@ -609,7 +609,6 @@ nav.navbar.navbar-default {
   font-size: 0.95em;
   color: gold;
   line-height: 1.5em;
-  /* Remove the previous styling and add the following code */
   display: inline-block;
   margin-right: 10px;
 }
@@ -1534,6 +1533,12 @@ h2.heading:after {
 .why-choose-agile {
   padding: 5em 0;
 }
+.bottom-left{
+  background-color: #80ed99;
+  height: auto;
+  border-radius: 0.4cm;
+  padding: 1rem;
+}
 .bottom-left h3 {
   text-transform: capitalize;
   font-size: 24px;
@@ -1547,6 +1552,7 @@ h2.heading:after {
   line-height: 26px;
   margin-top: 1em;
   letter-spacing: 0.5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .morebutton a {
   background: #f44336;
@@ -1558,9 +1564,7 @@ h2.heading:after {
 }
 .morebutton a:hover {
   background: #4caf50;
-}
-.morebutton {
-  margin-top: 2em;
+  border-radius: 0.2cm;
 }
 .menu-items h4 {
   font-size: 20px;
@@ -1577,6 +1581,9 @@ h2.heading:after {
 .menu-items span {
   float: right;
   color: #4caf50;
+}
+.bottom-right img{
+  border-radius: 0.5cm;
 }
 .bottom-right img,
 .menu-grids img {
@@ -4279,14 +4286,7 @@ header {
   line-height: 40px;
   -webkit-animation: bounce 2s infinite ease-in-out;
 }
-/* @-webkit-keyframes bounce {
-	0%, 20%, 60%, 100%  { -ms-transform: translateY(0); }
-	0%, 20%, 60%, 100%  { -o-transform: translateY(0); }
-	0%, 20%, 60%, 100%  { -moz-transform: translateY(0); }
-	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
-    40%  { -webkit-transform: translateY(-20px); }
-	80% { -webkit-transform: translateY(-10px); }
-} */
+
 .banner2 {
   background: url(../images/slider4.webp) no-repeat center 0px;
   background-size: cover;
