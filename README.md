@@ -96,6 +96,19 @@ git push origin branch_name
 ✏️ <b>Review and Merge:</b> Wait for your PR review and approval from the maintainers.
 Once approved, it will be merged into the main repository.
 
+<br>
+
+<div align="center">
+	<h1>This project is a part of Open Source Program ✨</h1>
+	<br>
+	  <picture>
+	    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png">
+	    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
+	    <img alt="Girlscript Summer of Code" width=80% src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
+	  </picture>
+</div>
+     
+
 <h1>GSSOC'23 Issue TimeLine</h1>
 
 
