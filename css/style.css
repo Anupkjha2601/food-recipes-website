@@ -1049,7 +1049,9 @@ nav.navbar.navbar-default {
   padding: 5em 0;
 }
 .bottomright img {
+  position: relative;
   width: 100%;
+  left: 180px;
 }
 .bottomleft h5 {
   font-size: 20px;
@@ -5129,12 +5131,20 @@ nav.navbar.navbar-default {
   top: 18%;
   width: 65%;
   left: -23%;
+  transition: 0.3s;
+}
+.positiongrid1:hover{
+  background: rgba(83, 158, 86, 0.96);
 }
 .positiongrid2 {
   position: absolute;
   bottom: 12%;
   width: 65%;
   left: -23%;
+  transition: 0.3s;
+}
+.positiongrid2:hover{
+  background: rgba(83, 158, 86, 0.96);
 }
 /*-- //banner bottom --*/
 
