@@ -1,8 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Food Recipe</title>
-    <!-- custom-theme -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta
@@ -14,29 +13,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
       	function hideURLbar(){ window.scrollTo(0,1); }
     </script>
-
-    <!--favicon icon-->
     <link rel="icon" href="images/restaurant.webp" />
-
-    <!-- //custom-theme -->
     <link
       href="css/bootstrap.css"
       rel="stylesheet"
       type="text/css"
       media="all"
     />
-
+    <link
+      rel="stylesheet"
+      href="css/lightGallery.css"
+      type="text/css"
+      media="all"
+    />
+<link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- js -->
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <!-- //js -->
-
     <script src="js/script.js"></script>
-    <!-- js for loader-->
-
-    <!-- font-awesome-icons -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <!-- //font-awesome-icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -190,6 +184,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                       </ul>
                     </li>
                     <li><a href="contact.html">Contact</a></li>
+                      <li>
+            <div id="google_translate_element"></div>
+            <script src="js_files/translate.js"></script>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    {pageLanguage: 'en'},
+                    'google_translate_element'
+                );
+            }
+        </script>
+
+        <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+        </script>
+          </li>
                   </ul>
                 </nav>
               </div>
@@ -215,24 +225,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <h2 class="heading">Our <span>Food</span></h2>
             <p class="heading">Our Food recipes</p>
           </div>
-          <div>
-          
-            <input
-              type="text"
-              id="inputvalue"
-              placeholder="Enter the dish name..."
-              style="
-                padding: 5px 10px;
-                border-radius: 8px;
-                height: 6vh;
-                width: 250px;
-              "
-            />
-
-            <button class="btn btn-primary btn-lg serching">Search</button>
+          <div style="display:flex;align-items:center; margin-bottom: 10rem; margin-right: 10px;">
+            <div style="position: relative; flex: 1;">
+              <input type="text" id="inputvalue" placeholder="    Enter the dish name..."
+                class="form-control shadow-none rounded-pill py-2 pl-4 hover-shadow " style="width: 250px; margin-right: 10px;">
+              <span style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%);">
+                <img src="https://cdn-icons-png.flaticon.com/512/5636/5636698.png" width="16" height="16">
+              </span>
+            </div>
+            <button class="btn btn-primary btn-lg searching shadow-hover">Search</button>
           </div>
-            
         </div>
+
+        
         <div class="full_container">
           <div class="w3l_gallery_grids">
             <ul class="w3l_gallery_grid gallery" id="lightGallery">
@@ -420,6 +425,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="clearfix"></div>
           </div>
         </div>
+
+
       </div>
     </div>
 
@@ -612,25 +619,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     </script>
 
-    <!-- here stars scrolling icon -->
     <script type="text/javascript">
       $(document).ready(function () {
-        /*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-
         $().UItoTop({ easingType: "easeOutQuart" });
       });
     </script>
-    <!-- //here ends scrolling icon -->
-
-    <!-- for bootstrap working -->
     <script src="js/bootstrap.js"></script>
-    <!-- //for bootstrap working -->
   </body>
 </html>
