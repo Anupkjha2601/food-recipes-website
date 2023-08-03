@@ -1566,6 +1566,13 @@ h2.heading:after {
   background: #4caf50;
   border-radius: 0.2cm;
 }
+
+.con_mid{
+  background-color: #c7f9cc;
+  padding: 1rem;
+  border-radius: 0.3cm;
+  border: 2px solid #ade8f4;
+}
 .menu-items h4 {
   font-size: 20px;
   text-transform: capitalize;
@@ -1590,16 +1597,20 @@ h2.heading:after {
   width: 100%;
   padding: 10px;
 }
-.menu-grids img:hover{
-   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-50px, 0, -50px);
-  transform: translate3d(-50px, 0, -50px);
-  -moz-transform: translate3d(-50px, 0, -50px);
-  -o-transform: translate3d(-50px, 0, -50px);
-  -ms-transform: translate3d(-50px, 0, -50px);
-   opacity: 0.7;
+
+.menu-grids img {
+  background-color: #4caf50;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s, transform 0.3s, border-radius 0.3s;
 }
+
+.menu-grids img:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  border-radius: 0.5cm;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
 .readmore a {
   font-size: 14px;
   color: #fff;
@@ -1610,6 +1621,7 @@ h2.heading:after {
 }
 .readmore a:hover {
   background: #4caf50;
+  border-radius: 0.2cm;
 }
 .readmore {
   text-align: center;
