@@ -13,5 +13,4 @@ jobs:
       - uses: EddieHubCommunity/gh-action-community/src/welcome@main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          pr-message: "Thank you, ${{ github.actor }}, for creating this pull request and contributing to Food Recipes Website! 💗\n\nThe maintainers will review this Pull Request and provide feedback as soon as possible! 😇\n\nWe appreciate your patience and contribution. You're making a significant impact! 🚀"
-
+          pr-message: "Thank you @${{ github.actor }}! 🙌🏻 \n\nFor creating this pull request and contributing to Food Recipes Website! 💗\n\nThe maintainers will review this Pull Request and provide feedback as soon as possible! 😇\n\nWe appreciate your patience and contribution. You're making a significant impact! 🚀"
