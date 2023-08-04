@@ -4126,6 +4126,9 @@ header {
   border-color: transparent;
   margin: 0 60px 0;
 }
+.navbar-default .navbar-nav > li:hover :is(a, select) {
+  color: #F44336 !important;
+}
 
 /*-- /bootstrap dropdown hover menu --*/
 /*-- /header --*/
