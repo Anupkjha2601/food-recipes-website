@@ -60,7 +60,7 @@ header {
 .logo h1 a {
   text-decoration: none;
   font-size: 35px;
-  color: #286090;
+  color:indigo;
   text-transform: uppercase;
 }
 .navbar {
@@ -148,7 +148,7 @@ header {
 }
 .carousel-caption p {
   font-weight: normal;
-  color: white;
+  color: rgb(235, 227, 227);
   margin: 30px 0;
   letter-spacing: 3px;
   font-size: 13.5px;
@@ -187,7 +187,7 @@ header {
 }
 .slides-navigation a {
   position: absolute;
-  display: block;
+  display:inline-block;
 }
 .slides-navigation a.prev {
   left: 0;
@@ -1049,7 +1049,9 @@ nav.navbar.navbar-default {
   padding: 5em 0;
 }
 .bottomright img {
+  position: relative;
   width: 100%;
+  left: 195px;
 }
 .bottomleft h5 {
   font-size: 20px;
@@ -5132,12 +5134,20 @@ nav.navbar.navbar-default {
   top: 18%;
   width: 65%;
   left: -23%;
+  transition: 0.3s;
+}
+.positiongrid1:hover{
+  background: rgba(83, 158, 86, 0.96);
 }
 .positiongrid2 {
   position: absolute;
   bottom: 12%;
   width: 65%;
   left: -23%;
+  transition: 0.3s;
+}
+.positiongrid2:hover{
+  background: rgba(83, 158, 86, 0.96);
 }
 /*-- //banner bottom --*/
 
@@ -7951,5 +7961,7 @@ input.email {
     left: 46.5%;
   }
 }
-
+.Service-Box{
+  padding: 22px;
+}
 /* //Responsive Design */
