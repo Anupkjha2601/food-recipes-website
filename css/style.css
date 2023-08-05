@@ -819,6 +819,7 @@ nav.navbar.navbar-default {
   color: #fff;
   border: 2px solid #fff;
   line-height: 32px;
+  transition: 0.5s ease-in;
 }
 .social-icons i.fa.fa-facebook:hover {
   color: #f2f3f5;
@@ -832,14 +833,14 @@ nav.navbar.navbar-default {
   background: #1da1f2;
   transition: 0.5s ease-in;
 }
-.social-icons i.fa.fa-google-plus:hover {
+.social-icons i.fab.fa-google-plus:hover {
   color: #f2f3f5;
   border: 2px solid #f2f3f5;
   background: #dd4b39;
   transition: 0.5s ease-in;
 }
 
-.social-icons i.fab.fa-facebook-f:hover {
+.social-icons i.fab.fa-facebook:hover {
   color: #f2f3f5;
   border: 2px solid #f3f4f7;
   background: #3c5998;
@@ -849,6 +850,12 @@ nav.navbar.navbar-default {
   color: #f2f3f5;
   border: 2px solid #f3f4f7;
   background: #1da1f2;
+  transition: 0.5s ease-in;
+}
+.social-icons i.fab.fa-github:hover {
+  color: #f2f3f5;
+  border: 2px solid #f3f4f7;
+  background: #4a4a4a;
   transition: 0.5s ease-in;
 }
 .social-icons i.fab.fa-google-plus-g:hover {
@@ -872,10 +879,10 @@ nav.navbar.navbar-default {
   );
   transition: 0.5s ease-in;
 }
-.social-icons i.fab.fa-linkedin-in:hover {
+.social-icons i.fab.fa-linkedin:hover {
   color: #f2f3f5;
   border: 2px solid #f2f3f5;
-  background: #3c5998;
+  background: #44619f;
   transition: 0.5s ease-in;
 }
 /*-- //footer --*/
