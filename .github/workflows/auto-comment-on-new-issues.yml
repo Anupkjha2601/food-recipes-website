@@ -1,0 +1,17 @@
+name: Auto Comment on New Issues
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  comment_on_new_issue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: EddieHubCommunity/gh-action-community/src/welcome@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: "Thanks for creating this issue, @${{ github.actor }}! \n\n🚀 We really appreciate your contribution. Before we proceed, please make sure to read our [Contributing Guidelines](https://github.com/Anupkjha2601/food-recipes-website/blob/main/contributing.md) to understand the project's requirements and best practices. \n\n🕵️‍♂️ Once you've reviewed the guidelines, please wait until one of our team members reviews the issue and provides further feedback. \n\n🙏 Thanks again for your help, and we look forward to your valuable contributions! Happy coding! 😄"
