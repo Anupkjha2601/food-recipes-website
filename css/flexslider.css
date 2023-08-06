@@ -37,7 +37,7 @@ html[xmlns] .slides {display: block;}
 *********************************/
 .flexslider {
 	border: 0px;
-	position: relative;
+	/* position: relative; */
 	zoom: 1;
 	overflow: hidden;
 }
@@ -78,9 +78,10 @@ html[xmlns] .slides {display: block;}
 .flex-control-nav {
 	display: block;
     position: absolute;
-    right: 30%;
+    right: 60%;
     margin-left: 0px;
-    bottom: 0%;
+    top: 40%;
+	padding-top: 200px;
 }
 .flex-control-nav li {
 	margin: 0 10px;
@@ -134,6 +135,10 @@ html[xmlns] .slides {display: block;}
 	.flex-direction-nav .flex-next {
 		right: 80.5%;
 	}
+	.flex-control-nav {
+		top: 60%;
+		right: 43%;
+	}
 }	
 @media screen and (max-width: 800px) {
 	.flex-direction-nav .flex-next {
@@ -149,10 +154,8 @@ html[xmlns] .slides {display: block;}
 	.flex-direction-nav .flex-next {
 		right: 75.5%;
 	}
-}
-@media screen and (max-width: 640px){
 	.flex-control-nav {
-		bottom: -8%;
+		right: 41%;
 	}
 }
 @media screen and (max-width: 600px){
@@ -164,11 +167,8 @@ html[xmlns] .slides {display: block;}
 	.flex-direction-nav .flex-next {
 		right: 72.5%;
 	}
-}
-@media screen and (max-width: 480px){
 	.flex-control-nav {
-		bottom: 0%;
-		right: 10%;
+		right: 40%;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -178,6 +178,9 @@ html[xmlns] .slides {display: block;}
 	.flexslider {
 		padding: 0px 0px;
 	}
+	.flex-control-nav {
+		right: 36%;
+	}
 }
 @media screen and (max-width: 414px){
 	.flex-direction-nav .flex-next {
@@ -185,10 +188,6 @@ html[xmlns] .slides {display: block;}
 	}
 	.flex-direction-nav .flex-prev {
 		left: 3%;
-	}
-	.flex-control-nav {
-		bottom: 0%;
-		right: 12%;
 	}
 }
 @media screen and (max-width: 384px){
