@@ -223,3 +223,23 @@ button.ghost {
 	letter-spacing: 15px;
 	align-items: center;
 }
+
+/* icons hover  */
+.social-container a.social-facebook:hover {
+    color: #f2f3f5;
+    border: 2px solid #f3f4f7;
+    background: #3c5998;
+    transition: 0.5s ease-in;
+  }
+  .social-container a.social-google:hover {
+    color: #f2f3f5;
+    border: 2px solid #f2f3f5;
+    background: #dd4b39;
+    transition: 0.5s ease-in;
+  }
+  .social-container a.social-linkedin:hover {
+    color: #f2f3f5;
+    border: 2px solid #f2f3f5;
+    background: #3c5998;
+    transition: 0.5s ease-in;
+  }
