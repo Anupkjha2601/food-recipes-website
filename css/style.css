@@ -327,8 +327,13 @@ header {
 }
 /*-- nav --*/
 .navbar-default {
-  background: none;
+  /* background: none; */
   border: none;
+  position: fixed;
+  height: 107px;
+  margin-left: -24px;
+  border-radius: 119px;
+  margin-top: -70px;
 }
 .navbar {
   margin-bottom: 0;
@@ -340,6 +345,8 @@ header {
 }
 .navbar-nav {
   float: none;
+  background-color: #000000;
+
 }
 .navbar-collapse {
   padding: 0;
@@ -4404,8 +4411,8 @@ header {
 }
 
 .small-image {
-  width: 300px;
-  height: auto;
+  width: 200px;
+  height: 320px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
