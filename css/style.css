@@ -2349,7 +2349,10 @@ figure.effect-roxy:hover p,
   transition: 0.3s;
 }
 .services-info:hover {
-	background-color: #d0d0d0;
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor:pointer;
 }
 .services-info-1,
 .services-info-2,
@@ -6303,12 +6306,32 @@ figure.effect-roxy:hover p,
 /*-- //banner-bottom --*/
 /*-- Services --*/
 .services-info {
-  padding: 0;
+  padding: 1rem;
+  /* margin: 1px; */
+  border-radius: 0.3cm;
 }
 .services-info-1,
 .services-info-2,
 .services-info-3 {
   margin-bottom: 50px;
+}
+.services-info-1{
+  background-color: #fb8b24;
+}
+.services-info-2{
+  background-color: #00c5b5;
+}
+.services-info-3{
+  background-color: #06d6a0;
+}
+.services-info-4{
+  background-color: #98f5e1;
+}
+.services-info-5{
+  background-color: #f6bd60;
+}
+.services-info-6{
+  background-color: #f4acb7;
 }
 .w3layouts i.fa {
   font-size: 40px;
@@ -6373,6 +6396,9 @@ figure.effect-roxy:hover p,
 .services-grid-2 img {
   width: 100%;
 }
+/* .small_card1{
+  background-color: #00c5b5;
+} */
 /*-- //Services --*/
 /*-- background --*/
 .background {
