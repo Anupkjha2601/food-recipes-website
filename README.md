@@ -1,5 +1,18 @@
-# Food Recipe 🎍
-Food Recipe is a food store website that helps customers find good recipes at affordable prices with genuine products. It provides an exceptional dining experience that combines delectable cuisine, warm ambiance, and exceptional service.
+## TABLE OF CONTENTS
+
+- [Food Recipe](#Food-Recipe)
+- [Tech Stack Used](#Tech-Stack-Used)
+- [Features](#Features)
+- [Contribution Guidelines](#Contribution-Guidelines)
+    - [Setup the project](#Setup-the-project)
+    - [Steps to open a pull request](#Steps-to-open-a-pull-request)
+- [GSSOC'23 Issue TimeLine](#GSSOC'23-Issue-TimeLine)
+- [GSSOC'23 Pointer System](#GSSOC'23-Pointer-System)
+- [Repo Status](#Repo-Status)
+- [OUR CONTRIBUTORS](#Our-Contributors)
+
+## Food Recipe 
+Food Recipe goes beyond being just a food store website, it's a culinary haven where affordability meets authenticity. Our carefully curated selection of recipes ensures that you can embark on a gastronomic journey without breaking the bank. Every dish is a blend of top-quality, genuine ingredients, promising a delightful and wholesome cooking experience. But we don't stop at recipes – step into our physical restaurant, and you'll find yourself enveloped in a cozy ambiance that perfectly complements the flavors on your plate. Our dedicated staff ensures that your dining experience is nothing short of exceptional, leaving you with cherished memories of flavor and comfort. At Food Recipe, we believe that good food should be accessible, memorable, and above all, a true celebration of the culinary arts.
 
 <div align="center">
  <p>
@@ -19,28 +32,39 @@ Food Recipe is a food store website that helps customers find good recipes at af
   
  </p>
  </div>
- 
-Features
-Updates customers about daily special offers.
-Provides the facility to order food online.
-Technology Stack 💻
-The technologies used in this project are:
 
-- JavaScript
-- CSS3
-- HTML5
-- Microsoft Azure
-- UI/UX
+ ## Tech Stack Used
+
+ <div align="left">
+ <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white">
+ <img src="https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white">
+ <img src="https://img.shields.io/badge/Bootstrap-7952B3.svg?style=for-the-badge&logo=Bootstrap&logoColor=white">
+ <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=white">
+ <img src="https://img.shields.io/badge/-MicrosoftAzure-61DAFB?logo=MicrosoftAzure&logoColor=white&style=for-the-badge">
+ <img src="https://img.shields.io/badge/-UIUX-61DAFB?logo=UIUX&logoColor=white&style=for-the-badge">
+</div>
+
+## Features
+- Daily Special Offers Updates.
+- Online Ordering.
+- Recipe Collection.
+- Genuine Product Assurance.
+- Visual Gallery.
+- Customization.
+- Interactive Customer Support.
+- Social Media Integration.
+- Nutritional Information.
 
 
-<h1>Contribution Guidelines ✍️</h1>
+## Contribution Guidelines 
+
 We welcome contributions from the open-source community to make the Food Recipe website even better. To contribute, please follow these steps:
 
-<h3>Star the Repo: Start by giving our repository a 🌟 to show your support for the project.</h3>
+<i>Star the Repo:</i> Start by giving our repository a 🌟 to show your support for the project.
 
-<b>Find or Create an Issue: Browse the existing issues or create a new one if you have a suggestion or find a bug. Wait until the issue is assigned to you.</b>
+<i>Find or Create an Issue:</i> Browse the existing issues or create a new one if you have a suggestion or find a bug. Wait until the issue is assigned to you.
 
-<h2>Setup the project</h2>
+### Setup the project
 
 1.Fork the Repo: Fork the Food Recipe repository to your GitHub account by clicking the "Fork" button in the top right of this page.
 
@@ -64,7 +88,7 @@ git checkout -b branch-name
 Make Your Contribution: Make the necessary changes as per the assigned issue.
 
 
-<h2>Steps to open a pull request</h2>
+### Steps to open a pull request
 
 1. Run the following commands to check the changed files.
    ```sh
@@ -98,19 +122,7 @@ Once approved, it will be merged into the main repository.
 
 <br>
 
-<div align="center">
-	<h1>This project is a part of Open Source Program ✨</h1>
-	<br>
-	  <picture>
-	    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png">
-	    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
-	    <img alt="Girlscript Summer of Code" width=80% src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
-	  </picture>
-</div>
-     
-
-<h1>GSSOC'23 Issue TimeLine</h1>
-
+## GSSOC'23 Issue TimeLine
 
 - Once an issue is assigned,the assignee is expected to submit a pr for review within a week of the assignment. 
 
@@ -118,28 +130,23 @@ Once approved, it will be merged into the main repository.
 
 
 
-<h1>GSSOC'23 Pointer System</h1>
-<h2> Level 1 - Documentation/Minor bug fix </h2>
-<h3> Points - 10 </h3>
+## GSSOC'23 Pointer System
+
+## Level 1 - Documentation/Minor bug fix 
+### Points - 10 
 
 
 - Contributors can update existing documentation, write new documentation for features or code and improve the overall organisation and clarity of the projects documentation.  
 
-
 - Minor bug fixes refer to fixing small isolated issues in the codebase.  
 
-
 - Fixing issues such as typos, broken links, or minor performance problems.
-
 
 - Bug fixes are an important part of maintaining stability of and reliability of of an open-source project and every bug fix, no matter how small, contributes to the overall health of the project. 
 
 
-
-
-
-<h2> Level 2 - Enhancement of existing features </h2>
-<h3> Points - 25 </h3>
+## Level 2 - Enhancement of existing features 
+### Points - 25 
 
 
 -  Feature or enhancement contributions refer to adding new functionality to an open source project.  
@@ -148,21 +155,17 @@ Once approved, it will be merged into the main repository.
 
 
 
-
-
-
-<h2> Level 3 - Refactoring/ Adding functionalities </h2>
-<h3> Points - 45 </h3>
+## Level 3 - Refactoring/ Adding functionalities 
+### Points - 45 
 
 
 - Core contributions, such as implementing major features or refactoring significant parts of the codebase. This needs a deep understanding of the codebase and its patterns.
 
-
 <br>
 We appreciate your contributions!! Happy Coding!! 🤍
-<br><br>
+<br> <br>
 
-## Repo Status 🌟
+## Repo Status 
 
 <div align="center">
 	<img src="https://img.shields.io/github/repo-size/Anupkjha2601/food-recipes-website?style=for-the-badge" />
@@ -183,7 +186,18 @@ We appreciate your contributions!! Happy Coding!! 🤍
 </div>
 <br>
 
-## Our Contributors ✨
+<div align="center">
+	<h1>This project is a part of Open Source Program ✨</h1>
+	<br>
+	  <picture>
+	    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png">
+	    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
+	    <img alt="Girlscript Summer of Code" width=80% src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
+	  </picture>
+</div>
+     
+
+## Our Contributors 
 
 <div align="center">
 	<a href="https://github.com/Anupkjha2601/food-recipes-website/graphs/contributors">

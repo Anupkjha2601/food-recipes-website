@@ -1,4 +1,4 @@
-/*--
+/* --
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -60,7 +60,7 @@ header {
 .logo h1 a {
   text-decoration: none;
   font-size: 35px;
-  color: #286090;
+  color:indigo;
   text-transform: uppercase;
 }
 .navbar {
@@ -148,7 +148,7 @@ header {
 }
 .carousel-caption p {
   font-weight: normal;
-  color: white;
+  color: rgb(235, 227, 227);
   margin: 30px 0;
   letter-spacing: 3px;
   font-size: 13.5px;
@@ -187,7 +187,7 @@ header {
 }
 .slides-navigation a {
   position: absolute;
-  display: block;
+  display:inline-block;
 }
 .slides-navigation a.prev {
   left: 0;
@@ -216,6 +216,14 @@ header {
 }
 .slides-pagination a.current {
   background: #222;
+}
+.hovering-1 a:hover{
+
+	color : #12db16;
+	background-color: rgb(66, 5, 5);
+	text-shadow: 12px;
+	
+	
 }
 
 .slides-navigation {
@@ -327,8 +335,13 @@ header {
 }
 /*-- nav --*/
 .navbar-default {
-  background: none;
+  /* background: none; */
   border: none;
+  position: fixed;
+  height: 107px;
+  margin-left: -24px;
+  border-radius: 119px;
+  margin-top: -70px;
 }
 .navbar {
   margin-bottom: 0;
@@ -340,6 +353,8 @@ header {
 }
 .navbar-nav {
   float: none;
+  background-color: #000000;
+
 }
 .navbar-collapse {
   padding: 0;
@@ -348,6 +363,29 @@ header {
   float: none !important;
   margin-right: 0;
 }
+
+/* .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #F44336;
+    background: #fff;
+} */
+/* .navbar-default .navbar-nav > .active > a:hover{
+	color:#333;
+	background: #fff;
+} */
+/* .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-weight: 400;
+    border: 1.5px solid #fff;
+    border-radius: 30px;
+    padding: 10px 15px;
+} */
+/* .navbar-nav > li > a {
+    margin: 0em 1em;
+    padding: 0 .1em;
+    line-height: 1em;
+    text-transform: uppercase;
+} */
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -371,6 +409,7 @@ header {
   line-height: 1em;
   text-transform: uppercase;
 }
+
 .navbar-nav > li:nth-child(3) a {
   margin-right: 40em !important;
 }
@@ -819,6 +858,7 @@ nav.navbar.navbar-default {
   color: #fff;
   border: 2px solid #fff;
   line-height: 32px;
+  transition: 0.5s ease-in;
 }
 .social-icons i.fa.fa-facebook:hover {
   color: #f2f3f5;
@@ -832,14 +872,14 @@ nav.navbar.navbar-default {
   background: #1da1f2;
   transition: 0.5s ease-in;
 }
-.social-icons i.fa.fa-google-plus:hover {
+.social-icons i.fab.fa-google-plus:hover {
   color: #f2f3f5;
   border: 2px solid #f2f3f5;
   background: #dd4b39;
   transition: 0.5s ease-in;
 }
 
-.social-icons i.fab.fa-facebook-f:hover {
+.social-icons i.fab.fa-facebook:hover {
   color: #f2f3f5;
   border: 2px solid #f3f4f7;
   background: #3c5998;
@@ -849,6 +889,12 @@ nav.navbar.navbar-default {
   color: #f2f3f5;
   border: 2px solid #f3f4f7;
   background: #1da1f2;
+  transition: 0.5s ease-in;
+}
+.social-icons i.fab.fa-github:hover {
+  color: #f2f3f5;
+  border: 2px solid #f3f4f7;
+  background: #4a4a4a;
   transition: 0.5s ease-in;
 }
 .social-icons i.fab.fa-google-plus-g:hover {
@@ -872,10 +918,10 @@ nav.navbar.navbar-default {
   );
   transition: 0.5s ease-in;
 }
-.social-icons i.fab.fa-linkedin-in:hover {
+.social-icons i.fab.fa-linkedin:hover {
   color: #f2f3f5;
   border: 2px solid #f2f3f5;
-  background: #3c5998;
+  background: #44619f;
   transition: 0.5s ease-in;
 }
 /*-- //footer --*/
@@ -1049,7 +1095,9 @@ nav.navbar.navbar-default {
   padding: 5em 0;
 }
 .bottomright img {
+  position: relative;
   width: 100%;
+  left: 195px;
 }
 .bottomleft h5 {
   font-size: 20px;
@@ -1329,6 +1377,13 @@ ul.agileits_social_list {
 .w3_testimonials_grid_left p img {
   padding: 0 1em;
 }
+
+.slide1{
+  background-color: #e9ff70;
+  padding: 1rem;
+  border-radius: 0.5cm;
+}
+
 /*-- //testimonials --*/
 
 /*-- special --*/
@@ -1440,11 +1495,19 @@ h3.tittle.two {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+
+/* .effect-1 {
+	-webkit-transition: background 0.5s, color 0.2s;
+	-moz-transition: background 0.5s, color 0.2s;
+	transition: background 0.5s, color 0.2s;
+} */
+
 .effect-1 {
   -webkit-transition: background 0.5s, color 0.2s;
   -moz-transition: background 0.5s, color 0.2s;
   transition: background 0.5s, color 0.2s;
 }
+
 .effect-1:after {
   top: 25px;
   left: 25px;
@@ -2212,7 +2275,31 @@ h2.typoh2 {
   width: 60px;
 }
 .agileits_banner_bottom_grid_three {
+  /* border: 2px solid black; */
   margin: 3em 0 0;
+}
+.first1{
+  background-color: #e9c46a;
+  padding: 0.7rem;
+  border-radius: 0.3cm;
+}
+
+.second2{
+  background-color: #00c5b5;
+  padding: 0.7rem;
+  border-radius: 0.3cm;
+}
+
+.third3{
+  background-color: pink;
+  padding: 0.7rem;
+  border-radius: 0.3cm;
+}
+
+.four4{
+  background-color: #4cc9f0;
+  padding: 0.7rem;
+  border-radius: 0.3cm;
 }
 .w3_agileits_para {
   margin: 1em auto 0;
@@ -2329,7 +2416,7 @@ figure.effect-roxy:hover img,
 .agileinfo_banner_bottom_grid_three_left:hover img {
   opacity: 0.7;
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  transform: translate3(0, 0, 0);
 }
 
 figure.effect-roxy:hover figcaption::before,
@@ -2340,6 +2427,10 @@ figure.effect-roxy:hover p,
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+
+
+
 /*-- //banner-bottom --*/
 /*-- Services --*/
 .services-info {
@@ -2347,7 +2438,10 @@ figure.effect-roxy:hover p,
   transition: 0.3s;
 }
 .services-info:hover {
-	background-color: #d0d0d0;
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor:pointer;
 }
 .services-info-1,
 .services-info-2,
@@ -4126,6 +4220,9 @@ header {
   border-color: transparent;
   margin: 0 60px 0;
 }
+.navbar-default .navbar-nav > li:hover :is(a, select) {
+  color: #F44336 !important;
+}
 
 /*-- /bootstrap dropdown hover menu --*/
 /*-- /header --*/
@@ -4389,8 +4486,8 @@ header {
 }
 
 .small-image {
-  width: 300px;
-  height: auto;
+  width: 200px;
+  height: 320px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -4981,7 +5078,7 @@ nav.navbar.navbar-default {
   background: #f44336;
   color: #fff;
   text-transform: capitalize;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
 }
 @media (max-width: 480px) {
   .agile-dish-caption {
@@ -5129,12 +5226,20 @@ nav.navbar.navbar-default {
   top: 18%;
   width: 65%;
   left: -23%;
+  transition: 0.3s;
+}
+.positiongrid1:hover{
+  background: rgba(83, 158, 86, 0.96);
 }
 .positiongrid2 {
   position: absolute;
   bottom: 12%;
   width: 65%;
   left: -23%;
+  transition: 0.3s;
+}
+.positiongrid2:hover{
+  background: rgba(83, 158, 86, 0.96);
 }
 /*-- //banner bottom --*/
 
@@ -6290,12 +6395,32 @@ figure.effect-roxy:hover p,
 /*-- //banner-bottom --*/
 /*-- Services --*/
 .services-info {
-  padding: 0;
+  padding: 1rem;
+  /* margin: 1px; */
+  border-radius: 0.3cm;
 }
 .services-info-1,
 .services-info-2,
 .services-info-3 {
   margin-bottom: 50px;
+}
+.services-info-1{
+  background-color: #fb8b24;
+}
+.services-info-2{
+  background-color: #00c5b5;
+}
+.services-info-3{
+  background-color: #06d6a0;
+}
+.services-info-4{
+  background-color: #98f5e1;
+}
+.services-info-5{
+  background-color: #f6bd60;
+}
+.services-info-6{
+  background-color: #f4acb7;
 }
 .w3layouts i.fa {
   font-size: 40px;
@@ -6360,6 +6485,9 @@ figure.effect-roxy:hover p,
 .services-grid-2 img {
   width: 100%;
 }
+/* .small_card1{
+  background-color: #00c5b5;
+} */
 /*-- //Services --*/
 /*-- background --*/
 .background {
@@ -7948,5 +8076,7 @@ input.email {
     left: 46.5%;
   }
 }
-
+.Service-Box{
+  padding: 22px;
+}
 /* //Responsive Design */
