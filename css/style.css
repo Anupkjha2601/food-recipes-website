@@ -1,4 +1,4 @@
-/*--
+/* --
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -1345,6 +1345,13 @@ ul.agileits_social_list {
 .w3_testimonials_grid_left p img {
   padding: 0 1em;
 }
+
+.slide1{
+  background-color: #e9ff70;
+  padding: 1rem;
+  border-radius: 0.5cm;
+}
+
 /*-- //testimonials --*/
 
 /*-- special --*/
