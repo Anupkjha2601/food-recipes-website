@@ -217,6 +217,14 @@ header {
 .slides-pagination a.current {
   background: #222;
 }
+.hovering-1 a:hover{
+
+	color : #12db16;
+	background-color: rgb(66, 5, 5);
+	text-shadow: 12px;
+	
+	
+}
 
 .slides-navigation {
   top: 50%;
@@ -355,6 +363,29 @@ header {
   float: none !important;
   margin-right: 0;
 }
+
+/* .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #F44336;
+    background: #fff;
+} */
+/* .navbar-default .navbar-nav > .active > a:hover{
+	color:#333;
+	background: #fff;
+} */
+/* .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-weight: 400;
+    border: 1.5px solid #fff;
+    border-radius: 30px;
+    padding: 10px 15px;
+} */
+/* .navbar-nav > li > a {
+    margin: 0em 1em;
+    padding: 0 .1em;
+    line-height: 1em;
+    text-transform: uppercase;
+} */
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -378,6 +409,7 @@ header {
   line-height: 1em;
   text-transform: uppercase;
 }
+
 .navbar-nav > li:nth-child(3) a {
   margin-right: 40em !important;
 }
@@ -1463,11 +1495,19 @@ h3.tittle.two {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+
+/* .effect-1 {
+	-webkit-transition: background 0.5s, color 0.2s;
+	-moz-transition: background 0.5s, color 0.2s;
+	transition: background 0.5s, color 0.2s;
+} */
+
 .effect-1 {
   -webkit-transition: background 0.5s, color 0.2s;
   -moz-transition: background 0.5s, color 0.2s;
   transition: background 0.5s, color 0.2s;
 }
+
 .effect-1:after {
   top: 25px;
   left: 25px;
