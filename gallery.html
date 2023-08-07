@@ -1,7 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
- <title>Food Recipe</title>
+    <title>Food Recipe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta
@@ -26,7 +26,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       type="text/css"
       media="all"
     />
-<link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
+    <link
+      href="css/translate.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script src="js/script.js"></script>
@@ -185,22 +190,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                       </ul>
                     </li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li style="width: max-content;">
-                            <a id="google_translate_element"></a>
-                            <script src="js_files/translate.js"></script>
-                
-                            <script type="text/javascript">
-                                function googleTranslateElementInit() {
-                                    new google.translate.TranslateElement(
-                                        {pageLanguage: 'en'},
-                                        'google_translate_element'
-                                    );
-                                }
-                            </script>
-                
-                            <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-                            </script>
-                   </li>
+                    <li style="width: max-content">
+                      <a id="google_translate_element"></a>
+                      <script src="js_files/translate.js"></script>
+
+                      <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                          new google.translate.TranslateElement(
+                            { pageLanguage: "en" },
+                            "google_translate_element"
+                          );
+                        }
+                      </script>
+
+                      <script
+                        type="text/javascript"
+                        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+                      ></script>
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -226,19 +233,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <h2 class="heading">Our <span>Food</span></h2>
             <p class="heading">Our Food recipes</p>
           </div>
-          <div style="display:flex;align-items:center; margin-bottom: 10rem; margin-right: 10px;">
-            <div style="position: relative; flex: 1;">
-              <input type="text" id="inputvalue" placeholder="    Enter the dish name..."
-                class="form-control shadow-none rounded-pill py-2 pl-4 hover-shadow " style="width: 250px; margin-right: 10px;">
-              <span style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%);">
-                <img src="https://cdn-icons-png.flaticon.com/512/5636/5636698.png" width="16" height="16">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              margin-bottom: 10rem;
+              margin-right: 10px;
+            "
+          >
+            <div style="position: relative; flex: 1">
+              <input
+                type="text"
+                id="inputvalue"
+                placeholder="    Enter the dish name..."
+                class="form-control shadow-none rounded-pill py-2 pl-4 hover-shadow"
+                style="width: 250px; margin-right: 10px; padding: 0.2rem 0 0 2rem"
+              />
+              <span
+                style="
+                  position: absolute;
+                  top: 50%;
+                  left: 10px;
+                  transform: translateY(-50%);
+                "
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5636/5636698.png"
+                  width="16"
+                  height="16"
+                />
               </span>
             </div>
-            <button class="btn btn-primary btn-lg searching shadow-hover">Search</button>
+            <button class="btn btn-primary btn-lg searching shadow-hover">
+              Search
+            </button>
           </div>
         </div>
 
-        
         <div class="full_container">
           <div class="w3l_gallery_grids">
             <ul class="w3l_gallery_grid gallery" id="lightGallery">
@@ -426,8 +457,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="clearfix"></div>
           </div>
         </div>
-
-
       </div>
     </div>
 
@@ -614,7 +643,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             {
               scrollTop: $(this.hash).offset().top,
             },
-            1000,
+            1000
           );
         });
       });
