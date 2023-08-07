@@ -10,6 +10,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background: #ffffff;
   margin: 0;
+  overflow-x: hidden;
 }
 p, 
 ul li,
