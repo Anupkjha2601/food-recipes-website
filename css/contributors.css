@@ -1,0 +1,30 @@
+.contributors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
+  }
+  
+  .contributor-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    margin: 10px;
+    flex-basis: calc(50% - 20px); 
+    box-sizing: border-box;
+  }
+  
+  .contributor-card:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+  }
+  
+  .contributor-image {
+    transition: transform 0.3s ease;
+  }
+  
+  .contributor-card:hover .contributor-image {
+    transform: scale(1.1);
+  }
+  
