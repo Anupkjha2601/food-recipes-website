@@ -10,6 +10,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background: #ffffff;
   margin: 0;
+  overflow-x: hidden;
 }
 p, 
 ul li,
@@ -63,10 +64,7 @@ header {
   color:indigo;
   text-transform: uppercase;
 }
-.navbar {
-  margin-bottom: 0px;
-  min-height: 30px;
-}
+
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
 .navbar-inverse .navbar-nav > .active > a:hover {
@@ -339,13 +337,21 @@ header {
   border: none;
   position: fixed;
   height: 107px;
-  margin-left: -24px;
   border-radius: 119px;
-  margin-top: -70px;
+
 }
 .navbar {
-  margin-bottom: 0;
-  border-radius: 0px;
+  display: flex;
+  top: -27.3px;
+  width: 100%;
+  left: 0;
+  margin-bottom: 0px;
+  min-height: 30px;
+}
+.navbar .small-image{
+  position: relative;
+  height: 100%;
+  top: 55px;
 }
 .w3_navigation {
   border-top: 1px solid #999;
@@ -353,8 +359,8 @@ header {
 }
 .navbar-nav {
   float: none;
-  background-color: #000000;
-
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  backdrop-filter: blur(8px);
 }
 .navbar-collapse {
   padding: 0;
@@ -6489,7 +6495,7 @@ figure.effect-roxy:hover p,
   background-color: #00c5b5;
 } */
 /*-- //Services --*/
-/*-- background --*/
+/*-- background -- */
 .background {
   background: url(../images/t.webp) no-repeat 0px 0px;
   background-size: cover;
