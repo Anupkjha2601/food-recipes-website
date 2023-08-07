@@ -50,6 +50,38 @@ a,
 a:focus {
   outline: none;
 }
+/*Sticky Nav Bar*/
+.header{
+  display: flex;
+}
+.navbar-nav{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav{
+  background-color: black;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 80px;
+  justify-content: space-evenly;
+}
+.logo{
+  margin-left: 20px;
+}
+.small-image{
+  margin-left: 20px;
+}
+.abt{
+  width: 120px;
+}
+.abt>a{
+  width: 120px;
+}
 /*-- header --*/
 header {
   padding: 10px 0;
@@ -4393,8 +4425,8 @@ header {
 }
 
 .small-image {
-  width: 300px;
-  height: auto;
+  width: 160px;
+  height: 110px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
