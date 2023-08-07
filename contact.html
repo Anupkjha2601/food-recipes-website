@@ -12,6 +12,12 @@
       addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
       	function hideURLbar(){ window.scrollTo(0,1); }
     </script>
+
+  <!--
+    AOS STYLESHEET INIT
+  -->
+  <link rel="stylesheet" href="./css/aos.css">
+
   <link rel="icon" href="images/restaurant.webp" />
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -90,7 +96,7 @@
 
   <!-- end Loader -->
 
-  <div class="banner-header banner2">
+  <div class="banner-header banner2"  data-aos="fade-down">
     <div class="banner-dott1">
       <!--header-->
       <div class="header">
@@ -151,94 +157,9 @@
   </div>
   <!-- // banner -->
 
-
-    <!-- contact -->
-    <div class="contact">
-      <div class="container">
-        <h2 class="heading">Contact <span>Us</span></h2>
-        <p class="heading">Get In Touch</p>
-        <div class="contact-agileinfo">
-          <div class="col-md-7 contact-right">
-            <form action="#" method="post" role="form" aria-labelledby="form-heading">
-		    
-	      <label for="name" class="sr-only">Enter your Name: </label>    
-              <input 
-		type="text" 
-		name="name" 
-		id="name" 
-		placeholder="Name" 
-		required=""
-    aria-required="true"
-	      />
-	      
-	      <label for="email" class="sr-only">Enter your E-mail: </label> 
-              <input
-                type="email"
-                class="email"
-                name="email"
-	        id="email"
-                placeholder="Email"
-                required=""
-                aria-required="true"
-              />
-
-	      <label for="phone" class="sr-only">Enter your Phone Number: </label> 
-              <input
-                type="tel"
-                name="phone"
-		id="phone"
-		pattern="91[0-9]{10}"
-                placeholder="Phone"
-                required=""
-                aria-required="true"
-              />
-
-	      <label for="message" class="sr-only">Enter your Message: </label> 
-              <textarea
-                name="message"
-		id="message"
-                placeholder="Message"
-                required="" aria-required="true">
-	      </textarea>
-
-	      <label for="submit" class="sr-only">Submit this Form</label> 
-              <input 
-		type="submit" 
-		name="submit" 
-		id="submit" 
-		value="SUBMIT" 
-    aria-label="Submit"
-	      />
-            </form>
-          </div>
-          <address class="col-md-5 contact-left">
-            <div class="address">
-              <h5>Address:</h5>
-              <p>
-                <i class="glyphicon glyphicon-home"></i> 333 Broome St New York,
-                NY 10002, USA
-              </p>
-            </div>
-            <div class="address address-mdl">
-              <h5>Phones:</h5>
-              <p>
-                <i class="glyphicon glyphicon-earphone"></i> +14 999 888 7773
-              </p>
-              <p><i class="glyphicon glyphicon-phone"></i> +12 222 333 2365</p>
-            </div>
-            <div class="address">
-              <h5>Email:</h5>
-              <p>
-                <i class="glyphicon glyphicon-envelope"></i>
-                <a href="mailto:anupkjha01@gmail.com">anupkjha01@gmail.com</a>
-              </p>
-            </div>
-          </address>
-          <div class="clearfix"></div>
-
   <!-- contact -->
   <div class="contact">
-    <div class="container">
+    <div class="container" data-aos="fade-right" data-aos-delay="10">
       <h2 class="heading">Contact <span>Us</span></h2>
       <p class="heading">Get In Touch</p>
       <div class="contact-agileinfo">
@@ -299,7 +220,7 @@
 
   <!-- News letter -->
   <div class="agile-form">
-    <div class="container">
+    <div class="container" data-aos="fade-left" data-aos-delay="10">
       <div class="col-md-4 newsletter">
         <p>Subscribe to our newsletter</p>
         <h4>For our latest updates</h4>
@@ -322,7 +243,7 @@
     <div class="container">
       <div class="footer-main">
         <div class="footer-top">
-          <div class="col-md-4 ftr-grid fg1">
+          <div class="col-md-4 ftr-grid fg1" data-aos="fade-right" data-aos-delay="10">
             <h3>opening timings</h3>
             <p>
               <span class="fa fa-clock-o" aria-hidden="true"></span><span class="day">Mon - friday</span> : 9am to 8pm
@@ -334,7 +255,7 @@
               <span class="fa fa-clock-o" aria-hidden="true"></span><span class="day">Sunday</span> : 6am to 11pm
             </p>
           </div>
-          <div class="col-md-4 ftr-grid fg2 mid-gd">
+          <div class="col-md-4 ftr-grid fg2 mid-gd" data-aos="fade-right" data-aos-delay="150">
             <h3>Our Address</h3>
             <div class="ftr-address">
               <div class="local">
@@ -367,7 +288,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 ftr-grid fg2">
+          <div class="col-md-4 ftr-grid fg2" data-aos="fade-right" data-aos-delay="250">
             <h3>Recent posts</h3>
             <p>
               Vestibulum ante ipsum primis in faucibus orci luctus et
@@ -444,6 +365,15 @@
           1000
         );
       });
+    });
+  </script>
+
+  <script src="./js/aos.js"> 
+  </script>
+  <script>
+    AOS.init({
+      duration: 1000, 
+      mirror: true,
     });
   </script>
 

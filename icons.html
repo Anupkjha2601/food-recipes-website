@@ -28,7 +28,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       type="text/css"
       media="all"
     />
-<link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!--
+      AOS STYLESHEET INIT
+    -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script src="js/script.js"></script>
@@ -137,12 +143,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <!-- end Loader -->
 
-    <div class="banner-header banner2">
+    <div class="banner-header banner2" data-aos="fade-bottom">
       <div class="banner-dott1">
         <!--header-->
         <div class="header">
           <div class="container-fluid">
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default" data-aos="fade-bottom">
               <div class="navbar-header navbar-left">
                 <button
                   type="button"
@@ -5403,7 +5409,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <!-- News letter -->
     <div class="agile-form">
-      <div class="container">
+      <div class="container" data-aos="fade-right">
         <div class="col-md-4 newsletter">
           <p>Subscribe to our newsletter</p>
           <h4>For our latest updates</h4>
@@ -5432,7 +5438,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="container">
         <div class="footer-main">
           <div class="footer-top">
-            <div class="col-md-4 ftr-grid fg1">
+            <div class="col-md-4 ftr-grid fg1" data-aos="fade-right">
               <h3>opening timings</h3>
               <p>
                 <span class="fa fa-clock-o" aria-hidden="true"></span
@@ -5447,7 +5453,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 ><span class="day">Sunday</span> : 6am to 11pm
               </p>
             </div>
-            <div class="col-md-4 ftr-grid fg2 mid-gd">
+            <div class="col-md-4 ftr-grid fg2 mid-gd" data-aos="fade-left">
               <h3>Our Address</h3>
               <div class="ftr-address">
                 <div class="local">
@@ -5481,7 +5487,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="clearfix"></div>
               </div>
             </div>
-            <div class="col-md-4 ftr-grid fg2">
+            <div class="col-md-4 ftr-grid fg2" data-aos="fade-right">
               <h3>Recent posts</h3>
               <p>
                 Vestibulum ante ipsum primis in faucibus orci luctus et
@@ -5581,11 +5587,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     </script>
 
+    <script src="./js/aos.js"> </script>
+    <script>
+      AOS.init({
+        duration: 1000, 
+        mirror: true,
+      });
+    </script>
+
+
+    <script src="./js/scrollReveal.js"></script>
+
+    <script>
+      ScrollReveal().reveal('.fontawesome-icon-list > div', { interval: 26, reset: true });
+      ScrollReveal().reveal('.bs-glyphicons-list > li', { interval: 26, reset: true });      
+    </script>
+
     <script type="text/javascript">
       $(document).ready(function () {
         $().UItoTop({ easingType: "easeOutQuart" });
       });
     </script>
+
     <script src="js/bootstrap.js"></script>
   </body>
 </html>
