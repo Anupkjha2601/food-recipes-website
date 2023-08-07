@@ -5003,7 +5003,7 @@ nav.navbar.navbar-default {
   background: #f44336;
   color: #fff;
   text-transform: capitalize;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
 }
 @media (max-width: 480px) {
   .agile-dish-caption {
