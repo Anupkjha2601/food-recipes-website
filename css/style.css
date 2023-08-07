@@ -10,7 +10,9 @@ body {
   font-family: "Open Sans", sans-serif;
   background: #ffffff;
   margin: 0;
+  width: 100%;
 }
+
 p, 
 ul li,
 ol li {
