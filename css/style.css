@@ -8080,3 +8080,17 @@ input.email {
   padding: 22px;
 }
 /* //Responsive Design */
+
+.box .caption {
+  padding: unset !important;
+  display: grid;
+  place-items: center;
+  gap: 1.5rem;
+  height: 100%;
+  align-content: center;
+}
+
+.box .scale-caption p {
+  width: 80%;
+  text-align: center;
+}
