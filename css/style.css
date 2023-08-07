@@ -2228,7 +2228,31 @@ h2.typoh2 {
   width: 60px;
 }
 .agileits_banner_bottom_grid_three {
+  /* border: 2px solid black; */
   margin: 3em 0 0;
+}
+.first1{
+  background-color: #e9c46a;
+  padding: 0.7rem;
+  border-radius: 0.3cm;
+}
+
+.second2{
+  background-color: #00c5b5;
+  padding: 0.7rem;
+  border-radius: 0.3cm;
+}
+
+.third3{
+  background-color: pink;
+  padding: 0.7rem;
+  border-radius: 0.3cm;
+}
+
+.four4{
+  background-color: #4cc9f0;
+  padding: 0.7rem;
+  border-radius: 0.3cm;
 }
 .w3_agileits_para {
   margin: 1em auto 0;
@@ -2345,7 +2369,7 @@ figure.effect-roxy:hover img,
 .agileinfo_banner_bottom_grid_three_left:hover img {
   opacity: 0.7;
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  transform: translate3(0, 0, 0);
 }
 
 figure.effect-roxy:hover figcaption::before,
@@ -2356,6 +2380,10 @@ figure.effect-roxy:hover p,
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+
+
+
 /*-- //banner-bottom --*/
 /*-- Services --*/
 .services-info {
