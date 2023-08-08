@@ -10,7 +10,10 @@ body {
   font-family: "Open Sans", sans-serif;
   background: #ffffff;
   margin: 0;
+  overflow-x: hidden;
+  width: 100%;
 }
+
 p, 
 ul li,
 ol li {
@@ -47,6 +50,38 @@ a,
 }
 a:focus {
   outline: none;
+}
+/*Sticky Nav Bar*/
+.header{
+  display: flex;
+}
+.navbar-nav{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav{
+  background-color: black;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 80px;
+  justify-content: space-evenly;
+}
+.logo{
+  margin-left: 20px;
+}
+.small-image{
+  margin-left: 20px;
+}
+.abt{
+  width: 120px;
+}
+.abt>a{
+  width: 120px;
 }
 /*-- header --*/
 header {
@@ -767,7 +802,7 @@ nav.navbar.navbar-default {
   -moz-transition: 0.5s all;
   -o-transition: 0.5s all;
   -ms-transition: 0.5s all;
-  -webkit-appearance: none;
+ 
 }
 .newsletter-agile input[type="submit"]:hover {
   background: #000000;
@@ -2775,9 +2810,7 @@ input.email {
   height: 60px;
   border: none;
   text-indent: 100%;
-  background: url(../images/top.webp) no-repeat 0px 0px;
-  background-position: 50%;
-  background-color: #808080;
+  background: radial-gradient(circle at center, #96f099, #0f3205);  background-position: 50%;
   border-radius: 50%;
 }
 #toTopHover {
@@ -4485,10 +4518,7 @@ header {
   display: inline-block; /* Ensure the container expands only to the image size */
 }
 
-.small-image {
-  width: 200px;
-  height: 320px;
-}
+
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -6754,9 +6784,7 @@ input.email {
   height: 60px;
   border: none;
   text-indent: 100%;
-  background: url(../images/top.webp) no-repeat 0px 0px;
-  background-position: 50%;
-  background-color: #808080;
+  background: radial-gradient(circle at center, #96f099, #0f3205);  background-position: 50%;
   border-radius: 50%;
 }
 #toTopHover {
