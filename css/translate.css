@@ -1,11 +1,26 @@
 #google_translate_element select{
-  background:#f6edfd;
-  color:black;
-  border: none;
-  border-radius:3px;
+  /*Adding style to the select language button*/
+  background: transparent;
+  color: #fff;
+  /*border: none;*/
   padding:2px 6px;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1.5px solid #fff;
+  border-radius: 30px;
+  margin-top: 12px;
   }
-  
+  option{
+    background-color: black;
+   text-transform: uppercase;
+  }
+  .goog-te-combo{
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  /*language button style*/
+  option>value
   /*google translate link | logo */
     .goog-logo-link,.goog-te-gadget span,div#goog-gt-{
     display:none!important;
