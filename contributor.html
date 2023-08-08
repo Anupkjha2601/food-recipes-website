@@ -10,6 +10,48 @@
      <!--favicon icon-->
     <link rel="icon" href="images/restaurant.webp" />
 
+    <!-- //custom-theme -->
+    <link
+      href="css/bootstrap.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+
+    <!-- for banner css -->
+    <link
+      href="css/carousel.css"
+      type="text/css"
+      rel="stylesheet"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="css/owl.carousel.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="css/translate.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+ <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
 </head>
 <body>
     <section class="text-gray-400 bg-gray-900 body-font">
@@ -27,6 +69,31 @@
         </div>
       </section>
            
-<script src="./js/contributor.js"></script>       
+<script src="./js/contributor.js"></script>     
+  <!-- start-smoth-scrolling -->
+    <script src="js/SmoothScroll.min.js"></script>
+
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          $("html,body").animate(
+            {
+              scrollTop: $(this.hash).offset().top,
+            },
+            1000
+          );
+        });
+      });
+    </script>
+
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $().UItoTop({ easingType: "easeOutQuart" });
+      });
+    </script>  
 </body>
 </html>
