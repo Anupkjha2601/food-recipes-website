@@ -2809,7 +2809,9 @@ input.email {
   height: 60px;
   border: none;
   text-indent: 100%;
-  background: radial-gradient(circle at center, #96f099, #0f3205);  background-position: 50%;
+  background: url(../images/top.webp) no-repeat 0px 0px;
+  background-position: 50%;
+  background-color: #808080;
   border-radius: 50%;
 }
 #toTopHover {
@@ -6783,7 +6785,9 @@ input.email {
   height: 60px;
   border: none;
   text-indent: 100%;
-  background: radial-gradient(circle at center, #96f099, #0f3205);  background-position: 50%;
+  background: url(../images/top.webp) no-repeat 0px 0px;
+  background-position: 50%;
+  background-color: #808080;
   border-radius: 50%;
 }
 #toTopHover {
