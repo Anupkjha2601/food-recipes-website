@@ -7840,6 +7840,73 @@ input.email {
     right: 170%;
   }
 
+/* //Responsive Design */
+
+
+
+.abs-img-2 {
+    top: -65px;
+    right: 0;
+    overflow: hidden;
+}
+
+.abs-img {
+    position: absolute;
+}
+.has-before, .has-after {
+    position: relative;
+    z-index: 1;
+}
+.abs-img-2::before {
+    inset: 3px;
+	width: 11%;
+    background-image: url(	https://vq.pe/creator/frontend/theme_11/images/badge-2-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: rotate360 15s linear infinite;
+}
+
+@keyframes rotate360{
+	
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+.abs-img::before {
+    z-index: -1;
+}
+.has-before::before, .has-after::after {
+    content: "";
+    position: absolute;
+}
+img {
+    height: auto;
+}
+
+
+
+.move-anim {
+    animation: move 5s linear infinite;
+}
+
+@keyframes move{
+	0%,100%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(15px);
+	}
+}
+
+.shape {
+    position: absolute;
+    max-width: max-content;
+    z-index: 0;
+	inset:69rem;
+    top: 47rem;
+	opacity:70%;
+}
   .w3_navigation_pos {
     position: static;
     margin-left: 0.2rem;
