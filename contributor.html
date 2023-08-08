@@ -9,6 +9,9 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
      <!--favicon icon-->
     <link rel="icon" href="images/restaurant.webp" />
+     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/script.js"></script>
 
 </head>
 <body>
@@ -26,7 +29,32 @@
         
         </div>
       </section>
-           
+             <!-- start-smoth-scrolling -->
+  <script src="js/SmoothScroll.min.js"></script>
+
+  <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $(".scroll").click(function (event) {
+        event.preventDefault();
+        $("html,body").animate(
+          {
+            scrollTop: $(this.hash).offset().top,
+          },
+          1000
+        );
+      });
+    });
+  </script>
+
+  <!-- here stars scrolling icon -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $().UItoTop({ easingType: "easeOutQuart" });
+    });
+  </script>
+  <script src="js/bootstrap.js"></script>
 <script src="./js/contributor.js"></script>       
 </body>
 </html>
