@@ -1,0 +1,32 @@
+.hovering-1  :hover{
+    
+	font-size: 12px;
+	transform: scale(1);
+    
+	animation-name: coloring;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+
+}
+@keyframes coloring {
+    from{
+        
+        color: aquamarine;
+
+    }to{
+        
+        color: burlywood;
+    }
+    
+}
+
+
+/* Scroll Bar styles */
+::-webkit-scrollbar{
+
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,rgb(245, 83, 83));
+    border-radius: 6px;
+}

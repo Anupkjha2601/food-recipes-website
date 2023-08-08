@@ -1,11 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
     <title>
       Food Recipe a hotel Category Flat Bootstrap Responsive Website Template |
       Home :: w3layouts
     </title>
     <!-- custom-theme -->
+    <!-- <link rel="stylesheet" href="./css/contributors.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta
@@ -36,36 +39,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       rel="stylesheet"
       media="all"
     />
-    <!-- carousel css -->
-    <!-- //for banner css -->
-
     <link
       rel="stylesheet"
       href="css/owl.carousel.css"
       type="text/css"
       media="all"
     />
-    <!-- Owl-Carousel-CSS -->
+    <link
+      href="css/translate.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
 
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- Theme-CSS -->
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!-- //font-awesome-icons -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+
 
     <link
       rel="stylesheet"
-      href="css/flexslider.css"
-      type="text/css"
-      media="screen"
-      property=""
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <!-- Flexslider-CSS -->
-
-    <!-- js -->
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <!-- //js -->
-
-    <!-- font-awesome-icons -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <!-- //font-awesome-icons -->
 
     <link href="//fonts.googleapis.com/css?family=Cookie" rel="stylesheet" />
     <link
@@ -159,9 +165,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     />
 
     <!-- META END -->
+    
+    <link rel="stylesheet" href="css/style3.css">
+    <script>
+      let myFunction = () => {
+        document.body.style.color = "white";
+        if (document.body.style.backgroundColor ===  "black" ){
+          document.body.style.backgroundColor =  "white" ;
+        }
+        else{
+          document.body.style.backgroundColor = "black"; 
+        }
+      }
+    </script>
   </head>
 
   <body>
+
     <div class="banner-header">
       <!--header-->
       <div class="header">
@@ -180,7 +200,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <span class="icon-bar"></span>
               </button>
               <div class="w3_navigation_pos">
-                <div class="image-container">
+                <!--<div class="image-container">
                   <a href="index.html"
                     ><img
                       src="/images/food-logo.webp"
@@ -190,7 +210,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
               </div>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div
               class="collapse navbar-collapse navbar-right"
               id="bs-example-navbar-collapse-1"
@@ -215,13 +234,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </ul>
                   </li>
                   <li><a href="contact.html">Contact</a></li>
+                    <li>
+            <div id="google_translate_element"></div>
+            <script src="js_files/translate.js"></script>
+
+                  <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                      new google.translate.TranslateElement(
+                        { pageLanguage: "en" },
+                        "google_translate_element"
+                      );
+                    }
+                  </script>
+
+        <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+        </script>
+          </li>
                 </ul>
               </nav>
             </div>
           </nav>
         </div>
       </div>
-      <!--//header-->
+      <!-header-->
     </div>
 
     <!-- slider -->
@@ -361,8 +396,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <!-- //slider -->
-    <!-- // banner -->
 
     <!-- banner bottom section -->
     <div class="bannerbottom">
@@ -848,6 +881,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- team -->
 
+
+    
     <!-- testimonials -->
     <div class="testimonials">
       <div class="container">
@@ -858,54 +893,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="flexslider">
               <ul class="slides">
                 <li>
-                  <div class="col-md-7 w3_testimonials_grid_left">
-                    <p>
-                      <img src="images/q1.webp" alt=" " class="" />Morbi cursus,
-                      turpis quis laoreet blandit, odio turpis imperdiet nisl,
-                      quis bibendum lorem purus lobortis nunc. Suspendisse
-                      tincidunt eu sapien pellentesque interdum. Aenean lacus
-                      sapien, blandit vel nibh in, imperdiet egestas erat
-                      Suspendisse tincidunt eusapien. Maecenas ac hendrerit
-                      purus. Lorem ipsum dolor sit amet<img
+                  <div class="slide1">
+                    <div class="col-md-7 w3_testimonials_grid_left">
+                      <p>
+                        <img src="images/q1.webp" alt=" " class="" />Morbi cursus,
+                        turpis quis laoreet blandit, odio turpis imperdiet nisl,
+                        quis bibendum lorem purus lobortis nunc. Suspendisse
+                        tincidunt eu sapien pellentesque interdum. Aenean lacus
+                        sapien, blandit vel nibh in, imperdiet egestas erat
+                        Suspendisse tincidunt eusapien. Maecenas ac hendrerit
+                        purus. Lorem ipsum dolor sit amet<img
                         src="images/q2.webp"
                         alt=" "
                         class=""
-                      />
-                    </p>
-                  </div>
-                  <div class="col-md-5 w3_testimonials_grid_right">
-                    <img
+                        />
+                      </p>
+                    </div>
+                    <div class="col-md-5 w3_testimonials_grid_right">
+                      <img
                       src="images/test1.webp"
                       alt=" "
                       class="img-responsive"
-                    />
-                  </div>
-                  <div class="clearfix"></div>
-                </li>
-                <li>
-                  <div class="col-md-7 w3_testimonials_grid_left">
-                    <p>
-                      <img src="images/q1.webp" alt=" " class="" />Morbi cursus,
-                      turpis quis laoreet blandit, odio turpis imperdiet nisl,
-                      quis bibendum lorem purus lobortis nunc. Suspendisse
-                      tincidunt eu sapien pellentesque interdum. Aenean lacus
-                      sapien, blandit vel nibh in, imperdiet egestas erat
-                      Suspendisse tincidunt eusapien. Maecenas ac hendrerit
-                      purus. Lorem ipsum dolor sit amet<img
+                      />
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="col-md-7 w3_testimonials_grid_left">
+                      <p>
+                        <img src="images/q1.webp" alt=" " class="" />Morbi cursus,
+                        turpis quis laoreet blandit, odio turpis imperdiet nisl,
+                        quis bibendum lorem purus lobortis nunc. Suspendisse
+                        tincidunt eu sapien pellentesque interdum. Aenean lacus
+                        sapien, blandit vel nibh in, imperdiet egestas erat
+                        Suspendisse tincidunt eusapien. Maecenas ac hendrerit
+                        purus. Lorem ipsum dolor sit amet<img
                         src="images/q2.webp"
                         alt=" "
                         class=""
-                      />
-                    </p>
-                  </div>
-                  <div class="col-md-5 w3_testimonials_grid_right">
-                    <img
+                        />
+                      </p>
+                    </div>
+                    <div class="col-md-5 w3_testimonials_grid_right">
+                      <img
                       src="images/test2.webp"
                       alt=" "
                       class="img-responsive"
-                    />
+                      />
+                    </div>
+                    <div class="clearfix"></div>
                   </div>
-                  <div class="clearfix"></div>
                 </li>
               </ul>
             </div>
@@ -913,9 +950,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
       </div>
     </div>
+
+
     <!-- //testimonials -->
 
     <!-- instagram section -->
+    <div class="container">
+      <h3 class="heading">Instagram Post</h3>
+      <p class="heading">our posts</p>
+    </div>
     <div data-target="clients" class="clients" id="clients">
       <!-- instagram -->
       <div class="w3agile-spldishes">
@@ -995,7 +1038,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div>
     </div>
     <!-- instagram section -->
+    <center>
+      <div class="contributors-button" style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white; /* White color for the button */
+          color: #4CAF50; /* Text color (Green) */
+          font-size: 24px; /* Increase the font size to make the button text larger */
+          font-weight: bold;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: background-color 0.3s ease; /* Transition effect for smoother hover */
+          margin-bottom: 20px; /* Add margin to create space between the button and the contents below */
+          width: 20%; /* Set the width to 20% of its parent's width */
+          height: 40px; /* Increase the height of the button */
+          overflow: hidden; /* Hide any content that overflows (in case the animation expands the button) */
+          animation: buttonExpand 0.5s; /* Add animation to the button */
+      ">
+    
+        <!-- Add the animation keyframes for the button -->
+        <style>
+          @keyframes buttonExpand {
+            0% {
+              transform: scale(1); /* Initial scale of the button */
+            }
+            100% {
+              transform: scale(1.1); /* Final scale of the button during animation */
+            }
+          }
+        </style>
+    
+        <a href="contributor.html">Our Contributors💙</a>
+      </div>
+    </center>
+    
 
+
+    
+    
     <!-- News letter -->
     <div class="agile-form" style="margin-top: 50px;">
       <div class="container">
@@ -1031,15 +1112,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <h3>opening timings</h3>
               <p>
                 <span class="fa fa-clock-o" aria-hidden="true"></span
-                ><span>Mon - friday</span> : 9am to 8pm
+                ><span class="day">Mon - friday</span> : 9am to 8pm
               </p>
               <p>
                 <span class="fa fa-clock-o" aria-hidden="true"></span
-                ><span>Saturday</span> : 9am to 5pm
+                ><span class="day">Saturday</span> : 9am to 5pm
               </p>
               <p>
                 <span class="fa fa-clock-o" aria-hidden="true"></span
-                ><span>Sunday</span> : 6am to 11pm
+                ><span class="day">Sunday</span> : 6am to 11pm
               </p>
             </div>
             <div class="col-md-4 ftr-grid fg2 mid-gd">
@@ -1083,7 +1164,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 ultrices.
               </p>
               <div class="more-button">
-                <a href="#">Read more</a>
+                <a href="#">Read more</a>        
               </div>
             </div>
             <div class="clearfix"></div>
@@ -1095,10 +1176,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="container">
         <div class="copyright">
           <p>
-            &copy; 2022 Food Recipe. All Rights Reserved | Design &copy; by Anup
-            Kumar Jha
+            &copy; <span id="copyright-year"></span> Food Recipe. All Rights
+            Reserved | Design &copy; by Anup Kumar Jha
           </p>
         </div>
+
         <div class="social-icons">
           <ul>
             <li>
@@ -1109,6 +1191,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 title="Facebook (External Link)"
                 rel="noopener noreferrer"
                 ><i class="fab fa-facebook" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/Anupkjha2601"
+                aria-label="Follow us on GitHub"
+                title="GitHub (External Link)"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github" aria-hidden="true"></i
               ></a>
             </li>
             <li>
@@ -1158,8 +1250,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- Footer -->
 
-    <!--  chat bot finish  -->
-
     <!-- Owl-Carousel-JavaScript -->
     <script src="js/owl.carousel.js"></script>
     <script>
@@ -1172,8 +1262,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
       });
     </script>
-
-    <!-- //Owl-Carousel-JavaScript -->
 
     <!-- flexSlider -->
     <script defer src="js/jquery.flexslider.js"></script>
@@ -1188,6 +1276,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     </script>
     <!-- //flexSlider -->
+    <!-- copyright Year JavaScript -->
+    <script src="js/copyrightYear.js"></script>
 
     <!-- start-smoth-scrolling -->
     <script src="js/SmoothScroll.min.js"></script>
@@ -1202,7 +1292,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             {
               scrollTop: $(this.hash).offset().top,
             },
-            1000,
+            1000
           );
         });
       });
@@ -1211,24 +1301,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- here stars scrolling icon -->
     <script type="text/javascript">
       $(document).ready(function () {
-        /*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-
         $().UItoTop({ easingType: "easeOutQuart" });
       });
     </script>
-    <!-- //here ends scrolling icon -->
 
-    <!-- for bootstrap working -->
     <script src="js/bootstrap.js"></script>
-    <!-- //for bootstrap working -->
-    <!-- chat bot js -->
     <script src="./chatBot/script.js"></script>
   </body>
 </html>
