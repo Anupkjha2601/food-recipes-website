@@ -2703,6 +2703,29 @@ figure.effect-roxy:hover p,
 .address p a:hover {
   color: #0d3172;
 }
+.con{
+  background-color: #cbf3f0;
+  padding: 1rem;
+  border-radius: 0.5cm;
+  animation: fadeInLeft 1s ease-in-out;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.contact-agileinfo .contact-right,
+.contact-agileinfo .contact-left {
+  animation: fadeInLeft 1s ease-in-out 0.5s;
+}
+#submit {
+  animation: none;
+}
 .contact-agileinfo input[type="text"],
 .contact-agileinfo input[type="email"] {
   width: 100%;
