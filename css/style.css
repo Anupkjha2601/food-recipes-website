@@ -1074,6 +1074,10 @@ nav.navbar.navbar-default {
   text-transform: capitalize;
   padding: 10px 20px;
 }
+.agile-dish-caption a:hover {
+  background-color: #C02B69;
+  border-radius: 0.2cm;
+}
 @media (max-width: 480px) {
   .agile-dish-caption {
     padding: 0.5em;
