@@ -1211,6 +1211,22 @@ nav.navbar.navbar-default {
   padding-left: 0;
   padding-right: 0;
 }
+.cut1{
+  background-color: #bde0fe;
+  padding: 0.2rem;
+  border-radius: 0.3cm;
+}
+.cut2{
+  background-color: #ffcad4;
+  padding: 0.2rem;
+  border-radius: 0.3cm;
+
+}
+.cut3{
+  background-color: #faedcd;
+  padding: 0.2rem;
+  border-radius: 0.3cm;
+}
 .positiongrid1,
 .positiongrid2 {
   background: rgba(0, 0, 0, 0.7);
