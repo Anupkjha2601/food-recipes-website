@@ -1,8 +1,8 @@
 .contributors-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     margin: 0 -10px;
+ padding-left: 10%;
   }
   
   .contributor-card {
@@ -10,8 +10,7 @@
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease, border-color 0.3s ease;
-    margin: 10px;
-    flex-basis: calc(50% - 20px); 
+  margin: 10px;
     box-sizing: border-box;
   }
   
@@ -27,4 +26,6 @@
   .contributor-card:hover .contributor-image {
     transform: scale(1.1);
   }
-  
+  .contributor-image{
+    border-radius: 50%;
+  }
