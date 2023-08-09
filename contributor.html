@@ -9,24 +9,65 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
      <!--favicon icon-->
     <link rel="icon" href="images/restaurant.webp" />
+     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/script.js"></script>
 
+<link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
-    <section class="text-gray-400 bg-gray-900 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-6xl text-6xl font-bold title-font mb-4 text-white">Meet Our Team</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-2xl">🙏 Thanks to all the amazing Contributors who spiced up our food recipe website with their delightful 🍳 creations! 🎉👨‍🍳👩‍🍳</p>
-          </div>
-          <div class="contributors-container" id="contributors"></div>
+  
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
 
-          <div class="flex flex-wrap -m-4" id="contributors">
-            <!-- Contributor cards will be dynamically added here -->
-          </div>
-        
+    <!-- end Loader -->
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="sm:text-6xl text-6xl font-bold title-font mb-4 text-white">
+            Meet Our Team
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-2xl">
+            🙏 Thanks to all the amazing Contributors who spiced up our food
+            recipe website with their delightful 🍳 creations! 🎉👨‍🍳👩‍🍳
+          </p>
+        </div>
+        <div class="contributors-container" id="contributors"></div>
+
+        <div class="flex flex-wrap -m-4" id="contributors">
+          <!-- Contributor cards will be dynamically added here -->
         </div>
       </section>
-           
+             <!-- start-smoth-scrolling -->
+  <script src="js/SmoothScroll.min.js"></script>
+
+  <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $(".scroll").click(function (event) {
+        event.preventDefault();
+        $("html,body").animate(
+          {
+            scrollTop: $(this.hash).offset().top,
+          },
+          1000
+        );
+      });
+    });
+  </script>
+
+  <!-- here stars scrolling icon -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $().UItoTop({ easingType: "easeOutQuart" });
+    });
+  </script>
+  <script src="js/bootstrap.js"></script>
 <script src="./js/contributor.js"></script>       
 </body>
 </html>

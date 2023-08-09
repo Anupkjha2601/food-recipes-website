@@ -10,6 +10,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background: #ffffff;
   margin: 0;
+  overflow-x: hidden;
 }
 p, 
 ul li,
@@ -63,10 +64,7 @@ header {
   color:indigo;
   text-transform: uppercase;
 }
-.navbar {
-  margin-bottom: 0px;
-  min-height: 30px;
-}
+
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
 .navbar-inverse .navbar-nav > .active > a:hover {
@@ -339,13 +337,21 @@ header {
   border: none;
   position: fixed;
   height: 107px;
-  margin-left: -24px;
   border-radius: 119px;
-  margin-top: -70px;
+
 }
 .navbar {
-  margin-bottom: 0;
-  border-radius: 0px;
+  display: flex;
+  top: -27.3px;
+  width: 100%;
+  left: 0;
+  margin-bottom: 0px;
+  min-height: 30px;
+}
+.navbar .small-image{
+  position: relative;
+  height: 100%;
+  top: 55px;
 }
 .w3_navigation {
   border-top: 1px solid #999;
@@ -353,8 +359,8 @@ header {
 }
 .navbar-nav {
   float: none;
-  background-color: #000000;
-
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  backdrop-filter: blur(8px);
 }
 .navbar-collapse {
   padding: 0;
@@ -1074,6 +1080,10 @@ nav.navbar.navbar-default {
   text-transform: capitalize;
   padding: 10px 20px;
 }
+.agile-dish-caption a:hover {
+  background-color: #C02B69;
+  border-radius: 0.2cm;
+}
 @media (max-width: 480px) {
   .agile-dish-caption {
     padding: 0.5em;
@@ -1200,6 +1210,22 @@ nav.navbar.navbar-default {
 .services-icon .col-md-2 {
   padding-left: 0;
   padding-right: 0;
+}
+.cut1{
+  background-color: #bde0fe;
+  padding: 0.2rem;
+  border-radius: 0.3cm;
+}
+.cut2{
+  background-color: #ffcad4;
+  padding: 0.2rem;
+  border-radius: 0.3cm;
+
+}
+.cut3{
+  background-color: #faedcd;
+  padding: 0.2rem;
+  border-radius: 0.3cm;
 }
 .positiongrid1,
 .positiongrid2 {
@@ -1880,54 +1906,6 @@ h3.agileits-icons-title {
 }
 .icons h3.heading {
   margin-left: 0px;
-}
-.icons a {
-  color: #999;
-  font-size: 14px;
-}
-.icon-box i {
-  margin-right: 10px !important;
-  font-size: 20px !important;
-  color: #282a2b !important;
-}
-.icons .bs-glyphicons li {
-  float: left;
-  width: 18%;
-  height: 115px;
-  padding: 10px;
-  line-height: 1.4;
-  text-align: center;
-  font-size: 12px;
-  list-style-type: none;
-  background: rgba(149, 149, 149, 0.18);
-  margin: 1%;
-}
-.icons .bs-glyphicons .glyphicon {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-size: 24px;
-  color: #282a2b;
-}
-.icons .glyphicon {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: "Glyphicons Halflings";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #777;
-}
-.icons .bs-glyphicons .glyphicon-class {
-  display: block;
-  text-align: center;
-  word-wrap: break-word;
-}
-ul.bs-glyphicons-list {
-  padding: 0;
-  margin: 0;
 }
 /*-- //icons --*/
 /*-- typography --*/
@@ -2702,6 +2680,29 @@ figure.effect-roxy:hover p,
 }
 .address p a:hover {
   color: #0d3172;
+}
+.con{
+  background-color: #cbf3f0;
+  padding: 1rem;
+  border-radius: 0.5cm;
+  animation: fadeInLeft 1s ease-in-out;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.contact-agileinfo .contact-right,
+.contact-agileinfo .contact-left {
+  animation: fadeInLeft 1s ease-in-out 0.5s;
+}
+#submit {
+  animation: none;
 }
 .contact-agileinfo input[type="text"],
 .contact-agileinfo input[type="email"] {
@@ -5929,7 +5930,7 @@ ul.bs-glyphicons-list {
   transform: scale(1.1);
   box-shadow: 0 10px 10px rgba(0,0,0,.2);
   color: white;
-  background: #0009
+  background: #ff5722
 }
 .icons .bs-glyphicons li span:first-of-type {
   font-size: 1.6rem;
@@ -6519,7 +6520,7 @@ figure.effect-roxy:hover p,
   background-color: #00c5b5;
 } */
 /*-- //Services --*/
-/*-- background --*/
+/*-- background -- */
 .background {
   background: url(../images/t.webp) no-repeat 0px 0px;
   background-size: cover;
