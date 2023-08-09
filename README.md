@@ -32,17 +32,19 @@ Food Recipe goes beyond being just a food store website, it's a culinary haven w
   
  </p>
  </div>
+ 
+# Tech Stack 💻
 
- ## Tech Stack Used
+<div align="center">
 
- <div align="left">
- <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white">
- <img src="https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white">
- <img src="https://img.shields.io/badge/Bootstrap-7952B3.svg?style=for-the-badge&logo=Bootstrap&logoColor=white">
- <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=white">
- <img src="https://img.shields.io/badge/-MicrosoftAzure-61DAFB?logo=MicrosoftAzure&logoColor=white&style=for-the-badge">
- <img src="https://img.shields.io/badge/-UIUX-61DAFB?logo=UIUX&logoColor=white&style=for-the-badge">
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) &nbsp;&nbsp;&nbsp;
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) &nbsp;&nbsp;&nbsp;
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) &nbsp;&nbsp;&nbsp;
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) &nbsp;&nbsp;&nbsp;
+![Azure](https://img.shields.io/badge/microsoft%20azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) &nbsp;&nbsp;&nbsp;
+
 </div>
+
 
 ## Features
 - Daily Special Offers Updates.
