@@ -8158,3 +8158,13 @@ input.email {
   width: 80%;
   text-align: center;
 }
+
+.widget{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  backdrop-filter: blur(8px);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 150px;
+  cursor: pointer;
+}
