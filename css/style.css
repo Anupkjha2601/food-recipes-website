@@ -27,10 +27,18 @@ h6 {
   font-family: "Muli", sans-serif;
   margin: 0;
 }
-ul,
+ul{
+  margin: 0;
+  padding: 0;
+
+}
 label {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+
 }
 body a:hover {
   text-decoration: none;
@@ -72,6 +80,8 @@ header {
 }
 .navbar-nav > li {
   margin: 0 3px;
+  display: flex;
+  justify-content: space-between;
 }
 .navbar-nav {
   float: right;
@@ -347,11 +357,15 @@ header {
   left: 0;
   margin-bottom: 0px;
   min-height: 30px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  backdrop-filter: blur(8px);
+
 }
 .navbar .small-image{
   position: relative;
   height: 100%;
   top: 55px;
+  
 }
 .w3_navigation {
   border-top: 1px solid #999;
@@ -359,8 +373,12 @@ header {
 }
 .navbar-nav {
   float: none;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
-  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  margin-top: 15px;
+  text-align: center;
+
 }
 .navbar-collapse {
   padding: 0;
