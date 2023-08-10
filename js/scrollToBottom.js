@@ -6,19 +6,15 @@ $(document).ready(function () {
     } else {
       scrollDownButton.fadeOut();
     }
-    // Hide button when it reaches the end of the page
     if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
       scrollDownButton.hide();
     }
   });
   scrollDownButton.click(function () {
-    $("html, body").animate({ scrollTop: $(document).height() }, "slow"); // Scroll to the end of the page
+    $("html, body").animate({ scrollTop: $(document).height() }, "slow"); 
     return false;
   });
-  // Initially hide the button when at the top
   if ($(window).scrollTop() === 0) {
     scrollDownButton.hide();
   }
 });
-
-// Bottom button added by preksha mahajan

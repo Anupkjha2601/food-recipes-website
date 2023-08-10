@@ -1215,17 +1215,20 @@ nav.navbar.navbar-default {
   background-color: #bde0fe;
   padding: 0.2rem;
   border-radius: 0.3cm;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 .cut2{
   background-color: #ffcad4;
   padding: 0.2rem;
   border-radius: 0.3cm;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 
 }
 .cut3{
   background-color: #faedcd;
   padding: 0.2rem;
   border-radius: 0.3cm;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 .positiongrid1,
 .positiongrid2 {
@@ -2252,28 +2255,42 @@ h2.typoh2 {
   /* border: 2px solid black; */
   margin: 3em 0 0;
 }
-.first1{
+.first1 {
   background-color: #e9c46a;
   padding: 0.7rem;
   border-radius: 0.3cm;
+  transition: all 0.3s;
 }
-
+.first1:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
 .second2{
   background-color: #00c5b5;
   padding: 0.7rem;
   border-radius: 0.3cm;
+  transition: all 0.3s;
 }
-
+.second2:hover{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); 
+}
 .third3{
   background-color: pink;
   padding: 0.7rem;
   border-radius: 0.3cm;
+  transition: all 0.3s;
+}
+.third3:hover{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); 
 }
 
 .four4{
   background-color: #4cc9f0;
   padding: 0.7rem;
   border-radius: 0.3cm;
+  transition: all 0.3s;
+}
+.four4:hover{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); 
 }
 .w3_agileits_para {
   margin: 1em auto 0;
@@ -2412,10 +2429,11 @@ figure.effect-roxy:hover p,
   transition: 0.3s;
 }
 .services-info:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor:pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 .services-info-1,
 .services-info-2,
@@ -2682,6 +2700,7 @@ figure.effect-roxy:hover p,
   padding: 1rem;
   border-radius: 0.5cm;
   animation: fadeInLeft 1s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 @keyframes fadeInLeft {
   from {
