@@ -40,9 +40,7 @@ const firebaseConfig = {
           alert('Please enter a password.');
           return;
         }
-        // Create user with email and pass.
         firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-          // Handle Errors here.
           var errorCode = error.code;
           var errorMessage = error.message;
           if (errorCode == 'auth/weak-password') {
@@ -54,32 +52,3 @@ const firebaseConfig = {
         });
       }
   
-
-
-//   const auth = firebase.auth();
-//   function SignIn(){
-//       var email = document.getElementById('eemail').value;
-//       var password = document.getElementById('lpassword').value;
-//       if(email != "" && password != ""){
-//       const promise = auth.signInWithEmailAndPassword(email,password);
-//       promise.catch( e => alert(e.msg));
-//       window.open("https://www.google.com","_self");
-//       }
-//   }
-// //   if(email != "" && password != ""){
-//   document.getElementById('form').addEventListener('submit', (e) => {
-//       e.preventDefault();
-//       var userInfo = datab.push();
-//       userInfo.set({
-//           name: getId('fname'),
-//           email : getId('eemail'),
-//           password : getId('lpassword')
-//       });
-//       alert("Successfully Signed Up");
-//       console.log("sent");
-//       document.getElementById('form').reset();
-//   });
-//   function  getId(id){
-//       return document.getElementById(id).value;
-//   }
-// }

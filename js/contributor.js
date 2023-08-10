@@ -11,14 +11,12 @@ fetch(url)
       const contributorCard = document.createElement('div');
       contributorCard.classList.add('p-4', 'lg:w-1/2', 'contributor-card');
 
-      // Fetch contributor's commits
       const commitsUrl = `https://api.github.com/repos/${owner}/${repo}/commits?author=${contributor.login}`;
       const commitsResponse = await fetch(commitsUrl);
       const commitsData = await commitsResponse.json();
 
-      const contributorCommits = commitsData.length; // Number of contributions (commits)
+      const contributorCommits = commitsData.length;
 
-      // Change "UI Developer" to "Contributor" for everyone except the owner
       const contributorRole = contributor.login === owner ? 'Project Admin' : 'Contributor';
 
       contributorCard.innerHTML = `
