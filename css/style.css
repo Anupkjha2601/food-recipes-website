@@ -1215,17 +1215,20 @@ nav.navbar.navbar-default {
   background-color: #bde0fe;
   padding: 0.2rem;
   border-radius: 0.3cm;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 .cut2{
   background-color: #ffcad4;
   padding: 0.2rem;
   border-radius: 0.3cm;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 
 }
 .cut3{
   background-color: #faedcd;
   padding: 0.2rem;
   border-radius: 0.3cm;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 .positiongrid1,
 .positiongrid2 {
