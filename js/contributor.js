@@ -11,20 +11,18 @@ fetch(url)
       const contributorCard = document.createElement('div');
       contributorCard.classList.add('p-4', 'lg:w-1/2', 'contributor-card');
 
-      // Fetch contributor's commits
       const commitsUrl = `https://api.github.com/repos/${owner}/${repo}/commits?author=${contributor.login}`;
       const commitsResponse = await fetch(commitsUrl);
       const commitsData = await commitsResponse.json();
 
-      const contributorCommits = commitsData.length; // Number of contributions (commits)
+      const contributorCommits = commitsData.length;
 
-      // Change "UI Developer" to "Contributor" for everyone except the owner
       const contributorRole = contributor.login === owner ? 'Project Admin' : 'Contributor';
 
       contributorCard.innerHTML = `
-        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+        <div class="h-full">
           <a href="${contributor.html_url}" target="_blank" rel="noopener noreferrer">
-            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4 contributor-image" src="${contributor.avatar_url}">
+            <img alt="team" class="flex-shrink-0  w-48 h-44 object-cover object-center sm:mb-0 mb-4 contributor-image" src="${contributor.avatar_url}">
           </a>
           <div class="flex-grow sm:pl-8">
             <h2 class="title-font font-medium text-lg text-white">${contributor.login}</h2>
