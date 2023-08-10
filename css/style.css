@@ -1211,6 +1211,22 @@ nav.navbar.navbar-default {
   padding-left: 0;
   padding-right: 0;
 }
+.cut1{
+  background-color: #bde0fe;
+  padding: 0.2rem;
+  border-radius: 0.3cm;
+}
+.cut2{
+  background-color: #ffcad4;
+  padding: 0.2rem;
+  border-radius: 0.3cm;
+
+}
+.cut3{
+  background-color: #faedcd;
+  padding: 0.2rem;
+  border-radius: 0.3cm;
+}
 .positiongrid1,
 .positiongrid2 {
   background: rgba(0, 0, 0, 0.7);
@@ -1611,6 +1627,8 @@ h2.heading:after {
   height: auto;
   border-radius: 0.4cm;
   padding: 1rem;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 .bottom-left h3 {
   text-transform: capitalize;
@@ -1640,12 +1658,6 @@ h2.heading:after {
   border-radius: 0.2cm;
 }
 
-.con_mid{
-  background-color: #c7f9cc;
-  padding: 1rem;
-  border-radius: 0.3cm;
-  border: 2px solid #ade8f4;
-}
 .menu-items h4 {
   font-size: 20px;
   text-transform: capitalize;
@@ -2776,6 +2788,36 @@ input.email {
   filter: alpha(opacity=0);
 }
 /*-- //to-top --*/
+
+/*-- //to-bottom added by preksha mahajan--*/
+#scrollDownButton {
+  position: fixed;
+  top: 20px;
+  right: 2%; /* Adjust the right value to shift the button more to the right */
+  display: none;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  z-index: 999; /* Adjust this value as needed */
+}
+#scrollDownButton .circle-background {
+  width: 60px; /* Increase the width to make the circle larger */
+  height: 60px; /* Increase the height to maintain aspect ratio */
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#scrollDownButton img {
+  width: 30px; /* Adjust the image width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+#scrollDownButton:hover {
+  opacity: 1;
+}
+
+/*-- //to-bottom added by preksha mahajan--*/
 
 /* Responsive Design */
 @media (max-width: 1440px) {
@@ -8065,3 +8107,17 @@ input.email {
   padding: 22px;
 }
 /* //Responsive Design */
+
+.box .caption {
+  padding: unset !important;
+  display: grid;
+  place-items: center;
+  gap: 1.5rem;
+  height: 100%;
+  align-content: center;
+}
+
+.box .scale-caption p {
+  width: 80%;
+  text-align: center;
+}
