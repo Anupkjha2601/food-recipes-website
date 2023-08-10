@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Food Recipe</title>
@@ -13,7 +13,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script type="application/x-javascript">
       addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
       	function hideURLbar(){ window.scrollTo(0,1); }
-    </script> 
+    </script>
     <link rel="icon" href="images/restaurant.webp" />
     <link
       href="css/bootstrap.css"
@@ -21,7 +21,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       type="text/css"
       media="all"
     />
-<link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!--
+     AOS STYLESHEET INIT
+    -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+
+    <link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
@@ -45,6 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style3.css" />
     <!-- SEO ESSENTIALS -->
     <meta name="robots" content="index, follow" />
     <meta name="language" content="en" />
@@ -134,10 +142,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <!-- end Loader -->
 
-    <div class="banner-header banner2">
+    <div class="banner-header banner2" data-aos="fade-down">
       <div class="banner-dott1">
         <!--header-->
-        <div class="header">
+        <div class="header" data-aos="zoom-out" data-aos-delay="100">
           <div class="container-fluid">
             <nav class="navbar navbar-default">
               <div class="navbar-header navbar-left">
@@ -172,11 +180,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 id="bs-example-navbar-collapse-1"
               >
                 <nav>
-                  <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Our Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                  <ul class="nav navbar-nav hovering-1">
+                    <li class="hovering-1"><a href="index.html">Home</a></li>
+                    <li class="active hovering-2">
+                      <a href="about.html">About Us</a>
+                    </li>
+                    <li class="hovering-3">
+                      <a href="services.html">Our Services</a>
+                    </li>
+                    <li class="hovering-4">
+                      <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li><a href="contributor.html">Contributors</a></li>
                     <li class="dropdown">
                       <a
                         href="#"
@@ -190,23 +205,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <li><a href="typography.html">Typography</a></li>
                       </ul>
                     </li>
+
+                    <li class="hovering-5">
+                      <a href="contact.html">Contact</a>
+                    </li>
+
                     <li><a href="contact.html">Contact</a></li>
-                      <li>
-            <div id="google_translate_element"></div>
-            <script src="js_files/translate.js"></script>
 
-        <script type="text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement(
-                    {pageLanguage: 'en'},
-                    'google_translate_element'
-                );
-            }
-        </script>
+                    <li>
+                      <div id="google_translate_element"></div>
+                      <script src="js_files/translate.js"></script>
 
-        <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-        </script>
-          </li>
+                      <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                          new google.translate.TranslateElement(
+                            { pageLanguage: "en" },
+                            "google_translate_element"
+                          );
+                        }
+                      </script>
+
+                      <script
+                        type="text/javascript"
+                        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+                      ></script>
+                    </li>
+
+                    <li style="width: max-content">
+                      <a id="google_translate_element"></a>
+                      <script src="js_files/translate.js"></script>
+
+                      <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                          new google.translate.TranslateElement(
+                            { pageLanguage: "en" },
+                            "google_translate_element"
+                          );
+                        }
+                      </script>
+
+                      <script
+                        type="text/javascript"
+                        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+                      ></script>
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -218,26 +260,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- // banner -->
 
+    <!-- //bottom button added by preksha mahajan-->
+    <a href="#" id="scrollDownButton">
+      <div class="circle-background">
+          <img src="./images/bottomButton.webp" alt="Scroll Down">
+      </div>
+    </a>
+    <!-- //bottom button added by preksha mahajan-->
+
     <!-- about section -->
     <div class="about">
       <div class="container">
-        <h2 class="heading">About <span>our</span> food</h2>
-        <p class="heading">About Our History</p>
-        <div class="about-content">
+        <h2 class="heading" data-aos="fade-right" data-aos-delay="10">About <span>our</span> food</h2>
+        <p class="heading" data-aos="fade-right" data-aos-delay="30">About Our History</p>
+        <div class="about-content" data-aos="fade-right" data-aos-delay="70">
           <div class="col-md-6 bottom-left">
             <!-- <div class="addition"> -->
-              <h3>We make tasty food,the Best grills and drinks</h3>
-              <p>
-                Etiam vitae augue odio. Ut laoreet ipsum vel ultrices viverra.
-                Donec nisl dolor, mollis vel libero id, tempor cursus lectus.
-                Vestibulum eu ligula et pharetra efficitur. Maecenas eleifend.
-                Phasellus antelig.
-              </p>
-              <p>
-                Etiam vitae augue odio. Ut laoreet ipsum vel ultrices viverra.
-                Donec nisl dolor, mollis vel libero id, tempor cursus lectus.
-                Vestibulum eu ligula et pharetra efficitur. Maecenas eleifend.
-              </p>
+            <h3>We make tasty food,the Best grills and drinks</h3>
+            <p>
+              Etiam vitae augue odio. Ut laoreet ipsum vel ultrices viverra.
+              Donec nisl dolor, mollis vel libero id, tempor cursus lectus.
+              Vestibulum eu ligula et pharetra efficitur. Maecenas eleifend.
+              Phasellus antelig.
+            </p>
+            <p>
+              Etiam vitae augue odio. Ut laoreet ipsum vel ultrices viverra.
+              Donec nisl dolor, mollis vel libero id, tempor cursus lectus.
+              Vestibulum eu ligula et pharetra efficitur. Maecenas eleifend.
+            </p>
             <!-- </div> -->
             <div class="morebutton">
               <a href="#">Read More</a>
@@ -250,18 +300,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
       </div>
     </div>
-    <!-- //about section -->
-    <!-- choose-us -->
     <div class="why-choose-agile">
       <div class="container">
         <div class="w3-heading-grid">
-          <h3 class="heading">Why <span>Choose</span> Us</h3>
-          <p class="heading">What We Do</p>
+          <h3 class="heading" data-aos="fade-left" data-aos-delay="10">Why <span>Choose</span> Us</h3>
+          <p class="heading" data-aos="fade-left" data-aos-delay="30">What We Do</p>
           <div class="agileits-border"></div>
         </div>
         <div class="why-choose-agile-grids-top">
           <div class="col-md-4 agileits-w3layouts-grid">
-            <div class="wthree_agile_us">
+            <div class="wthree_agile_us" data-aos="fade-left" data-aos-delay="20">
               <div class="col-xs-9 agile-why-text">
                 <h4>Maecenas</h4>
                 <p>
@@ -275,7 +323,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               </div>
               <div class="clearfix"></div>
             </div>
-            <div class="wthree_agile_us">
+            <div class="wthree_agile_us" data-aos="fade-left" data-aos-delay="40">
               <div class="col-xs-9 agile-why-text">
                 <h4>Lorem ipsum</h4>
                 <p>
@@ -289,7 +337,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               </div>
               <div class="clearfix"></div>
             </div>
-            <div class="wthree_agile_us">
+            <div class="wthree_agile_us" data-aos="fade-left" data-aos-delay="60">
               <div class="col-xs-9 agile-why-text">
                 <h4>Duis ipsum</h4>
                 <p>
@@ -304,10 +352,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <div class="clearfix"></div>
             </div>
           </div>
-          <div class="col-md-4 agileits-w3layouts-grid img">
+          <div class="col-md-4 agileits-w3layouts-grid img" data-aos="fade-up" data-aos-delay="50">
             <img src="images/bottom.webp" alt=" " class="img-responsive" />
           </div>
-          <div class="col-md-4 agileits-w3layouts-grid">
+          <div class="col-md-4 agileits-w3layouts-grid" data-aos="fade-right" data-aos-delay="50">
             <div class="wthree_agile_us">
               <div class="col-xs-3 agile-why-text agile-icon-left">
                 <div class="wthree_features_grid hvr-rectangle-out">
@@ -358,16 +406,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
       </div>
     </div>
-    <!-- //choose-us -->
 
     <!-- menu section -->
     <div class="menu">
       <div class="container">
         <div class="con_mid">
-        <h3 class="heading">Our <span>Menu</span> List</h3>
-        <p class="heading">Our Food Items List</p>
+
+        <h3 class="heading" data-aos="fade-right" data-aos-delay="0">Our <span>Menu</span> List</h3>
+        <p class="heading" data-aos="fade-right" data-aos-delay="20">Our Food Items List</p>
         <div class="menu-grids">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="50">
             <img src="images/breakfast.webp" alt="" />
             <div class="menu-items">
               <h4>Easy Banana Bread <span>-12$</span></h4>
@@ -390,7 +438,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
             <img src="images/lunch.webp" alt="" />
             <div class="menu-items">
               <h4>Glorified rice <span>-31$</span></h4>
@@ -413,41 +461,74 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <p>Vestibulum eu ligula et pharetra efficitur vesti.</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="150">
             <img src="images/dinner.webp" alt="" />
             <div class="menu-items">
               <h4>Salisbury Steaks <span>-42$</span></h4>
               <p>Vestibulum eu ligula et pharetra efficitur vesti.</p>
             </div>
-            <div class="menu-items">
-              <h4>Chicken Fajitas <span>-26$</span></h4>
-              <p>
-                Vestibulum eu ligula et pharetra efficitur. Maecenas eleifend.
-              </p>
+            <div class="col-md-4">
+              <img src="images/lunch.webp" alt="" />
+              <div class="menu-items">
+                <h4>Glorified rice <span>31$</span></h4>
+                <p>
+                  Vestibulum eu ligula et pharetra efficitur. Maecenas eleifend.
+                </p>
+              </div>
+              <div class="menu-items">
+                <h4>Charleston red rice <span>24$</span></h4>
+                <p>Vestibulum eu ligula et pharetra efficitur vesti.</p>
+              </div>
+              <div class="menu-items">
+                <h4>American fried rice <span>21$</span></h4>
+                <p>
+                  Vestibulum eu ligula et pharetra efficitur. Maecenas eleifend.
+                </p>
+              </div>
+              <div class="menu-items">
+                <h4>Hawaiian haystack <span>28$</span></h4>
+                <p>Vestibulum eu ligula et pharetra efficitur vesti.</p>
+              </div>
             </div>
-            <div class="menu-items">
-              <h4>Corn Chowder <span>-22$</span></h4>
-              <p>Vestibulum eu ligula et pharetra efficitur vesti.</p>
+            <div class="col-md-4">
+              <img src="images/dinner.webp" alt="" />
+              <div class="menu-items">
+                <h4>Salisbury Steaks <span>42$</span></h4>
+                <p>Vestibulum eu ligula et pharetra efficitur vesti.</p>
+              </div>
+              <div class="menu-items">
+                <h4>Chicken Fajitas <span>26$</span></h4>
+                <p>
+                  Vestibulum eu ligula et pharetra efficitur. Maecenas eleifend.
+                </p>
+              </div>
+              <div class="menu-items">
+                <h4>Corn Chowder <span>22$</span></h4>
+                <p>Vestibulum eu ligula et pharetra efficitur vesti.</p>
+              </div>
+              <div class="menu-items">
+                <h4>Honey Baked Chicken <span>33$</span></h4>
+                <p>
+                  Vestibulum eu ligula et pharetra efficitur. Maecenas eleifend.
+                </p>
+              </div>
             </div>
-            <div class="menu-items">
-              <h4>Honey Baked Chicken <span>-33$</span></h4>
-              <p>
-                Vestibulum eu ligula et pharetra efficitur. Maecenas eleifend.
-              </p>
+            <div class="clearfix"></div>
+            <div class="readmore">
+              <a href="#">Read more</a>
             </div>
           </div>
           <div class="clearfix"></div>
-          <div class="readmore">
+          <div class="readmore" data-aos="fade-in" data-aos-delay="100">
             <a href="#">Read more</a>
           </div>
         </div>
-      </div>
       </div>
     </div>
 
     <!-- News letter -->
     <div class="agile-form">
-      <div class="container">
+      <div class="container" data-aos="fade-left" data-aos-delay="10">
         <div class="col-md-4 newsletter">
           <p>Subscribe to our newsletter</p>
           <h4>For our latest updates</h4>
@@ -476,7 +557,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="container">
         <div class="footer-main">
           <div class="footer-top">
-            <div class="col-md-4 ftr-grid fg1">
+            <div class="col-md-4 ftr-grid fg1" data-aos="fade-left" data-aos-delay="0">
               <h3>opening timings</h3>
               <p>
                 <span class="fa fa-clock-o" aria-hidden="true"></span
@@ -491,7 +572,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 ><span class="day">Sunday</span> : 6am to 11pm
               </p>
             </div>
-            <div class="col-md-4 ftr-grid fg2 mid-gd">
+            <div class="col-md-4 ftr-grid fg2 mid-gd" data-aos="fade-left" data-aos-delay="20">
               <h3>Our Address</h3>
               <div class="ftr-address">
                 <div class="local">
@@ -525,7 +606,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="clearfix"></div>
               </div>
             </div>
-            <div class="col-md-4 ftr-grid fg2">
+            <div class="col-md-4 ftr-grid fg2" data-aos="fade-right" data-aos-delay="50">
               <h3>Recent posts</h3>
               <p>
                 Vestibulum ante ipsum primis in faucibus orci luctus et
@@ -613,6 +694,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="js/SmoothScroll.min.js"></script>
 
     <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/scrollToBottom.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript">
       jQuery(document).ready(function ($) {
@@ -622,11 +704,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             {
               scrollTop: $(this.hash).offset().top,
             },
-            1000,
+            1000
           );
         });
       });
     </script>
+
+    <script src="./js/aos.js"> 
+    </script>
+    <script>
+      AOS.init({
+        duration: 1200, 
+        mirror: true,
+      });
+    </script>
+
 
     <script type="text/javascript">
       $(document).ready(function () {

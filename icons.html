@@ -17,17 +17,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
       	function hideURLbar(){ window.scrollTo(0,1); }
     </script>
-
-    <!--favicon icon-->
     <link rel="icon" href="images/restaurant.webp" />
 
-    <!-- //custom-theme -->
     <link
       href="css/bootstrap.css"
       rel="stylesheet"
       type="text/css"
       media="all"
     />
+
+    <!--
+      AOS STYLESHEET INIT
+    -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
+
     <style>
       .icons-container {
         position: relative;
@@ -85,33 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         aspect-ratio: 1/1;
       }
 
-      .icons .bs-glyphicons li {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 7rem;
-        transition: 0.6s ease;
-      }
-      .icons .bs-glyphicons li:hover {
-        transform: scale(1.1);
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-        color: white;
-        background: #0009;
-      }
-      .icons .bs-glyphicons li span:first-of-type {
-        font-size: 1.6rem;
-      }
-      .icons .bs-glyphicons li span::before,
-      .icons .bs-glyphicons li span {
-        transition: 0.3s ease;
-      }
-      .icons .bs-glyphicons li:hover span::before {
-        color: white;
-      }
-      .icons .bs-glyphicons li:hover span:first-of-type {
-        transform: rotateY(360deg);
-      }
+    
     </style>
 
     <link
@@ -120,17 +99,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       type="text/css"
       media="all"
     />
+
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- js -->
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <!-- //js -->
-
     <script src="js/script.js"></script>
-    <!-- js for loader-->
-
-    <!-- font-awesome-icons -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <!-- //font-awesome-icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -200,7 +173,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       content="https://raw.githubusercontent.com/0xabdulkhalid/food-recipes-website/fixes-issue-%23213-by-0xabdulkhalid/images/preview.webp"
     />
 
-    <!-- Twitter Essentials -->
     <meta
       name="twitter:card"
       content="https://raw.githubusercontent.com/0xabdulkhalid/food-recipes-website/fixes-issue-%23213-by-0xabdulkhalid/images/preview.webp"
@@ -237,12 +209,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <!-- end Loader -->
 
-    <div class="banner-header banner2">
+    <div class="banner-header banner2" data-aos="fade-bottom">
       <div class="banner-dott1">
-        <!--header-->
         <div class="header">
           <div class="container-fluid">
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default" data-aos="fade-bottom">
               <div class="navbar-header navbar-left">
                 <button
                   type="button"
@@ -265,11 +236,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     /></a>
                   </div>
                 </div>
-                <!-- <div class="w3_navigation_pos">
-					  <h1><a href="index.html">Food Recipe</a></h1>
-					</div> -->
               </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
               <div
                 class="collapse navbar-collapse navbar-right"
                 id="bs-example-navbar-collapse-1"
@@ -305,37 +272,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </li>
                       </ul>
                     </li>
-                    <li class="icons-container">
-                      <a href="contact.html">Contact</a>
-                    </li>
-                    <li class="icons-container">
-                      <div id="google_translate_element"></div>
-                      <script src="js_files/translate.js"></script>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li style="width: max-content;">
+                            <a id="google_translate_element"></a>
+                            <script src="js_files/translate.js"></script>
+                
+                            <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                    new google.translate.TranslateElement(
+                                        {pageLanguage: 'en'},
+                                        'google_translate_element'
+                                    );
+                                }
+                            </script>
+                
+                            <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                            </script>
+                  </li>
 
-                      <script type="text/javascript">
-                        function googleTranslateElementInit() {
-                          new google.translate.TranslateElement(
-                            { pageLanguage: "en" },
-                            "google_translate_element",
-                          );
-                        }
-                      </script>
-
-                      <script
-                        type="text/javascript"
-                        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-                      ></script>
-                    </li>
                   </ul>
                 </nav>
               </div>
             </nav>
           </div>
         </div>
-        <!--//header-->
       </div>
     </div>
-    <!-- // banner -->
+  <a href="#" id="scrollDownButton">
+    <div class="circle-background">
+        <img src="./images/bottomButton.webp" alt="Scroll Down">
+    </div>
+  </a>
+    
     <!-- icons -->
     <div class="codes icons main-grid-border">
       <div class="container">
@@ -614,49 +582,49 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <div class="box_content">
                 <div class="fontawesome-icon-list">
                   <!-- Facebook icon -->
-                  <div class="icon-box col-md-3 col-sm-4">
+                  <div class="icon-box icons-container col-md-3 col-sm-4">
                     <a class="agile-icon" href="#">
                       <i class="fab fa-facebook"></i> Facebook
                     </a>
                   </div>
                   <!-- Twitter icon -->
-                  <div class="icon-box col-md-3 col-sm-4">
+                  <div class="icon-box icons-container col-md-3 col-sm-4">
                     <a class="agile-icon" href="#">
                       <i class="fab fa-twitter"></i> Twitter
                     </a>
                   </div>
                   <!-- Instagram-Icon -->
-                  <div class="icon-box col-md-3 col-sm-4">
+                  <div class="icon-box icons-container col-md-3 col-sm-4">
                     <a class="agile-icon" href="#">
                       <i class="fab fa-instagram"></i> Instagram
                     </a>
                   </div>
                   <!-- LinkedIn icon -->
-                  <div class="icon-box col-md-3 col-sm-4">
+                  <div class="icon-box icons-container col-md-3 col-sm-4">
                     <a class="agile-icon" href="#">
                       <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
                   </div>
                   <!-- YouTube icon -->
-                  <div class="icon-box col-md-3 col-sm-4">
+                  <div class="icon-box icons-container col-md-3 col-sm-4">
                     <a class="agile-icon" href="#">
                       <i class="fab fa-youtube"></i> YouTube
                     </a>
                   </div>
                   <!-- gitHub icon -->
-                  <div class="icon-box col-md-3 col-sm-4">
+                  <div class="icon-box icons-container col-md-3 col-sm-4">
                     <a class="agile-icon" href="#">
                       <i class="fab fa-github"></i> GitHub
                     </a>
                   </div>
                   <!-- WhatsApp icon -->
-                  <div class="icon-box col-md-3 col-sm-4">
+                  <div class="icon-box icons-container col-md-3 col-sm-4">
                     <a class="agile-icon" href="#">
                       <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
                   </div>
                   <!-- Pinterest Icon -->
-                  <div class="icon-box col-md-3 col-sm-4">
+                  <div class="icon-box icons-container col-md-3 col-sm-4">
                     <a class="agile-icon" href="#">
                       <i class="fab fa-pinterest"></i> Pinterest
                     </a>
@@ -5586,7 +5554,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <!-- News letter -->
     <div class="agile-form">
-      <div class="container">
+      <div class="container" data-aos="fade-right">
         <div class="col-md-4 newsletter">
           <p>Subscribe to our newsletter</p>
           <h4>For our latest updates</h4>
@@ -5615,7 +5583,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="container">
         <div class="footer-main">
           <div class="footer-top">
-            <div class="col-md-4 ftr-grid fg1">
+            <div class="col-md-4 ftr-grid fg1" data-aos="fade-right">
               <h3>opening timings</h3>
               <p>
                 <span class="fa fa-clock-o" aria-hidden="true"></span
@@ -5630,7 +5598,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 ><span class="day">Sunday</span> : 6am to 11pm
               </p>
             </div>
-            <div class="col-md-4 ftr-grid fg2 mid-gd">
+            <div class="col-md-4 ftr-grid fg2 mid-gd" data-aos="fade-left">
               <h3>Our Address</h3>
               <div class="ftr-address">
                 <div class="local">
@@ -5664,7 +5632,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="clearfix"></div>
               </div>
             </div>
-            <div class="col-md-4 ftr-grid fg2">
+            <div class="col-md-4 ftr-grid fg2" data-aos="fade-right">
               <h3>Recent posts</h3>
               <p>
                 Vestibulum ante ipsum primis in faucibus orci luctus et
@@ -5751,6 +5719,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="js/SmoothScroll.min.js"></script>
 
     <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/scrollToBottom.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript">
       jQuery(document).ready(function ($) {
@@ -5766,7 +5735,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     </script>
 
-    <!-- here stars scrolling icon -->
+    <script src="./js/aos.js"> </script>
+    <script>
+      AOS.init({
+        duration: 1000, 
+        mirror: true,
+      });
+    </script>
+
+
+    <script src="./js/scrollReveal.js"></script>
+
+    <script>
+      ScrollReveal().reveal('.fontawesome-icon-list > div', { interval: 26, reset: true });
+      ScrollReveal().reveal('.bs-glyphicons-list > li', { interval: 26, reset: true });      
+    </script>
+
     <script type="text/javascript">
       $(document).ready(function () {
         /*
@@ -5781,9 +5765,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $().UItoTop({ easingType: "easeOutQuart" });
       });
     </script>
-    <!-- //here ends scrolling icon -->
 
-    <!-- for bootstrap working -->
     <script src="js/bootstrap.js"></script>
     <script defer>
       function copyIcon(event) {

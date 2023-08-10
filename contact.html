@@ -3,7 +3,6 @@
 
 <head>
   <title>Food Recipe</title>
-  <!-- custom-theme -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="keywords"
@@ -12,10 +11,14 @@
       addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
       	function hideURLbar(){ window.scrollTo(0,1); }
     </script>
+
+  <!--
+    AOS STYLESHEET INIT
+  -->
+  <link rel="stylesheet" href="./css/aos.css">
+
   <link rel="icon" href="images/restaurant.webp" />
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-
-  <!-- owl-Carousel-CSS -->
   <link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
 
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -90,9 +93,8 @@
 
   <!-- end Loader -->
 
-  <div class="banner-header banner2">
+  <div class="banner-header banner2"  data-aos="fade-down">
     <div class="banner-dott1">
-      <!--header-->
       <div class="header">
         <div class="container-fluid">
           <nav class="navbar navbar-default">
@@ -115,6 +117,7 @@
                   <li><a href="about.html">About Us</a></li>
                   <li><a href="services.html">Our Services</a></li>
                   <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="contributor.html">Contributors</a></li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-hover="Pages" data-toggle="dropdown">Short Codes <b
                         class="caret"></b></a>
@@ -124,21 +127,21 @@
                     </ul>
                   </li>
                   <li class="active"><a href="contact.html">Contact</a></li>
-                  <li>
-                    <div id="google_translate_element"></div>
-                    <script src="js_files/translate.js"></script>
-
-                    <script type="text/javascript">
-                      function googleTranslateElementInit() {
-                        new google.translate.TranslateElement(
-                          { pageLanguage: "en" },
-                          "google_translate_element"
-                        );
-                      }
-                    </script>
-
-                    <script type="text/javascript"
-                      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                 <li style="width: max-content;">
+                            <a id="google_translate_element"></a>
+                            <script src="js_files/translate.js"></script>
+                
+                            <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                    new google.translate.TranslateElement(
+                                        {pageLanguage: 'en'},
+                                        'google_translate_element'
+                                    );
+                                }
+                            </script>
+                
+                            <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                            </script>
                   </li>
                 </ul>
               </nav>
@@ -146,75 +149,79 @@
           </nav>
         </div>
       </div>
-      <!--//header-->
     </div>
   </div>
-
+  
+  <a href="#" id="scrollDownButton">
+    <div class="circle-background">
+        <img src="./images/bottomButton.webp" alt="Scroll Down">
+    </div>
+  </a>
 
   <!-- contact -->
   <div class="contact">
-    <div class="container">
+    <div class="container" data-aos="fade-right" data-aos-delay="10">
       <h2 class="heading">Contact <span>Us</span></h2>
       <p class="heading">Get In Touch</p>
-      <div class="contact-agileinfo">
-        <div class="col-md-7 contact-right">
-          <form action="#" method="post" aria-label="contact us form">
 
-            <label for="name" class="sr-only">Enter your Name: </label>
-            <input type="text" name="name" id="name" placeholder="Name" required aria-required="true" />
-
-            <label for="email" class="sr-only">Enter your E-mail: </label>
-            <input type="email" class="email" name="email" id="email" placeholder="Email" required aria-required="true" />
-
-            <label for="phone" class="sr-only">Enter your Phone Number: </label>
-            <input type="tel" name="phone" id="phone" pattern="91[0-9]{10}" placeholder="Phone" required aria-required="true" />
-
-            <label for="message" class="sr-only">Enter your Message: </label>
-            <textarea name="message" id="message" placeholder="Message" required aria-required="true">
-	      </textarea>
-
-            <label for="submit" class="sr-only">Submit this Form</label>
-            <input type="submit" name="submit" id="submit" value="SUBMIT" />
-          </form>
-
+      <div class="con">
+        <div class="contact-agileinfo">
+          <div class="col-md-7 contact-right">
+            <form action="#" method="post" aria-label="contact us form">
+              <label for="name" class="sr-only">Enter your Name: </label>
+              <input type="text" name="name" id="name" placeholder="Name" required aria-required="true" />
+              
+              <label for="email" class="sr-only">Enter your E-mail: </label>
+              <input type="email" class="email" name="email" id="email" placeholder="Email" required aria-required="true" />
+              
+              <label for="phone" class="sr-only">Enter your Phone Number: </label>
+              <input type="tel" name="phone" id="phone" pattern="91[0-9]{10}" placeholder="Phone" required aria-required="true" />
+              
+              <label for="message" class="sr-only">Enter your Message: </label>
+              <textarea name="message" id="message" placeholder="Message" required aria-required="true">
+              </textarea>
+              
+              <label for="submit" class="sr-only">Submit this Form</label>
+              <input type="submit" name="submit" id="submit" value="SUBMIT" />
+            </form>
+          </div>
+          <address class="col-md-5 contact-left">
+            <div class="address">
+              <h5>Address:</h5>
+              <p>
+                <i class="glyphicon glyphicon-home"></i> 333 Broome St New York,
+                NY 10002, USA
+              </p>
+            </div>
+            <div class="address address-mdl">
+              <h5>Phones:</h5>
+              <p>
+                <i class="glyphicon glyphicon-earphone"></i> +14 999 888 7773
+              </p>
+              <p><i class="glyphicon glyphicon-phone"></i> +12 222 333 2365</p>
+            </div>
+            <div class="address">
+              <h5>Email:</h5>
+              <p>
+                <i class="glyphicon glyphicon-envelope"></i>
+                <a href="mailto:anupkjha01@gmail.com">anupkjha01@gmail.com</a>
+              </p>
+            </div>
+          </address>
+          <div class="clearfix"></div>
         </div>
-        <address class="col-md-5 contact-left">
-          <div class="address">
-            <h5>Address:</h5>
-            <p>
-              <i class="glyphicon glyphicon-home"></i> 333 Broome St New York,
-              NY 10002, USA
-            </p>
-          </div>
-          <div class="address address-mdl">
-            <h5>Phones:</h5>
-            <p>
-              <i class="glyphicon glyphicon-earphone"></i> +14 999 888 7773
-            </p>
-            <p><i class="glyphicon glyphicon-phone"></i> +12 222 333 2365</p>
-          </div>
-          <div class="address">
-            <h5>Email:</h5>
-            <p>
-              <i class="glyphicon glyphicon-envelope"></i>
-              <a href="mailto:anupkjha01@gmail.com">anupkjha01@gmail.com</a>
-            </p>
-          </div>
-        </address>
-        <div class="clearfix"></div>
       </div>
-    </div>
+      </div>
   </div>
   <div class="agileits-w3layouts-map">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.9940307!3d40.719109700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1441710758555"
       allowfullscreen></iframe>
   </div>
-  <!-- //contact -->
 
   <!-- News letter -->
   <div class="agile-form">
-    <div class="container">
+    <div class="container" data-aos="fade-left" data-aos-delay="10">
       <div class="col-md-4 newsletter">
         <p>Subscribe to our newsletter</p>
         <h4>For our latest updates</h4>
@@ -237,7 +244,7 @@
     <div class="container">
       <div class="footer-main">
         <div class="footer-top">
-          <div class="col-md-4 ftr-grid fg1">
+          <div class="col-md-4 ftr-grid fg1" data-aos="fade-right" data-aos-delay="10">
             <h3>opening timings</h3>
             <p>
               <span class="fa fa-clock-o" aria-hidden="true"></span><span class="day">Mon - friday</span> : 9am to 8pm
@@ -249,7 +256,7 @@
               <span class="fa fa-clock-o" aria-hidden="true"></span><span class="day">Sunday</span> : 6am to 11pm
             </p>
           </div>
-          <div class="col-md-4 ftr-grid fg2 mid-gd">
+          <div class="col-md-4 ftr-grid fg2 mid-gd" data-aos="fade-right" data-aos-delay="150">
             <h3>Our Address</h3>
             <div class="ftr-address">
               <div class="local">
@@ -282,7 +289,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 ftr-grid fg2">
+          <div class="col-md-4 ftr-grid fg2" data-aos="fade-right" data-aos-delay="250">
             <h3>Recent posts</h3>
             <p>
               Vestibulum ante ipsum primis in faucibus orci luctus et
@@ -340,13 +347,11 @@
     </div>
   </div>
   <!-- Footer -->
-
-  <!-- Copyright Year js file -->
   <script src="js/copyrightYear.js"></script>
-  <!-- start-smoth-scrolling -->
   <script src="js/SmoothScroll.min.js"></script>
 
   <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/scrollToBottom.js"></script>
   <script type="text/javascript" src="js/easing.js"></script>
   <script type="text/javascript">
     jQuery(document).ready(function ($) {
@@ -359,6 +364,15 @@
           1000
         );
       });
+    });
+  </script>
+
+  <script src="./js/aos.js"> 
+  </script>
+  <script>
+    AOS.init({
+      duration: 1000, 
+      mirror: true,
     });
   </script>
 
