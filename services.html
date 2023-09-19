@@ -15,21 +15,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       	function hideURLbar(){ window.scrollTo(0,1); }
     </script>
 
+   <!--
+    AOS STYLESHEET INIT
+  -->
+  <link rel="stylesheet" href="./css/aos.css">
+
     <!--favicon icon-->
     <link rel="icon" href="images/restaurant.webp" />
 
-    <!-- //custom-theme -->
     <link
       href="css/bootstrap.css"
       rel="stylesheet"
-      type="text/css"
+      type="text/css" 
       media="all"
     />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/translate.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" /> 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -85,7 +89,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#0000" />
     <meta name="theme-color" content="#0000" />
-
     <!-- Open Graph Essentials -->
     <meta property="og:type" content="website" />
     <meta name="og:author" content="Anup Kumar jha" />
@@ -143,11 +146,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 
     <!-- end Loader -->
-
-    <div class="banner-header banner2">
+    <div class="banner-header banner2" data-aos="fade-down">
       <div class="banner-dott1">
         <!--header-->
-        <div class="header">
+        <div class="header" data-aos="zoom-out" data-aos-delay="100">
           <div class="container-fluid">
             <nav class="navbar navbar-default">
               <div class="navbar-header navbar-left">
@@ -181,8 +183,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Our Services</a></li>
+                    <li><a style="background: #fff; color:#fd463e"  href="services.html">Our Services</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contributor.html">Contributors</a></li>
                     <li class="dropdown active">
                       <a
                         href="#"
@@ -199,22 +202,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                       </ul>
                     </li>
                     <li><a href="contact.html">Contact</a></li>
-                      <li>
-            <div id="google_translate_element"></div>
-            <script src="js_files/translate.js"></script>
-
-        <script type="text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement(
-                    {pageLanguage: 'en'},
-                    'google_translate_element'
-                );
-            }
-        </script>
-
-        <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-        </script>
-          </li>
+                    <li style="width: max-content;">
+                            <a id="google_translate_element"></a>
+                            <script src="js_files/translate.js"></script>
+                
+                            <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                    new google.translate.TranslateElement(
+                                        {pageLanguage: 'en'},
+                                        'google_translate_element'
+                                    );
+                                }
+                            </script>
+                            <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                            </script>
+                  </li>
                   </ul>
 
                 </nav>
@@ -222,21 +224,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </nav>
           </div>
         </div>
-        <!--//header-->
       </div>
     </div>
-    <!-- // banner -->
+
+  <a href="#" id="scrollDownButton">
+    <div class="circle-background">
+        <img src="./images/bottomButton.webp" alt="Scroll Down">
+    </div>
+  </a>
 
     <!-- Services -->
-    <div class="services agileits w3layouts" id="services">
+    <div class="services agileits w3layouts" id="services" data-aos="fade-up">
       <div class="container">
-        <h2 class="heading">Our <span>Services</span></h2>
-        <p class="heading">what we do</p>
+        <h2 class="heading" data-aos="fade-right">Our <span>Services</span></h2>
+        <p class="heading" data-aos="fade-right" data-aos-delay="50">what we do</p>
         <div
           class="col-md-8 col-sm-6 agileits w3layouts services-grid services-grid-1"
         >
+
+        <div class="small_card1">
           <div
-            class="col-md-4 col-sm-4 agileits w3layouts services-info services-info-1 Service-Box"
+            class="col-md-4 col-sm-4 agileits w3layouts services-info services-info-1"
+            data-aos="fade-right" data-aos-delay="200"
           >
             <i class="fa fa-cutlery" aria-hidden="true"></i>
             <h4 class="agileits w3layouts">Breakfast</h4>
@@ -246,7 +255,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </p>
           </div>
           <div
-            class="col-md-4 col-sm-4 agileits w3layouts services-info services-info-2 Service-Box"
+            class="col-md-4 col-sm-4 agileits w3layouts services-info services-info-2"
+            data-aos="fade-right" data-aos-delay="400"
           >
             <i class="fa fa-glass" aria-hidden="true"></i>
             <h4 class="agileits w3layouts">Drinks</h4>
@@ -256,7 +266,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </p>
           </div>
           <div
-            class="col-md-4 col-sm-4 services-info agileits w3layouts services-info-3 Service-Box"
+            class="col-md-4 col-sm-4 services-info agileits w3layouts services-info-3"
+            data-aos="fade-right" data-aos-delay="600"
           >
             <i class="fa fa-lemon-o" aria-hidden="true"></i>
             <h4 class="agileits w3layouts">Starters recipes</h4>
@@ -266,7 +277,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </p>
           </div>
           <div
-            class="col-md-4 agileits w3layouts col-sm-4 services-info services-info-4 Service-Box"
+            class="col-md-4 agileits w3layouts col-sm-4 services-info services-info-4"
+            data-aos="fade-right" data-aos-delay="800"
           >
             <i class="fa fa-spoon" aria-hidden="true"></i>
             <h4 class="agileits w3layouts">Soup recipes</h4>
@@ -276,29 +288,90 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </p>
           </div>
           <div
-            class="col-md-4 col-sm-4 services-info services-info-5 agileits w3layouts Service-Box"
+            class="col-md-4 col-sm-4 services-info services-info-5 agileits w3layouts"
+            data-aos="fade-right" data-aos-delay="1000"
           >
-            <i class="fa fa-cutlery" aria-hidden="true"></i>
-            <h4 class="agileits w3layouts">Dinner Food</h4>
-            <p>
-              Quisque accumsan erat dolor. Ve stibulum id lacus placerat Pleas
-              ureblame belongs to fall in the lacusiner duty
-            </p>
-          </div>
+          <i class="fa fa-cutlery" aria-hidden="true"></i>
+          <h4 class="agileits w3layouts">Dinner Food</h4>
+          <p>
+            Quisque accumsan erat dolor. Ve stibulum id lacus placerat Pleas
+            ureblame belongs to duty
+          </p>
+        </div>
+      </div>
+
+      <div class="small_card2">
+        <div
+        class="col-md-4 col-sm-4 agileits w3layouts services-info services-info-6"
+        >
+        <i class="fa fa-coffee" aria-hidden="true"></i>
+        <h4 class="agileits w3layouts">Coffee</h4>
+        <p>
+          Quisque accumsan erat dolor. Ve stibulum id lacus placerat Pleas
+          ureblame belongs to duty
+        </p>
+      </div>
+    </div>
+        <div class="small_card3">
           <div
-            class="col-md-4 agileits w3layouts col-sm-4 services-info services-info-6 Service-Box"
+            class="col-md-4 agileits w3layouts col-sm-4 services-info services-info-6"
+            data-aos="fade-right" data-aos-delay="1200"
           >
-            <i class="fa fa-coffee" aria-hidden="true"></i>
-            <h4 class="agileits w3layouts">Coffee</h4>
-            <p>
-              Quisque accumsan erat dolor. Ve stibulum id lacus placerat Pleas
-              ureblame belongs to fall in the lacusiner duty
-            </p>
-          </div>
+          <i class="fa fa-lemon-o" aria-hidden="true"></i>
+          <h4 class="agileits w3layouts">Starters recipes</h4>
+          <p>
+            Quisque accumsan erat dolor. Ve stibulum id lacus placerat Pleas
+            ureblame belongs to duty
+          </p>
+        </div>
+      </div>
+
+
+      <div class="small_card4">
+        <div
+        class="col-md-4 agileits w3layouts col-sm-4 services-info services-info-4"
+        >
+        <i class="fa fa-spoon" aria-hidden="true"></i>
+        <h4 class="agileits w3layouts">Soup recipes</h4>
+        <p>
+          Quisque accumsan erat dolor. Ve stibulum id lacus placerat Pleas
+          ureblame belongs to fall in the lacusiner duty
+        </p>
+      </div>
+    </div>
+
+    <div class="small_card5">
+      <div
+      class="col-md-4 col-sm-4 services-info services-info-5 agileits w3layouts"
+      >
+      <i class="fa fa-cutlery" aria-hidden="true"></i>
+      <h4 class="agileits w3layouts">Dinner Food</h4>
+      <p>
+        Quisque accumsan erat dolor. Ve stibulum id lacus placerat Pleas
+        ureblame belongs to fall in the lacusiner duty
+      </p>
+    </div>
+  </div>
+
+
+  <div class="small_card6">
+    <div
+    class="col-md-4 agileits w3layouts col-sm-4 services-info services-info-6"
+    >
+    <i class="fa fa-coffee" aria-hidden="true"></i>
+    <h4 class="agileits w3layouts">Coffee</h4>
+    <p>
+      Quisque accumsan erat dolor. Ve stibulum id lacus placerat Pleas
+      ureblame belongs to fall in the lacusiner duty
+    </p>
+  </div>
+</div>
+
           <div class="clearfix"></div>
         </div>
         <div
           class="col-md-4 agileits w3layouts col-sm-6 services-grid services-grid-2"
+          data-aos="zoom-out" data-aos-delay="100"
         >
           <img src="images/bottom.webp" alt="" />
         </div>
@@ -308,13 +381,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- //Services -->
 
     <!-- background -->
-    <div class="background">
+    <div class="background" data-aos="fade-up" data-aos-delay="">
       <div class="container">
-        <h3>order online</h3>
-        <h5>
+        <h3  data-aos="fade-down" data-aos-delay="200">order online</h3>
+        <h5  data-aos="fade-down" data-aos-delay="350">
           <span class="fa fa-phone" aria-hidden="true"></span> +12 877 345 9667
         </h5>
-        <p>
+        <p  data-aos="fade-down" data-aos-delay="400">
           We are committed to your satisfaction with every order.Get started
           today
         </p>
@@ -325,10 +398,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- blog -->
     <div class="blog">
       <div class="container">
-        <h3 class="heading">Our <span>Food</span> Blog</h3>
-        <p class="heading">Our latest news</p>
+        <h3 class="heading"  data-aos="fade-left" data-aos-delay="10">Our <span>Food</span> Blog</h3>
+        <p class="heading" data-aos="fade-left" data-aos-delay="30">Our latest news</p>
         <div class="agileits_banner_bottom_grid_three">
-          <div class="col-md-4 agileinfo_banner_bottom_grid_three_left">
+          <div class="col-md-4 agileinfo_banner_bottom_grid_three_left" data-aos="fade-left" data-aos-delay="50">
             <div class="wthree_banner_bottom_grid_three_left1 grid">
               <figure class="effect-roxy">
                 <img src="images/blog1.webp" alt=" " class="img-responsive" />
@@ -343,7 +416,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               blandit ipsum auctor. Mauris volutpat augue dolor.
             </p>
           </div>
-          <div class="col-md-4 agileinfo_banner_bottom_grid_three_left">
+          <div class="col-md-4 agileinfo_banner_bottom_grid_three_left" data-aos="fade-left" data-aos-delay="100">
             <div class="wthree_banner_bottom_grid_three_left1 grid">
               <figure class="effect-roxy">
                 <img src="images/blog2.webp" alt=" " class="img-responsive" />
@@ -358,7 +431,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               blandit ipsum auctor. Mauris volutpat augue dolor.
             </p>
           </div>
-          <div class="col-md-4 agileinfo_banner_bottom_grid_three_left">
+          <div class="col-md-4 agileinfo_banner_bottom_grid_three_left" data-aos="fade-left" data-aos-delay="150">
             <div class="wthree_banner_bottom_grid_three_left1 grid">
               <figure class="effect-roxy">
                 <img src="images/blog3.webp" alt=" " class="img-responsive" />
@@ -368,33 +441,53 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </figcaption>
               </figure>
             </div>
-            <p class="w3_agileits_para">
-              Pellentesque vehicula augue eget nisl ullamco rper, molestie
-              blandit ipsum auctor. Mauris volutpat augue dolor.
-            </p>
-          </div>
+            </div>
+
+
+            <div class="col-md-4 agileinfo_banner_bottom_grid_three_left">
+              <div class="third3">
+              <div class="wthree_banner_bottom_grid_three_left1 grid">
+                <figure class="effect-roxy">
+                  <img src="images/blog3.webp" alt=" " class="img-responsive" />
+                  <figcaption>
+                    <h3>Corn <span>Rice</span></h3>
+                    <p>Vestibulum pulvinar lobortis lorem lectus pretium non.</p>
+                  </figcaption>
+                </figure>
+              </div>
+              <p class="w3_agileits_para">
+                Pellentesque vehicula augue eget nisl ullamco rper, molestie
+                blandit ipsum auctor. Mauris volutpat augue dolor.
+              </p>
+            </div>
+            </div>
+
+
           <div class="clearfix"></div>
         </div>
         <div class="agileits_banner_bottom_grid_three">
+
           <div class="col-md-4 agileinfo_banner_bottom_grid_three_left">
-            <div class="wthree_banner_bottom_grid_three_left1 grid">
-              <figure class="effect-roxy">
-                <img
+            <div class="four4">
+              <div class="wthree_banner_bottom_grid_three_left1 grid">
+                <figure class="effect-roxy">
+                  <img
                   src="https://media.istockphoto.com/id/502708516/photo/italian-pasta-alla-norma-close-up-and-ingredients-horizontal-to.webp?s=612x612&w=0&k=20&c=9c7HsKEWYRn1co5f6Jct7Z1nWTP1YVlqj_stRUvXLqM="
                   alt=" "
                   class="img-responsive"
-                />
-                <figcaption>
-                  <h3>Red Sauce <span>Pasta</span></h3>
-                  <p>Vestibulum pulvinar lobortis lorem lectus pretium non.</p>
-                </figcaption>
-              </figure>
+                  />
+                  <figcaption>
+                    <h3>Red Sauce <span>Pasta</span></h3>
+                    <p>Vestibulum pulvinar lobortis lorem lectus pretium non.</p>
+                  </figcaption>
+                </figure>
+              </div>
+              <p class="w3_agileits_para">
+                Pellentesque vehicula augue eget nisl ullamco rper, molestie
+                blandit ipsum auctor. Mauris volutpat augue dolor.
+              </p>
             </div>
-            <p class="w3_agileits_para">
-              Pellentesque vehicula augue eget nisl ullamco rper, molestie
-              blandit ipsum auctor. Mauris volutpat augue dolor.
-            </p>
-          </div>
+            </div>
 
           <div class="clearfix"></div>
         </div>
@@ -402,9 +495,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- //blog -->
 
+
+
     <!-- News letter -->
     <div class="agile-form">
-      <div class="container">
+      <div class="container" data-aos="fade-right" data-aos-delay="10">
         <div class="col-md-4 newsletter">
           <p>Subscribe to our newsletter</p>
           <h4>For our latest updates</h4>
@@ -433,7 +528,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="container">
         <div class="footer-main">
           <div class="footer-top">
-            <div class="col-md-4 ftr-grid fg1">
+            <div class="col-md-4 ftr-grid fg1" data-aos="fade-left" data-aos-delay="10">
               <h3>opening timings</h3>
               <p>
                 <span class="fa fa-clock-o" aria-hidden="true"></span>
@@ -454,7 +549,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 6am to 11pm
               </p>
             </div>
-            <div class="col-md-4 ftr-grid fg2 mid-gd">
+            <div class="col-md-4 ftr-grid fg2 mid-gd"  data-aos="fade-left" data-aos-delay="60">
               <h3>Our Address</h3>
               <div class="ftr-address">
                 <div class="local">
@@ -488,7 +583,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="clearfix"></div>
               </div>
             </div>
-            <div class="col-md-4 ftr-grid fg2">
+            <div class="col-md-4 ftr-grid fg2"  data-aos="fade-left" data-aos-delay="120">
               <h3>Recent posts</h3>
               <p>
                 <strong
@@ -570,12 +665,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="clearfix"></div>
       </div>
     </div>
+    <div class="alan-btn"></div>
+
+
+    <script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "ad327648a74abb8e64a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData) {
+      if (commandData.command === "go:back") {
+      }
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+
+
+</script>
     <!-- Footer -->
 
     <script src="js/copyrightYear.js"></script>
     <script src="js/SmoothScroll.min.js"></script>
 
     <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/scrollToBottom.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript">
       jQuery(document).ready(function ($) {
@@ -588,6 +701,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             1000,
           );
         });
+      });
+    </script>
+
+    <script src="./js/aos.js"> 
+    </script>
+    <script>
+      AOS.init({
+        duration: 1000, 
+        mirror: true,
       });
     </script>
 

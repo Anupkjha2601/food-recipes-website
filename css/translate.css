@@ -23,3 +23,14 @@
   
   #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
  .goog-text-highlight { background: none !important; box-shadow: none !important;}
+
+
+.goog-te-gadget,
+.goog-te-gadget > div {
+    all: unset;
+}
+
+.goog-te-gadget select {
+  all: unset;
+  color: white;
+}
