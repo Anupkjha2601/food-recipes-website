@@ -9561,6 +9561,40 @@ input.email {
   }
   .agile-dish-caption a {
     font-size: 14px;
+
+    color: #fff;
+    background: #F44336;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    -webkit-appearance: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+}
+.contact-agileinfo input[type="submit"]:hover {
+    background: #4caf50;
+}
+.agileits-w3layouts-map iframe {
+	width: 100%;
+	min-height: 350px;
+	border: none;
+} 
+.contact {
+    padding: 5em 0;
+}
+/*-- //contact --*/
+
+/*-- to-top --*/
+/* #toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 900;
+
     padding: 7px 10px;
   }
   .navbar-toggle .icon-bar {
@@ -9571,6 +9605,46 @@ input.email {
     width: 60px;
     line-height: 2.6em;
     height: 60px;
+
+    border: none;
+
+    background: url(../images/top.webp) no-repeat 0px 0px;
+	background-position: 50%;
+	background-color: #808080;
+	border-radius: 50%;
+
+}
+#toTopHover {
+	width: 35px;
+	height: 35px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+
+} */
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* Adjust this value to change the horizontal position */
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #F44336;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 51%;
+	width: 58px;
+}
+
+#scrollBtn:hover {
+	background-color: #777;
+
   }
   .agile-why-text h4 {
     font-size: 1.1em;
@@ -9581,6 +9655,7 @@ input.email {
   .thim-click-to-bottom {
     left: 46.5%;
   }
+
 }
 .Service-Box{
   padding: 22px;
