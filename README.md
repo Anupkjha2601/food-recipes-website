@@ -96,7 +96,7 @@ Make Your Contribution: Make the necessary changes as per the assigned issue.
    ```sh
    git status
    ```
-2. RUn the following command to add the changed files to the staging area.
+2. Run the following command to add the changed files to the staging area.
 ```shell
 git add .
 ```
