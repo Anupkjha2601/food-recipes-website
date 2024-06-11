@@ -1,0 +1,31 @@
+.contributors-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 -10px;
+ padding-left: 10%;
+  }
+  
+  .contributor-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  .contributor-card:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+  }
+  
+  .contributor-image {
+    transition: transform 0.3s ease;
+  }
+  
+  .contributor-card:hover .contributor-image {
+    transform: scale(1.1);
+  }
+  .contributor-image{
+    border-radius: 50%;
+  }
