@@ -1,7 +1,5 @@
-// Get the "return to top" button element
-let returnToTopButton = document.getElementById('returnToTop');
 
-// Function to scroll to the top of the page
+let returnToTopButton = document.getElementById('returnToTop');
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -9,7 +7,6 @@ function scrollToTop() {
   });
 }
 
-// Function to toggle the visibility of the "return to top" button
 function toggleReturnToTopButton() {
   if (window.scrollY > 200) {
     returnToTopButton.classList.add('active');
@@ -18,6 +15,5 @@ function toggleReturnToTopButton() {
   }
 }
 
-// Add event listeners
 window.addEventListener('scroll', toggleReturnToTopButton);
 returnToTopButton.addEventListener('click', scrollToTop);
